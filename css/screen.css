@@ -2776,7 +2776,7 @@ body.cms-page-view.cms-soil-dna-request-form .buttons-set {
     transition: all 300ms;
     background-color: #345f9f; }
 
-.checkout-cart-index .page-title .custom-title {
+.checkout-cart-index .page-title.custom-title {
   display: none; }
 .checkout-cart-index .cart {
   overflow: visible; }

@@ -3606,10 +3606,8 @@ body.cms-page-view.cms-soil-dna-request-form {
 
 //Styling for Shopping Cart Page ***********************************************
 .checkout-cart-index {
-	.page-title {
-		.custom-title {
-			display: none;
-		}	
+	.page-title.custom-title {
+		display: none;
 	}
 	.cart {
 		overflow: visible;
