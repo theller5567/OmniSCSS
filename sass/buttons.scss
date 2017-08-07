@@ -1,0 +1,74 @@
+////////////////////////////
+//BUTTONS
+//////////////////////////
+$dark_blue: #305893;
+$light_blue: #277ec8;
+$lighter_blue: #2e91db;
+
+.btnNew {
+    color: #000;
+    text-align: center;
+    cursor: pointer;
+    display: block;
+    font-size:16px;
+    font-weight: 400;
+    line-height: 2.25em;
+    margin: 0 auto 2em;
+    max-width: 160px; 
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    vertical-align: middle;
+    width: 100%; 
+    border-radius: 0;
+    border: 0;
+    &:hover { 
+        text-decoration: none; 
+    }
+    @media(min-width: 400px) {
+        display: inline-block;
+        margin-right: 2.5em;
+        &:nth-of-type(even) {
+            margin-right: 0;
+        }
+    }
+    @media(min-width: 600px) {
+        &:nth-of-type(even) {
+            margin-right: 2.5em;
+        }
+        &:nth-of-type(5) {
+            margin-right: 0;
+        }
+    }
+}
+.btn-hover {
+    background-color: $light_blue;
+    letter-spacing: 2px;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 1;
+    color: white;
+    &:active, &:hover {
+        color: white;
+        letter-spacing: 5px;
+    }
+    &:before {
+        backface-visibility: hidden;
+        top: 0;
+        left: -100%;
+        content: " ";
+        display: block;
+        margin: 0 auto;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: $lighter_blue;
+        transition: all 350ms ease-in-out;
+        z-index: -1;
+    }
+    &:hover:before {
+        backface-visibility: hidden;
+        left: 0;
+        width: 100%;
+    }
+}
