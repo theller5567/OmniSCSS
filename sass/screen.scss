@@ -3606,6 +3606,11 @@ body.cms-page-view.cms-soil-dna-request-form {
 
 //Styling for Shopping Cart Page ***********************************************
 .checkout-cart-index {
+	.page-title {
+		.custom-title {
+			display: none;
+		}	
+	}
 	.cart {
 		overflow: visible;
 		.shippingSection {
@@ -3613,8 +3618,6 @@ body.cms-page-view.cms-soil-dna-request-form {
 		}
 		.discount {
 			display: inline-block;
-			vertical-align: top;
-			float: left;
 			box-sizing: border-box;
 			font-size: 16px;
 			width: 100%;
@@ -3667,7 +3670,6 @@ body.cms-page-view.cms-soil-dna-request-form {
 		.shipping {
 			display: inline-block;
 			vertical-align: top;
-			float: left;
 			box-sizing: border-box;
 			font-size: 16px;
 			width: 100%;
@@ -3712,12 +3714,10 @@ body.cms-page-view.cms-soil-dna-request-form {
 		.totals {
 			display: inline-block;
 			vertical-align: top;
-			float: left;
 			box-sizing: border-box;
 			font-size: 16px;
-			width: 35%;
 			min-width: 268px;
-			float: right;
+			float: none;
 			background: none;
 		}
 		.crosssell {
@@ -5059,10 +5059,7 @@ body.cms-page-view.cms-soil-dna-request-form {
 		}
 }
 
-div.col-main div.col-main {
-	width: 100%;
-}
-
+div.col-main div.col-main { width: 100%; }
 /* ====================== jQuery FancyBox.css ========================= */
 /*! fancyBox v2.1.5 fancyapps.com | fancyapps.com/fancybox/#license */
 .fancybox-wrap {

@@ -2776,14 +2776,14 @@ body.cms-page-view.cms-soil-dna-request-form .buttons-set {
     transition: all 300ms;
     background-color: #345f9f; }
 
+.checkout-cart-index .page-title .custom-title {
+  display: none; }
 .checkout-cart-index .cart {
   overflow: visible; }
   .checkout-cart-index .cart .shippingSection {
     overflow: hidden; }
   .checkout-cart-index .cart .discount {
     display: inline-block;
-    vertical-align: top;
-    float: left;
     box-sizing: border-box;
     font-size: 16px;
     width: 100%;
@@ -2828,7 +2828,6 @@ body.cms-page-view.cms-soil-dna-request-form .buttons-set {
   .checkout-cart-index .cart .shipping {
     display: inline-block;
     vertical-align: top;
-    float: left;
     box-sizing: border-box;
     font-size: 16px;
     width: 100%; }
@@ -2867,12 +2866,10 @@ body.cms-page-view.cms-soil-dna-request-form .buttons-set {
   .checkout-cart-index .cart .totals {
     display: inline-block;
     vertical-align: top;
-    float: left;
     box-sizing: border-box;
     font-size: 16px;
-    width: 35%;
     min-width: 268px;
-    float: right;
+    float: none;
     background: none; }
   .checkout-cart-index .cart .crosssell {
     background: none; }
