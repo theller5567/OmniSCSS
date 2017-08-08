@@ -254,6 +254,37 @@ input[type="submit"] {
 	max-height: none !important;
 }
 
+//Global Layout Styling
+#main {
+	padding: 0;
+	position: relative;
+	max-height: none !important;
+}
+.main-container {
+	background: none;
+}
+.header {
+    width: auto;
+    max-width: 930px;
+}
+.title-wrapper {
+	position: relative;
+	top: 0;
+	left: 0;
+	padding: 24px 0;
+	width: 100%;
+	z-index: 0;
+	.page-title {
+		padding: 10px 0;
+		margin: 0;
+		background: none;
+	}
+	&.product-title h1 {
+		text-align: left;
+		line-height: 100%;
+	}
+}
+
 //Styling for Buttons	
 .btnNew {
     color: $black;
@@ -268,7 +299,6 @@ input[type="submit"] {
     position: relative;
     text-decoration: none;
     text-transform: uppercase;
-    vertical-align: middle;
     width: 100%; 
     border-radius: 0;
     border: 0;
@@ -505,36 +535,6 @@ button.button.plain {
 	cursor: not-allowed;
 }
 
-#main {
-	padding: 0;
-	position: relative;
-	max-height: none !important;
-}
-.main-container {
-	background: none;
-}
-.header {
-    width: auto;
-    max-width: 930px;
-}
-.title-wrapper {
-	position: relative;
-	top: 0;
-	left: 0;
-	padding: 24px 0;
-	width: 100%;
-	z-index: 0;
-	.page-title {
-		padding: 10px 0;
-		margin: 0;
-		background: none;
-	}
-	&.product-title h1 {
-		text-align: left;
-		line-height: 100%;
-	}
-}
-
 //Styling for Main Navigation
 #main-nav {
 	background: $blue;
@@ -622,7 +622,7 @@ button.button.plain {
 					    top: 50%;
 					    position: absolute;
 					    background-image: $omni-sprites;
-					    background-sizing: cover;
+					    background-size: cover;
 					    left: 0;
 					    background-position: -220px -52px;
 					    transform: scale(0.6) translateY(-90%);
@@ -640,7 +640,7 @@ button.button.plain {
 						font-size: 13.5px;
 						font-family: myriadpro_light, Arial, Helvetica, sans-serif;
 						span.new {
-				    		color: $hotpink;//pink
+				    		color: $hotpink;
 				    	}
 					}
 					a.box:hover {
@@ -669,7 +669,7 @@ button.button.plain {
 				color: $malibu-blue;
 				font-family: myriadpro_regular, Arial, Helvetica, sans-serif;
 				.new {
-				    color: $hotpink;//pink
+				    color: $hotpink;
 				}
 				ul li .text {
 					color: $white;
@@ -734,8 +734,6 @@ button.button.plain {
 		&.hover .drop-wrapper > a {
 			background: $omni-grey;
 			color: $white;
-		}
-		&.active .drop-wrapper > a {
 		}
 	}
 	.container {
@@ -990,7 +988,7 @@ button.button.plain {
 }
 
 //PROMOTION PAGE STYLING
-.std {
+.cms-promotions {
 	.demo-header {
 		margin: 15px 0;
 		a {
@@ -1108,10 +1106,10 @@ button.button.plain {
 	    		}
 	    		ul.promotions {
 	    			overflow: hidden;
-	    			list-style-type: disc;
-	    			margin: 15px 0;
+					margin: 15px 0;
+					padding: 0;
 	    			li {
-						list-style-type: disc;
+						list-style-type: none;
 					    padding: 10px;
 	    			}
 	    		}
@@ -1301,110 +1299,50 @@ table#compare-br {
 }
 
 //Individual Video Pages
-[class*="cms-video-"] .video .wrapper {
-	background-color: $omni-grey;
-    position: relative;
-    overflow: hidden;
-    padding: 10px;
-}
-
-[class*="cms-video-"] .video .wrapper h3 {
-    font-size: 18px;
-    text-align: left;
-    color: white;
-    background-color: $brightBlue;
-    padding: 0 5px;
-}
-
-[class*="cms-video-"] .video-wrapper {
-    position: relative;
-    padding-bottom: 56.25%;
-    padding-top: 30px;
-    height: 0;
-    overflow: hidden;
-}
-
-[class*="cms-video-"] .video-wrapper iframe, [class*="cms-video-"] .video-wrapper object, [class*="cms-video-"] .video-wrapper embed {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-[class*="cms-video-"] .video {
-	margin-bottom: 25px;
-}
-
-[class*="cms-video-"] button.goto-product {
-    background: #389AD3;
-    border: none;
-    padding: 10px 20px;
-    color: white;
-    font-weight: 300;
-    font-size: 18px;
-    margin: 20px auto;
-    position: relative;
-    width: 100%;
-}
-[class*="cms-video-"] button.goto-product a {
-  text-decoration: none;
-  color: $white; 
-}
-
-[class*="cms-video-"] .left-col {
-    width: 100%;
-    display: inline-block;
-    vertical-align: top;
-    p.description {
-		padding: 10px 15px 10px 10px;
-	}
-}
 [class*="cms-video-"] #video-wrapper {
-	.col-main {
-		padding-top: 0;
-		margin-top: 0;
-		.product-list-title {
-			display: none;
-		}
-		ul.product-list {
-			li {
-				width: 100%;
-				border-top: none;
-				border-bottom: 1px solid #e6e6e6;
-				padding: 0;
-				.img {
-					border: none;
-					border-radius: 0;
-					margin: 0;
-					padding: 0;
-					img {
-						border-radius: 0;
-						border: none;
-					}
-				}
-				.txt {
-					background: none;
-				    padding: 0;
-				    text-align: left;
-				    .col-1 {
-						display: inline-block;
-					    vertical-align: top;
-					    box-sizing: border-box;
-					    width: 60%;
-					    .product-name {
-					    	font-size: 18px;
-						    text-align: left;
-						    float: none;
-					    }
-				    }
-				    .col-2 {
-						display: inline-block;
-					    vertical-align: top;
-					    box-sizing: border-box;
-					    float: right;
-				    }
+	.video {
+		margin-bottom: 25px;
+		.wrapper {
+			background-color: $omni-grey;
+			position: relative;
+			overflow: hidden;
+			padding: 10px;
+			h3 {
+				font-size: 18px;
+				text-align: left;
+				color: white;
+				background-color: $brightBlue;
+				padding: 0 5px;
+			}
+			.video-wrapper {
+				position: relative;
+				padding-bottom: 56.25%;
+				padding-top: 30px;
+				height: 0;
+				overflow: hidden;
+				embed {
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
 				}
 			}
+		}
+		button.goto-product {
+			background: #389AD3;
+			border: none;
+			padding: 10px 20px;
+			color: white;
+			font-weight: 300;
+			font-size: 18px;
+			margin: 20px auto;
+			position: relative;
+			width: 100%;
+		}
+		button.goto-product a {
+		text-decoration: none;
+		color: $white; 
 		}
 	}
 }
@@ -1499,7 +1437,6 @@ table#compare-br {
 }
 
 //Styling for Search Page
-
 .catalogsearch-result-index {
 	.col-left.sidebar {
 		.block {
@@ -1761,52 +1698,54 @@ table#compare-br {
 	}
 }
 
-.std {
-	li {
-		overflow: hidden;
-		margin: 0 0 -1px;
-		overflow: visible;
-		list-style-position: outside;
-		list-style-type: none;
-		&:before {
-			display: none;
-			content: "";
-			width: 8px;
-			height: 8px;
-			border-radius: 5px;
-			background: $omni-grey;
-			float: left;
-			margin: 6px 7px 0 0;
-		}
-		&:after {
-			content: "";
-			display: block;
-			clear: both;
-		}
-	}
-	ul {
-		padding: 0;
-		margin: 0 0 20px;
-		list-style: none;
-		&.disc {
-			padding: 5px 0 0;
-		}
-	}
-	dl {
-		margin: 0;
-		overflow: hidden;
-		line-height: 19px;
-		dd {
-			margin: 0;
-			padding: 0;
-		}
-	}
-	dt {
-		float: left;
-		margin: 0 3px 0 0;
-		float: none;
-	}
-}
+//Check if still exist in the DOM
+	// .std {
+	// 	li {
+	// 		overflow: hidden;
+	// 		margin: 0 0 -1px;
+	// 		overflow: visible;
+	// 		list-style-position: outside;
+	// 		list-style-type: none;
+	// 		&:before {
+	// 			display: none;
+	// 			content: "";
+	// 			width: 8px;
+	// 			height: 8px;
+	// 			border-radius: 5px;
+	// 			background: $omni-grey;
+	// 			float: left;
+	// 			margin: 6px 7px 0 0;
+	// 		}
+	// 		&:after {
+	// 			content: "";
+	// 			display: block;
+	// 			clear: both;
+	// 		}
+	// 	}
+	// 	ul {
+	// 		padding: 0;
+	// 		margin: 0 0 20px;
+	// 		list-style: none;
+	// 		&.disc {
+	// 			padding: 5px 0 0;
+	// 		}
+	// 	}
+	// 	dl {
+	// 		margin: 0;
+	// 		overflow: hidden;
+	// 		line-height: 19px;
+	// 		dd {
+	// 			margin: 0;
+	// 			padding: 0;
+	// 		}
+	// 	}
+	// 	dt {
+	// 		float: left;
+	// 		margin: 0 3px 0 0;
+	// 		float: none;
+	// 	}
+	// }
+//
 
 //Styling for Sidebars
 .sidebar {
@@ -2573,7 +2512,6 @@ body.cms-page-view.cms-soil-dna-request-form {
 				}
 			}
 			.row {
-				//overflow: hidden;
 				margin: 0 20px 0 19px;
 				padding: 0;
 				position: relative;
@@ -3228,7 +3166,6 @@ body.cms-page-view.cms-soil-dna-request-form {
 		background: none;
 	}
 }
-
 .page-title {
 	padding: 0;
 	border: none;
@@ -3639,7 +3576,7 @@ body.cms-page-view.cms-soil-dna-request-form {
 				line-height: 34px;
 				padding: 0;
 				span {
-					padding: 0 12px 0 51px;
+					padding: 0 12px;
 					text-shadow: 0 1px lighten($black, 25%);
 					position: relative;
 					&:before {

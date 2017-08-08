@@ -177,6 +177,33 @@ input[type="image"] {
   margin-top: -21px;
   max-height: none !important; }
 
+#main {
+  padding: 0;
+  position: relative;
+  max-height: none !important; }
+
+.main-container {
+  background: none; }
+
+.header {
+  width: auto;
+  max-width: 930px; }
+
+.title-wrapper {
+  position: relative;
+  top: 0;
+  left: 0;
+  padding: 24px 0;
+  width: 100%;
+  z-index: 0; }
+  .title-wrapper .page-title {
+    padding: 10px 0;
+    margin: 0;
+    background: none; }
+  .title-wrapper.product-title h1 {
+    text-align: left;
+    line-height: 100%; }
+
 .btnNew {
   color: #000000;
   text-align: center;
@@ -190,7 +217,6 @@ input[type="image"] {
   position: relative;
   text-decoration: none;
   text-transform: uppercase;
-  vertical-align: middle;
   width: 100%;
   border-radius: 0;
   border: 0;
@@ -385,33 +411,6 @@ button.button.plain span {
 .disableClick:hover {
   cursor: not-allowed; }
 
-#main {
-  padding: 0;
-  position: relative;
-  max-height: none !important; }
-
-.main-container {
-  background: none; }
-
-.header {
-  width: auto;
-  max-width: 930px; }
-
-.title-wrapper {
-  position: relative;
-  top: 0;
-  left: 0;
-  padding: 24px 0;
-  width: 100%;
-  z-index: 0; }
-  .title-wrapper .page-title {
-    padding: 10px 0;
-    margin: 0;
-    background: none; }
-  .title-wrapper.product-title h1 {
-    text-align: left;
-    line-height: 100%; }
-
 #main-nav {
   background: #305893;
   line-height: 38px;
@@ -485,7 +484,7 @@ button.button.plain span {
             top: 50%;
             position: absolute;
             background-image: url(../images/omni8.png);
-            background-sizing: cover;
+            background-size: cover;
             left: 0;
             background-position: -220px -52px;
             transform: scale(0.6) translateY(-90%); }
@@ -752,9 +751,9 @@ button.button.plain span {
 .wrapper {
   min-width: 320px; }
 
-.std .demo-header {
+.cms-promotions .demo-header {
   margin: 15px 0; }
-  .std .demo-header a {
+  .cms-promotions .demo-header a {
     position: relative;
     display: block;
     padding: 15px;
@@ -772,7 +771,7 @@ button.button.plain span {
     font-size: 35px;
     text-transform: uppercase;
     transition: all 300ms; }
-    .std .demo-header a:hover {
+    .cms-promotions .demo-header a:hover {
       background: #004480;
       background: -moz-linear-gradient(top, #004480 0%, #004480 100%);
       background: -webkit-gradient(left top, left bottom, color-stop(0%, #004480), color-stop(100%, #004480));
@@ -782,7 +781,7 @@ button.button.plain span {
       background: linear-gradient(to bottom, #004480 0%, #004480 100%);
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#004480', endColorstr='#004480', GradientType=0 );
       text-decoration: none; }
-    .std .demo-header a:after {
+    .cms-promotions .demo-header a:after {
       position: absolute;
       content: '';
       top: calc(50% - 15px);
@@ -790,11 +789,11 @@ button.button.plain span {
       height: 30px;
       width: 30px;
       background-image: url("../images/svg/arrow-right.svg"); }
-    .std .demo-header a span {
+    .cms-promotions .demo-header a span {
       font-size: 18px;
       display: block;
       margin-top: 15px; }
-.std .promotion {
+.cms-promotions .promotion {
   max-width: 100%;
   min-height: 250px;
   border: 1px solid #cecece;
@@ -804,33 +803,33 @@ button.button.plain span {
   border-bottom: 1px solid #cecece;
   font-size: 0;
   box-sizing: border-box; }
-  .std .promotion header {
+  .cms-promotions .promotion header {
     background-color: #014383;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px; }
-    .std .promotion header h2 {
+    .cms-promotions .promotion header h2 {
       color: white;
       padding: 10px; }
-  .std .promotion .left-col {
+  .cms-promotions .promotion .left-col {
     display: inline-block;
     overflow: hidden;
     padding: 10px;
     width: 30%;
     vertical-align: top;
     box-sizing: border-box; }
-    .std .promotion .left-col img {
+    .cms-promotions .promotion .left-col img {
       border-style: none;
       vertical-align: top;
       max-width: 100%;
       max-height: 200px; }
-  .std .promotion .right-col {
+  .cms-promotions .promotion .right-col {
     padding: 10px;
     width: 70%;
     vertical-align: top;
     font-size: 16px;
     box-sizing: border-box;
     display: inline-block; }
-    .std .promotion .right-col .desc a.promo-btn {
+    .cms-promotions .promotion .right-col .desc a.promo-btn {
       position: relative;
       border-radius: 3px;
       background-color: #57c9e8;
@@ -844,9 +843,9 @@ button.button.plain span {
       text-decoration: none;
       transition: all 300ms;
       min-height: 34px; }
-      .std .promotion .right-col .desc a.promo-btn:hover {
+      .cms-promotions .promotion .right-col .desc a.promo-btn:hover {
         background-color: #41c2e5; }
-      .std .promotion .right-col .desc a.promo-btn:after {
+      .cms-promotions .promotion .right-col .desc a.promo-btn:after {
         position: absolute;
         content: '';
         top: calc(50% - 15px);
@@ -854,14 +853,14 @@ button.button.plain span {
         height: 30px;
         width: 30px;
         background-image: url("../images/svg/arrow-right.svg"); }
-    .std .promotion .right-col .desc ul.promotions {
+    .cms-promotions .promotion .right-col .desc ul.promotions {
       overflow: hidden;
-      list-style-type: disc;
-      margin: 15px 0; }
-      .std .promotion .right-col .desc ul.promotions li {
-        list-style-type: disc;
+      margin: 15px 0;
+      padding: 0; }
+      .cms-promotions .promotion .right-col .desc ul.promotions li {
+        list-style-type: none;
         padding: 10px; }
-    .std .promotion .right-col .desc .promo-length {
+    .cms-promotions .promotion .right-col .desc .promo-length {
       font-style: italic; }
 
 table#compare-br {
@@ -1011,94 +1010,44 @@ table#compare-br {
     width: 100%;
     height: 100%; }
 
-[class*="cms-video-"] .video .wrapper {
-  background-color: #444444;
-  position: relative;
-  overflow: hidden;
-  padding: 10px; }
-
-[class*="cms-video-"] .video .wrapper h3 {
-  font-size: 18px;
-  text-align: left;
-  color: white;
-  background-color: #1A7EC7;
-  padding: 0 5px; }
-
-[class*="cms-video-"] .video-wrapper {
-  position: relative;
-  padding-bottom: 56.25%;
-  padding-top: 30px;
-  height: 0;
-  overflow: hidden; }
-
-[class*="cms-video-"] .video-wrapper iframe, [class*="cms-video-"] .video-wrapper object, [class*="cms-video-"] .video-wrapper embed {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%; }
-
-[class*="cms-video-"] .video {
+[class*="cms-video-"] #video-wrapper .video {
   margin-bottom: 25px; }
-
-[class*="cms-video-"] button.goto-product {
-  background: #389AD3;
-  border: none;
-  padding: 10px 20px;
-  color: white;
-  font-weight: 300;
-  font-size: 18px;
-  margin: 20px auto;
-  position: relative;
-  width: 100%; }
-
-[class*="cms-video-"] button.goto-product a {
-  text-decoration: none;
-  color: #ffffff; }
-
-[class*="cms-video-"] .left-col {
-  width: 100%;
-  display: inline-block;
-  vertical-align: top; }
-  [class*="cms-video-"] .left-col p.description {
-    padding: 10px 15px 10px 10px; }
-
-[class*="cms-video-"] #video-wrapper .col-main {
-  padding-top: 0;
-  margin-top: 0; }
-  [class*="cms-video-"] #video-wrapper .col-main .product-list-title {
-    display: none; }
-  [class*="cms-video-"] #video-wrapper .col-main ul.product-list li {
-    width: 100%;
-    border-top: none;
-    border-bottom: 1px solid #e6e6e6;
-    padding: 0; }
-    [class*="cms-video-"] #video-wrapper .col-main ul.product-list li .img {
-      border: none;
-      border-radius: 0;
-      margin: 0;
-      padding: 0; }
-      [class*="cms-video-"] #video-wrapper .col-main ul.product-list li .img img {
-        border-radius: 0;
-        border: none; }
-    [class*="cms-video-"] #video-wrapper .col-main ul.product-list li .txt {
-      background: none;
-      padding: 0;
-      text-align: left; }
-      [class*="cms-video-"] #video-wrapper .col-main ul.product-list li .txt .col-1 {
-        display: inline-block;
-        vertical-align: top;
-        box-sizing: border-box;
-        width: 60%; }
-        [class*="cms-video-"] #video-wrapper .col-main ul.product-list li .txt .col-1 .product-name {
-          font-size: 18px;
-          text-align: left;
-          float: none; }
-      [class*="cms-video-"] #video-wrapper .col-main ul.product-list li .txt .col-2 {
-        display: inline-block;
-        vertical-align: top;
-        box-sizing: border-box;
-        float: right; }
+  [class*="cms-video-"] #video-wrapper .video .wrapper {
+    background-color: #444444;
+    position: relative;
+    overflow: hidden;
+    padding: 10px; }
+    [class*="cms-video-"] #video-wrapper .video .wrapper h3 {
+      font-size: 18px;
+      text-align: left;
+      color: white;
+      background-color: #1A7EC7;
+      padding: 0 5px; }
+    [class*="cms-video-"] #video-wrapper .video .wrapper .video-wrapper {
+      position: relative;
+      padding-bottom: 56.25%;
+      padding-top: 30px;
+      height: 0;
+      overflow: hidden; }
+      [class*="cms-video-"] #video-wrapper .video .wrapper .video-wrapper embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%; }
+  [class*="cms-video-"] #video-wrapper .video button.goto-product {
+    background: #389AD3;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-weight: 300;
+    font-size: 18px;
+    margin: 20px auto;
+    position: relative;
+    width: 100%; }
+  [class*="cms-video-"] #video-wrapper .video button.goto-product a {
+    text-decoration: none;
+    color: #ffffff; }
 
 .cms-product-videos ul.videos, .cms-how-to-videos ul.videos {
   box-sizing: border-box;
@@ -1368,43 +1317,6 @@ table#compare-br {
   list-style-position: inside;
   margin-bottom: 5px;
   padding-left: 5px; }
-
-.std li {
-  overflow: hidden;
-  margin: 0 0 -1px;
-  overflow: visible;
-  list-style-position: outside;
-  list-style-type: none; }
-  .std li:before {
-    display: none;
-    content: "";
-    width: 8px;
-    height: 8px;
-    border-radius: 5px;
-    background: #444444;
-    float: left;
-    margin: 6px 7px 0 0; }
-  .std li:after {
-    content: "";
-    display: block;
-    clear: both; }
-.std ul {
-  padding: 0;
-  margin: 0 0 20px;
-  list-style: none; }
-  .std ul.disc {
-    padding: 5px 0 0; }
-.std dl {
-  margin: 0;
-  overflow: hidden;
-  line-height: 19px; }
-  .std dl dd {
-    margin: 0;
-    padding: 0; }
-.std dt {
-  float: left;
-  margin: 0 3px 0 0;
-  float: none; }
 
 .sidebar {
   float: right;
@@ -2804,7 +2716,7 @@ body.cms-page-view.cms-soil-dna-request-form .buttons-set {
       line-height: 34px;
       padding: 0; }
       .checkout-cart-index .cart .discount button span span {
-        padding: 0 12px 0 51px;
+        padding: 0 12px;
         text-shadow: 0 1px #404040;
         position: relative; }
         .checkout-cart-index .cart .discount button span span:before {
