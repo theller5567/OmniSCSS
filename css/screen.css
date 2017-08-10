@@ -724,6 +724,12 @@ button.button.plain span {
     white-space: nowrap;
     font-size: 12px;
     line-height: 34px; }
+    @media only screen and (max-width: 480px) {
+      #header .changeLocation-wrapper #changeLocation {
+        right: 0;
+        top: -34px; }
+        #header .changeLocation-wrapper #changeLocation #changeLocation {
+          padding: 0 5px; } }
   #header #LP-video-slider {
     position: absolute;
     top: 34px;
@@ -3709,6 +3715,10 @@ body.cms-page-view.cms-soil-dna-request-form .buttons-set {
       background-position: -215px -49px;
       transform: scale(0.4) translateY(-120%);
       background-image: url(../images/omni8.png); }
+    @media only screen and (max-width: 480px) {
+      .select-country-popup-wrapper .country ul li {
+        width: 100%;
+        float: none; } }
 .select-country-popup-wrapper #ddSelectCountry {
   font-weight: 400;
   height: 30px;
@@ -4329,30 +4339,11 @@ div.col-main div.col-main {
   .form-add .button {
     float: right; }
 
-  #footer .footer-nav ul {
-    width: 50%;
-    margin-bottom: 20px;
-    text-align: center; }
-    #footer .footer-nav ul:first-child {
-      width: 50%;
-      margin-bottom: 20px;
-      text-align: center; }
-
   #newsletter-validate-detail .input-box {
     width: 70%; }
 
   .block-subscribe .actions {
     width: 30%; }
-
-  #header .changeLocation-wrapper {
-    right: 0;
-    top: -34px; }
-    #header .changeLocation-wrapper #changeLocation {
-      padding: 0 5px; }
-
-  .select-country-popup-wrapper .country ul li {
-    width: 100%;
-    float: none; }
 
   .std .promotion .right-col .desc a.promo-btn {
     font-size: 12px; }
