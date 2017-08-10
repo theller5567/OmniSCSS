@@ -1,0 +1,112 @@
+
+.content-block .bottom {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+}
+.cms-home .content-block .show_video {
+    background-color: #444;
+    color: #fff;
+    boder: none;
+}
+.cms-home .content-block .video {
+    display: none;
+    opacity: 0;
+}
+.cms-home .content-block .video.show {
+    display: block;
+    opacity: 1;
+}
+.cms-home .featured-list li:before { opacity: 0; }
+.cms-home .featured-list li.active:before {
+    opacity: 1;
+    content-block: '';
+    position: absolute;
+    bottom: 0px;
+    left: calc(50% - 16px);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 12.5px 15px 12.5px;
+    border-color: transparent transparent #444444 transparent;
+    transition: opacity 300ms;
+    -webkit-transition: opacity 300ms;
+    -moz-transition: opacity 300ms;
+    -o-transition: opacity 300ms;
+}
+.cms-home .content-block {
+    background-color: #444;
+    //border-bottom: 4px solid #222;
+    font-size: 0;
+    position: relative;
+}
+.cms-home .content-block .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 3px 5px;
+    cursor: pointer;
+    line-height: 16px;
+    border-radius: 50%;
+    background: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    z-index: 100;
+}
+.cms-home .content-block .left-col {
+    width: 40%;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+    padding: 5px 20px 5px 10px;
+}
+
+.cms-home .content-block .right-col {
+    width: 59%;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 16px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.cms-home ul.products {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.cms-home ul.products li {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #66cbff;
+    border-radius: 3px;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.cms-home .cat h1 {
+    margin-bottom: 0;
+    font-family: myriadpro_bold, Arial, Helvetica, sans-serif;
+}
+
+.cms-home .cat h1,
+.cms-home .cat p {
+    color: #ffffff;
+}
+.cms-home .cat p {  font-family: myriadpro_light; }
+.cms-home .cat.active {
+     opacity: 1;
+}
+
+.cms-home .cat {
+    padding: 10px;
+    display: none;
+    margin: 0 auto;
+    max-width: 1024px;
+    opacity: 0;
+    transition: opacity 300ms;
+    -webkit-transition: opacity 300ms;
+    -moz-transition: opacity 300ms;
+    -o-transition: opacity 300ms;
+}

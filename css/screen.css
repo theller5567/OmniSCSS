@@ -41,8 +41,6 @@ a {
     text-decoration: underline; }
   a:active {
     background-color: transparent; }
-  a.btn-chat:active {
-    background-color: #305893; }
 
 input {
   font: 300 16px/20px Open Sans, Arial, Helvetica, sans-serif;
@@ -1097,6 +1095,10 @@ button.button.plain span {
       width: auto;
       margin: 0;
       padding: 0; }
+      .top-bar .contacts-box {
+        margin-right: 0;
+        float: none;
+        width: 100%; }
       .top-bar .top-bar-top {
         padding: 10px 0 20px 0;
         margin: 0; }
@@ -1591,7 +1593,6 @@ table#compare-br {
     border-bottom: 0;
     display: inline-block;
     vertical-align: top;
-    float: right;
     color: white;
     width: 60%;
     width: 30%; }
@@ -1612,13 +1613,52 @@ table#compare-br {
   .catalogsearch-result-index .catalogsearch-result-index .pager .pages {
     margin: 0; } }
 
-#main .container .home-block {
+.cms-home .content-block {
+  background-color: #444444;
+  font-size: 0;
+  position: relative; }
+  .cms-home .content-block .cat {
+    padding: 10px;
+    display: none;
+    margin: 0 auto;
+    max-width: 1024px;
+    opacity: 0;
+    transition: opacity 300ms;
+    -webkit-transition: opacity 300ms;
+    -moz-transition: opacity 300ms;
+    -o-transition: opacity 300ms; }
+    .cms-home .content-block .cat h1 {
+      margin-bottom: 0;
+      font-family: myriadpro_bold, Arial, Helvetica, sans-serif; }
+    .cms-home .content-block .cat h1, .cms-home .content-block .cat p {
+      color: #ffffff; }
+    .cms-home .content-block .cat p {
+      font-family: myriadpro_light, Arial, Helvetica, sans-serif; }
+    .cms-home .content-block .cat.active {
+      opacity: 1; }
+  .cms-home .content-block .bottom {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px; }
+  .cms-home .content-block .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 3px 5px;
+    cursor: pointer;
+    line-height: 16px;
+    border-radius: 50%;
+    background: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    z-index: 100; }
+.cms-home .container .home-block {
   position: relative;
   background-color: #f4f4f4;
   display: block;
   width: 100%;
   max-width: 960px;
-  vertical-align: top;
   text-align: left;
   margin: 10px auto;
   padding: 0;
@@ -1627,24 +1667,22 @@ table#compare-br {
   -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
   box-sizing: border-box; }
-  #main .container .home-block .left-col {
-    position: relative;
-    display: inline-block;
+  .cms-home .container .home-block .left-col {
+    width: 40%;
     box-sizing: border-box;
+    display: inline-block;
     vertical-align: top;
-    width: 50%;
-    padding: 10px;
-    font-size: 16px; }
-    #main .container .home-block .left-col .video {
+    padding: 5px 20px 5px 10px; }
+    .cms-home .container .home-block .left-col .video {
       box-sizing: border-box;
       width: 100%;
       display: inline-block; }
-      #main .container .home-block .left-col .video .wrapper {
+      .cms-home .container .home-block .left-col .video .wrapper {
         background-color: #444444;
         position: relative;
         overflow: hidden;
         padding: 10px; }
-        #main .container .home-block .left-col .video .wrapper span.new {
+        .cms-home .container .home-block .left-col .video .wrapper span.new {
           position: absolute;
           top: -30px;
           right: -55px;
@@ -1657,46 +1695,48 @@ table#compare-br {
           font-size: 18px;
           transform-origin: left;
           transform: rotate(45deg); }
-        #main .container .home-block .left-col .video .wrapper h3 {
+        .cms-home .container .home-block .left-col .video .wrapper h3 {
           color: #ffffff; }
-        #main .container .home-block .left-col .video .wrapper .video-wrapper {
+        .cms-home .container .home-block .left-col .video .wrapper .video-wrapper {
           position: relative;
           padding-bottom: 50.25%;
           padding-top: 30px;
           height: 0;
           overflow: hidden; }
-  #main .container .home-block .right-col {
-    position: relative;
+  .cms-home .container .home-block .right-col {
+    width: 59%;
     display: inline-block;
-    box-sizing: border-box;
     vertical-align: top;
-    width: 50%;
-    padding: 10px;
-    font-size: 16px; }
-    #main .container .home-block .right-col h2 {
+    font-size: 16px;
+    position: relative;
+    box-sizing: border-box; }
+    .cms-home .container .home-block .right-col h2 {
       font-size: 24px;
       font-weight: bold;
       font-family: myriadpro_bold;
       text-align: left;
       color: #444444;
       padding: 0 5px; }
-    #main .container .home-block .right-col h3 {
+    .cms-home .container .home-block .right-col h3 {
       font-size: 16px;
       color: #014383 !important;
       text-align: left;
       color: white;
       padding: 0 5px; }
-    #main .container .home-block .right-col p {
+    .cms-home .container .home-block .right-col p {
       font-size: 16px;
       margin-left: 5px; }
-    #main .container .home-block .right-col ul {
-      list-style: disc;
-      list-style-position: outside;
-      margin-left: 20px;
-      font-size: 14px; }
-      #main .container .home-block .right-col ul li {
+    .cms-home .container .home-block .right-col ul.products {
+      list-style: none;
+      margin-top: 20px; }
+      .cms-home .container .home-block .right-col ul.products li {
+        display: inline-block;
+        padding: 5px 10px;
+        background-color: #66cbff;
+        border-radius: 3px;
+        color: #222;
         margin-bottom: 10px; }
-    #main .container .home-block .right-col .callout {
+    .cms-home .container .home-block .right-col .callout {
       display: inline-block;
       color: #ffffff;
       font-size: 18px;
@@ -1704,22 +1744,44 @@ table#compare-br {
       margin: 10px 10px 10px 0;
       text-align: center;
       background-color: #014383; }
-      #main .container .home-block .right-col .callout:hover {
+      .cms-home .container .home-block .right-col .callout:hover {
         text-decoration: none;
         background-color: #01509c; }
-      #main .container .home-block .right-col .callout.quote {
+      .cms-home .container .home-block .right-col .callout.quote {
         padding: 10px 75px;
         background-color: #1A7EC7; }
-        #main .container .home-block .right-col .callout.quote:hover {
+        .cms-home .container .home-block .right-col .callout.quote:hover {
           background-color: #1d8cde; }
-      #main .container .home-block .right-col .callout.product {
+      .cms-home .container .home-block .right-col .callout.product {
         background-color: #1A7EC7; }
-        #main .container .home-block .right-col .callout.product:hover {
+        .cms-home .container .home-block .right-col .callout.product:hover {
           background-color: #01509c; }
-      #main .container .home-block .right-col .callout.how-to {
+      .cms-home .container .home-block .right-col .callout.how-to {
         background-color: #1A7EC7; }
-        #main .container .home-block .right-col .callout.how-to:hover {
+        .cms-home .container .home-block .right-col .callout.how-to:hover {
           background-color: #01509c; }
+.cms-home .container .featured-list li:before {
+  opacity: 0; }
+.cms-home .container .featured-list li.active:before {
+  opacity: 1;
+  content: '';
+  position: absolute;
+  bottom: 0px;
+  left: calc(50% - 16px);
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 12.5px 15px 12.5px;
+  border-color: transparent transparent #444444 transparent;
+  transition: opacity 300ms;
+  -webkit-transition: opacity 300ms;
+  -moz-transition: opacity 300ms;
+  -o-transition: opacity 300ms; }
+@media only screen and (max-width: 767px) {
+  .cms-home .container .featured-list {
+    display: none; }
+  .cms-home .container .home-block .left-col, .cms-home .container .home-block .right-col {
+    width: 100%; } }
 
 .home-slider {
   max-width: 1024px;
@@ -2948,6 +3010,13 @@ body.cms-page-view.cms-soil-dna-request-form .buttons-set {
         overflow: hidden; }
       .checkout-cart-index .cart .page-title h1 {
         margin: 0 0 10px; } }
+  @media only screen and (max-width: 730px) {
+    .checkout-cart-index .cart .shipping {
+      width: 100%; }
+    .checkout-cart-index .cart .totals {
+      width: 100%;
+      min-width: auto;
+      float: none; } }
 .checkout-cart-index .totals td.a-right {
   text-align: left !important; }
 .checkout-cart-index .title-buttons h1 {
@@ -4416,16 +4485,6 @@ div.col-main div.col-main {
 
   .block-subscribe .actions {
     width: 30%; } }
-@media only screen and (max-width: 639px) {
-  #header .contacts-box {
-    margin-right: 0;
-    float: none;
-    width: 100%; }
-  #header .btn-chat {
-    width: 100%;
-    padding: 5px 0; }
-  #header .link-newsletterheader {
-    display: none; } }
 @media only screen and (max-width: 668px) {
   #main .page-title {
     margin: 0; }
@@ -4818,19 +4877,7 @@ div.col-main div.col-main {
     .std .promotion .right-col .desc a.promo-btn {
       font-size: 16px;
       padding: 5px 50px 5px 10px; } }
-@media only screen and (max-width: 730px) {
-  .cart .shipping {
-    width: 100%; }
-  .cart .totals {
-    width: 100%;
-    min-width: auto;
-    float: none; } }
 @media only screen and (max-width: 767px) {
-  .cms-home #main .container .featured-list {
-    display: none; }
-  .cms-home #main .container .home-block .left-col, .cms-home #main .container .home-block .right-col {
-    width: 100%; }
-
   #main.col2-left-layout .main > .col-main {
     width: 100%;
     float: none;

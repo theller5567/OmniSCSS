@@ -98,9 +98,6 @@ a {
 	&:active {
 		background-color: transparent;
 	}
-	&.btn-chat:active {
-		background-color: $blue;
-	}
 }
 input {
 	font: 300 16px/20px $open-sans, $arial, $helvetica, $sans-serif;
@@ -1384,6 +1381,11 @@ button.button.plain {
 		width: auto;
 		margin: 0;
 		padding: 0;
+		.contacts-box {
+			margin-right: 0;
+			float: none;
+			width: 100%;
+		}
 		.top-bar-top {
 			padding: 10px 0 20px 0;
 			margin: 0;
@@ -2002,7 +2004,6 @@ table#compare-br {
     		border-bottom: 0;
 		    display: inline-block;
 		    vertical-align: top;
-		    float: right;
 		    color: white;
 			width: 60%;
 			width:30%;
@@ -2029,130 +2030,212 @@ table#compare-br {
 }
 
 //Home block stlying
-#main .container .home-block {
-	position: relative;
-    background-color: #f4f4f4;
-    display: block;
-    width: 100%;
-    max-width: 960px;
-    vertical-align: top;
-    text-align: left;
-    margin: 10px auto;
-    padding: 0;
-    font-size: 0;
-    -moz-box-shadow: 0 0 3px rgba(0,0,0,0.4);
-	-webkit-box-shadow: 0 0 3px rgba(0,0,0,0.4);
-    box-shadow: 0 0 3px rgba(0,0,0,0.4);
-    box-sizing: border-box;
-	.left-col {
+.cms-home {
+	.content-block {
+		background-color: $omni-grey;
+		font-size: 0;
 		position: relative;
-		display: inline-block;
-		box-sizing: border-box;
-		vertical-align: top;
-		width: 50%;
-		padding: 10px;
-		font-size: 16px;
-		.video {
-		    box-sizing: border-box;
-		    width: 100%;
-		    display: inline-block;
-		    .wrapper {
-				background-color: $omni-grey;
-			    position: relative;
-			    overflow: hidden;
-			    padding: 10px;
-			    span.new {
-					position: absolute;
-				    top: -30px;
-				    right: -55px;
-				    padding: 4px 0;
-				    text-align: center;
-				    z-index: 2;
-				    width: 140px;
-				    background-color: $hotpink;
-				    color: $white;
-				    font-size: 18px;
-				    transform-origin: left;
-				    transform: rotate(45deg);
-				}
-				h3 {
-					color: $white;
-				}
-				.video-wrapper {
-					position: relative;
-				    padding-bottom: 50.25%;
-				    padding-top: 30px;
-				    height: 0;
-				    overflow: hidden;
-				}
+		.cat {
+			padding: 10px;
+			display: none;
+			margin: 0 auto;
+			max-width: 1024px;
+			opacity: 0;
+			transition: opacity 300ms;
+			-webkit-transition: opacity 300ms;
+			-moz-transition: opacity 300ms;
+			-o-transition: opacity 300ms;
+			h1 {
+				margin-bottom: 0;
+				font-family: myriadpro_bold, Arial, Helvetica, sans-serif;
 			}
+			h1, p {
+				color: $white;
+			}
+			p {
+				font-family: myriadpro_light, Arial, Helvetica, sans-serif;
+			}
+			&.active {
+				opacity: 1;
+			}
+		}
+		.bottom {
+			position: relative;
+			width: 100%;
+			margin-top: 10px;
+			padding: 10px;
+		}
+		.close {
+			position: absolute;
+			top: 0;
+			right: 0;
+			padding: 3px 5px;
+			cursor: pointer;
+			line-height: 16px;
+			border-radius: 50%;
+			background: $white;
+			font-size: 16px;
+			font-weight: 700;
+			z-index: 100;
 		}
 	}
-	.right-col {
-		position: relative;
-		display: inline-block;
-		box-sizing: border-box;
-		vertical-align: top;
-		width: 50%;
-		padding: 10px;
-		font-size: 16px;
-		h2 {
-			font-size: 24px;
-			font-weight: bold;
-			font-family: myriadpro_bold;
-		    text-align: left;
-		    color: $omni-grey;
-		    padding: 0 5px;
-		}
-		h3 {
-			font-size: 16px;
-			color: $omni-blue !important;
-		    text-align: left;
-		    color: white;
-		    padding: 0 5px;
-		}
-		p {
-			font-size: 16px;
-			margin-left: 5px;
-		}
-		ul {
-			list-style: disc;
-		    list-style-position: outside;
-		    margin-left: 20px;
-		    font-size: 14px;
-		    li {
-		    	margin-bottom: 10px;
-		    }
-		}
-		.callout {
-			display: inline-block;
-			color: $white;
-			font-size: 18px;
-			padding: 10px;
-			margin: 10px 10px 10px 0;
-			text-align: center;
-			background-color: $omni-blue;
-			&:hover {
-				text-decoration: none;
-				background-color: lighten($omni-blue, 5%);
-			}
-			&.quote {
-				padding: 10px 75px;
-				background-color: $brightBlue;
-				&:hover {
-					background-color: lighten($brightBlue, 5%);
+	.container {
+		.home-block {
+			position: relative;
+			background-color: #f4f4f4;
+			display: block;
+			width: 100%;
+			max-width: 960px;
+			text-align: left;
+			margin: 10px auto;
+			padding: 0;
+			font-size: 0;
+			-moz-box-shadow: 0 0 3px rgba(0,0,0,0.4);
+			-webkit-box-shadow: 0 0 3px rgba(0,0,0,0.4);
+			box-shadow: 0 0 3px rgba(0,0,0,0.4);
+			box-sizing: border-box;
+			.left-col {
+				width: 40%;
+				box-sizing: border-box;
+				display: inline-block;
+				vertical-align: top;
+				padding: 5px 20px 5px 10px;
+				.video {
+					box-sizing: border-box;
+					width: 100%;
+					display: inline-block;
+					.wrapper {
+						background-color: $omni-grey;
+						position: relative;
+						overflow: hidden;
+						padding: 10px;
+						span.new {
+							position: absolute;
+							top: -30px;
+							right: -55px;
+							padding: 4px 0;
+							text-align: center;
+							z-index: 2;
+							width: 140px;
+							background-color: $hotpink;
+							color: $white;
+							font-size: 18px;
+							transform-origin: left;
+							transform: rotate(45deg);
+						}
+						h3 {
+							color: $white;
+						}
+						.video-wrapper {
+							position: relative;
+							padding-bottom: 50.25%;
+							padding-top: 30px;
+							height: 0;
+							overflow: hidden;
+						}
+					}
 				}
 			}
-			&.product {
-				background-color: $brightBlue;
-				&:hover {
-					background-color: lighten($omni-blue, 5%);
+			.right-col {
+				width: 59%;
+				display: inline-block;
+				vertical-align: top;
+				font-size: 16px;
+				position: relative;
+				box-sizing: border-box;
+				h2 {
+					font-size: 24px;
+					font-weight: bold;
+					font-family: myriadpro_bold;
+					text-align: left;
+					color: $omni-grey;
+					padding: 0 5px;
+				}
+				h3 {
+					font-size: 16px;
+					color: $omni-blue !important;
+					text-align: left;
+					color: white;
+					padding: 0 5px;
+				}
+				p {
+					font-size: 16px;
+					margin-left: 5px;
+				}
+				ul.products {
+					list-style: none;
+    				margin-top: 20px;
+					li {
+						display: inline-block;
+						padding: 5px 10px;
+						background-color: $malibu-blue;
+						border-radius: 3px;
+						color: #222;
+						margin-bottom: 10px;
+					}
+				}
+				.callout {
+					display: inline-block;
+					color: $white;
+					font-size: 18px;
+					padding: 10px;
+					margin: 10px 10px 10px 0;
+					text-align: center;
+					background-color: $omni-blue;
+					&:hover {
+						text-decoration: none;
+						background-color: lighten($omni-blue, 5%);
+					}
+					&.quote {
+						padding: 10px 75px;
+						background-color: $brightBlue;
+						&:hover {
+							background-color: lighten($brightBlue, 5%);
+						}
+					}
+					&.product {
+						background-color: $brightBlue;
+						&:hover {
+							background-color: lighten($omni-blue, 5%);
+						}
+					}
+					&.how-to {
+						background-color: $brightBlue;
+						&:hover {
+							background-color: lighten($omni-blue, 5%);
+						}
+					}
 				}
 			}
-			&.how-to {
-				background-color: $brightBlue;
-				&:hover {
-					background-color: lighten($omni-blue, 5%);
+		}
+		.featured-list {
+			li:before { 
+				opacity: 0; 
+			}
+			li.active:before {
+				opacity: 1;
+				content: '';
+				position: absolute;
+				bottom: 0px;
+				left: calc(50% - 16px);
+				width: 0;
+				height: 0;
+				border-style: solid;
+				border-width: 0 12.5px 15px 12.5px;
+				border-color: transparent transparent $omni-grey transparent;
+				transition: opacity 300ms;
+				-webkit-transition: opacity 300ms;
+				-moz-transition: opacity 300ms;
+				-o-transition: opacity 300ms;
+			}
+		}
+		@media only screen and(max-width:767px){
+			.featured-list { 
+				display: none;
+			}
+			.home-block {
+				.left-col, .right-col {
+					width: 100%;
 				}
 			}
 		}
@@ -3785,6 +3868,16 @@ body.cms-page-view.cms-soil-dna-request-form {
 			}
 			.page-title h1 {
 				margin: 0 0 10px;
+			}
+		}
+		@media only screen and(max-width:730px){
+			.shipping {
+				width: 100%;
+			}
+			.totals {
+				width: 100%;
+				min-width: auto;
+				float: none;
 			}
 		}
 	}
@@ -5527,6 +5620,8 @@ $myriadpro-bold-svg: url(../webfonts/myriadpro-bold-webfont.svg#myriadpro_bold);
 /* added css to create a max-height on video block for product image */
 .product-gallery .thumbnails img { max-height: 72px; width:94px!important; }
 
+
+
 /* ===============  MEDIA QUERIES  =============== */
 //RESPONSIVE STYLING USING MEDIA QUERIES
 @media only screen and(max-width: 330px) {
@@ -5976,20 +6071,12 @@ $myriadpro-bold-svg: url(../webfonts/myriadpro-bold-webfont.svg#myriadpro_bold);
 		// 		top: -34px;
 		// 	}
 		// }
-		.contacts-box {
-			margin-right: 0;
-			float: none;
-			width: 100%;
-		}
-		.btn-chat {
-			width: 100%;
-			padding: 5px 0;
-		}
-		.link-newsletterheader {
-			display: none;
-		}
-		}
-		
+		// .contacts-box {
+		// 	margin-right: 0;
+		// 	float: none;
+		// 	width: 100%;
+		// }
+	}
 }
 
 @media only screen and(max-width: 668px) {
@@ -6371,19 +6458,6 @@ $myriadpro-bold-svg: url(../webfonts/myriadpro-bold-webfont.svg#myriadpro_bold);
 			text-align: left;
 		}
 	}
-	// #nav {
-	// 	padding: 0 3px;
-	// 	li .shown-sub {
-	// 		ul.shown-sub {
-	// 			left: 10px;
-	// 			top: 100%;
-	// 		}
-	// 		li div.shown-sub {
-	// 			left: 10px;
-	// 			top: 100%;
-	// 		}
-	// 	}
-	// }
 	.col-main {
 		.c2q {
 			li.section {
@@ -6525,29 +6599,29 @@ $myriadpro-bold-svg: url(../webfonts/myriadpro-bold-webfont.svg#myriadpro_bold);
 }
 
 @media only screen and(max-width: 730px) {
-	.cart {
-		.shipping {
-			width: 100%;
-		}
-		.totals {
-			width: 100%;
-			min-width: auto;
-			float: none;
-		}
-	}
+	// .cart {
+	// 	.shipping {
+	// 		width: 100%;
+	// 	}
+	// 	.totals {
+	// 		width: 100%;
+	// 		min-width: auto;
+	// 		float: none;
+	// 	}
+	// }
 }
 
 @media only screen and(max-width: 767px) {
-	.cms-home #main .container {
-		.featured-list {
-			display: none;
-		}
-		.home-block {
-			.left-col, .right-col {
-				width: 100%;
-			}
-		}
-	}
+	// .cms-home #main .container {
+	// 	.featured-list {
+	// 		display: none;
+	// 	}
+	// 	.home-block {
+	// 		.left-col, .right-col {
+	// 			width: 100%;
+	// 		}
+	// 	}
+	// }
 	#main.col2-left-layout .main>.col-main {
 		width: 100%;
 		float: none;
