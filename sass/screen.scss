@@ -1481,7 +1481,10 @@ button.button.plain {
 				    color: white;
 				    text-decoration: none;
 				    transition: all 300ms;
-				    min-height: 34px;
+					min-height: 34px;
+					@media only screen and(max-width:480px){
+						font-size: 12px;
+					}
 	    			&:hover {
 	    				background-color: darken(#57c9e8, 5%);
 	    			}
@@ -1575,6 +1578,11 @@ table#compare-br {
 .demo-program {
 	.demo-header {
 		margin: 0 0 15px 0;
+		@media only screen and(max-width:480px){
+			a {
+				text-align: left;
+			}
+		}
 	}
 	.container {
 		font-size: 0;
@@ -5441,7 +5449,6 @@ $myriadpro-bold-svg: url(../webfonts/myriadpro-bold-webfont.svg#myriadpro_bold);
 /* added css to create a max-height on video block for product image */
 .product-gallery .thumbnails img { max-height: 72px; width:94px!important; }
 
-
 /* ===============  MEDIA QUERIES  =============== */
 //RESPONSIVE STYLING USING MEDIA QUERIES
 @media only screen and(max-width: 330px) {
@@ -5756,12 +5763,12 @@ $myriadpro-bold-svg: url(../webfonts/myriadpro-bold-webfont.svg#myriadpro_bold);
 	// 	width: 100%;
 	// 	float: none;
 	// }
-	.std .promotion .right-col .desc a.promo-btn {
-		font-size: 12px;
-	}
-	.std .demo-header a {
-		text-align: left;
-	}
+	// .std .promotion .right-col .desc a.promo-btn {
+	// 	font-size: 12px;
+	// }
+	// .std .demo-header a {
+	// 	text-align: left;
+	// }
 }
 
 @media only screen and(max-width: 500px) {

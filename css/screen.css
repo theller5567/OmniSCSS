@@ -1174,6 +1174,9 @@ button.button.plain span {
       text-decoration: none;
       transition: all 300ms;
       min-height: 34px; }
+      @media only screen and (max-width: 480px) {
+        .cms-promotions .promotion .right-col .desc a.promo-btn {
+          font-size: 12px; } }
       .cms-promotions .promotion .right-col .desc a.promo-btn:hover {
         background-color: #41c2e5; }
       .cms-promotions .promotion .right-col .desc a.promo-btn:after {
@@ -1246,6 +1249,9 @@ table#compare-br {
 
 .demo-program .demo-header {
   margin: 0 0 15px 0; }
+  @media only screen and (max-width: 480px) {
+    .demo-program .demo-header a {
+      text-align: left; } }
 .demo-program .container {
   font-size: 0; }
   .demo-program .container .left-col {
@@ -4343,13 +4349,7 @@ div.col-main div.col-main {
     width: 70%; }
 
   .block-subscribe .actions {
-    width: 30%; }
-
-  .std .promotion .right-col .desc a.promo-btn {
-    font-size: 12px; }
-
-  .std .demo-header a {
-    text-align: left; } }
+    width: 30%; } }
 @media only screen and (max-width: 500px) {
   .contacts-index-index button.button {
     width: 100%;
