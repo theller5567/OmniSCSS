@@ -582,6 +582,10 @@ button.button.plain span {
     width: 1024px;
     max-width: 1024px;
     filter: progid:dximagetransform.microsoft.gradient(startcolorstr='$white', endcolorstr='$white',gradienttype=1 ); }
+    @media only screen and (max-width: 639px) {
+      #header .container {
+        width: 100% !important;
+        padding: 10px 0 0 0 !important; } }
   #header .cell {
     display: table-cell;
     background-color: #dedede;
@@ -645,6 +649,17 @@ button.button.plain span {
     margin-left: 5px; }
     #header .quote-link strong {
       font-size: 14px; }
+    @media only screen and (max-width: 639px) {
+      #header .quote-link {
+        width: 33%;
+        margin: 0;
+        padding: 0;
+        float: left;
+        text-align: center;
+        margin-top: 4px;
+        border-left: none;
+        border-right: 1px solid #000000;
+        line-height: 24px; } }
   #header .block-cart {
     float: right;
     margin: 0 10px 0 5px;
@@ -683,6 +698,30 @@ button.button.plain span {
       padding: 0; }
       #header .block-cart .summary a {
         color: #ffffff; }
+    @media only screen and (max-width: 639px) {
+      #header .block-cart {
+        width: 33%;
+        margin: 0;
+        padding: 0;
+        float: left;
+        text-align: center;
+        margin-top: 4px;
+        margin: 4px 0 0;
+        float: left;
+        border-left: none;
+        text-align: center;
+        max-height: 25px;
+        padding-top: 3px; }
+        #header .block-cart .cart-link {
+          line-height: 22px; }
+        #header .block-cart form.searchautocomplete .nav {
+          width: 340px; }
+        #header .block-cart .block-title {
+          display: none;
+          float: none; }
+        #header .block-cart .block-content {
+          display: inline-block;
+          float: none; } }
   #header .cart-link {
     position: relative;
     background-position: -152px -49px;
@@ -730,6 +769,10 @@ button.button.plain span {
         top: -34px; }
         #header .changeLocation-wrapper #changeLocation #changeLocation {
           padding: 0 5px; } }
+  @media only screen and (max-width: 639px) {
+    #header .changeLocation-wrapper {
+      right: 0;
+      top: -34px; } }
   #header #LP-video-slider {
     position: absolute;
     top: 34px;
@@ -1048,6 +1091,40 @@ button.button.plain span {
     .top-bar .links span {
       color: #000000;
       font-size: 12px; }
+  @media only screen and (max-width: 639px) {
+    .top-bar {
+      float: none;
+      width: auto;
+      margin: 0;
+      padding: 0; }
+      .top-bar .top-bar-top {
+        padding: 10px 0 20px 0;
+        margin: 0; }
+      .top-bar .form-search {
+        width: 100%;
+        text-align: center;
+        margin: 0; }
+        .top-bar .form-search .button {
+          width: 10%; }
+        .top-bar .form-search input.input-text {
+          width: 80%; }
+      .top-bar form {
+        width: auto;
+        float: none;
+        display: block; }
+      .top-bar .links {
+        clear: none;
+        text-align: center;
+        margin-top: 4px;
+        line-height: 24px;
+        width: 33%;
+        margin: 0;
+        padding: 0;
+        float: left;
+        text-align: center;
+        margin-top: 4px; }
+        .top-bar .links li {
+          display: inline; } }
 
 .logo-holder {
   float: left;
@@ -1068,6 +1145,13 @@ button.button.plain span {
     .logo-holder .logo a {
       display: block;
       height: 100%; }
+  @media only screen and (max-width: 639px) {
+    .logo-holder {
+      float: none;
+      width: auto;
+      margin: 0; }
+      .logo-holder .logo {
+        width: 196px; } }
 
 .cms-home #wrapper {
   background-color: #ffffff; }
@@ -1638,7 +1722,7 @@ table#compare-br {
           background-color: #01509c; }
 
 .home-slider {
-  max-width: 1280px;
+  max-width: 1024px;
   margin: auto; }
 
 .product-list .col-2 .add-to-cart button.button {
@@ -4333,85 +4417,6 @@ div.col-main div.col-main {
   .block-subscribe .actions {
     width: 30%; } }
 @media only screen and (max-width: 639px) {
-  #header .container {
-    width: 100% !important;
-    padding: 10px 0 0 0 !important; }
-    #header .container .top-bar {
-      float: none;
-      width: auto;
-      margin: 0;
-      padding: 0; }
-      #header .container .top-bar form {
-        width: auto;
-        float: none;
-        display: block; }
-      #header .container .top-bar .links {
-        float: right;
-        clear: none;
-        text-align: center;
-        margin-top: 4px;
-        line-height: 24px;
-        width: 33%;
-        margin: 0;
-        padding: 0;
-        float: left;
-        text-align: center;
-        margin-top: 4px; }
-        #header .container .top-bar .links li {
-          display: inline; }
-    #header .container .logo-holder {
-      float: none;
-      width: auto;
-      margin: 0; }
-    #header .container .logo {
-      width: 196px; }
-    #header .container .top-bar-top {
-      padding: 10px 0 20px 0;
-      margin: 0; }
-    #header .container .form-search {
-      width: 100%;
-      text-align: center;
-      margin: 0; }
-      #header .container .form-search .button {
-        width: 10%; }
-      #header .container .form-search input.input-text {
-        width: 80%; }
-    #header .container .block-cart {
-      width: 33%;
-      margin: 0;
-      padding: 0;
-      float: left;
-      text-align: center;
-      margin-top: 4px;
-      margin: 4px 0 0;
-      float: left;
-      border-left: none;
-      text-align: center;
-      max-height: 25px;
-      padding-top: 3px; }
-      #header .container .block-cart .cart-link {
-        line-height: 22px; }
-      #header .container .block-cart form.searchautocomplete .nav {
-        width: 340px; }
-      #header .container .block-cart .block-title {
-        display: none;
-        float: none; }
-      #header .container .block-cart .block-content {
-        display: inline-block;
-        float: none; }
-    #header .container .quote-link {
-      width: 33%;
-      margin: 0;
-      padding: 0;
-      float: left;
-      text-align: center;
-      margin-top: 4px;
-      border-left: none;
-      border-right: 1px solid #000000;
-      line-height: 24px; }
-    #header .container .changeLocation-wrapper {
-      right: 0;
-      top: -34px; }
   #header .contacts-box {
     margin-right: 0;
     float: none;
@@ -4931,8 +4936,6 @@ div.col-main div.col-main {
     width: auto; }
     .top-bar .links {
       clear: none; }
-    .top-bar form {
-      width: 100%; }
 
   .developer {
     display: none; }
@@ -5313,11 +5316,8 @@ div.col-main div.col-main {
     width: 720px;
     width: 100%; }
 
-  .top-bar {
-    padding-right: 15px;
-    margin-right: -15px; }
-    .top-bar .links {
-      clear: left; }
+  .top-bar .links {
+    clear: left; }
 
   .top-bar-top {
     margin-bottom: 10px; }
