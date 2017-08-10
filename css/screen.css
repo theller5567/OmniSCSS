@@ -2876,6 +2876,10 @@ body.cms-page-view.cms-soil-dna-request-form .buttons-set {
     font-weight: 800; }
   .checkout-cart-index .cart button.button {
     margin: 5px; }
+    @media only screen and (max-width: 600px) {
+      .checkout-cart-index .cart button.button {
+        margin: 5px 0;
+        width: 100%; } }
   .checkout-cart-index .cart .discount-form button.button {
     margin-left: 0 !important; }
   @media only screen and (max-width: 480px) {
@@ -2898,6 +2902,9 @@ body.cms-page-view.cms-soil-dna-request-form .buttons-set {
 
 #shopping-cart-table #c2qBtn {
   margin-left: 5px; }
+  @media only screen and (max-width: 600px) {
+    #shopping-cart-table #c2qBtn {
+      margin-left: 5px 0 !important; } }
 #shopping-cart-table .product-name a {
   padding: 0 10px 0 0;
   box-sizing: border-box;
@@ -3084,10 +3091,11 @@ body.cms-page-view.cms-soil-dna-request-form .buttons-set {
   .cart-table td {
     padding: 5px;
     width: 60px; } }
-@media only screen and (max-width: 480px) {
-  .cart-table .button {
-    float: none !important;
-    margin: 0 0 5px; } }
+@media only screen and (max-width: 600px) {
+  .cart-table .btn-update {
+    margin: 5px 0 !important; }
+  .cart-table .btn-empty {
+    margin: 5px 0 !important; } }
 
 .mini-products-list {
   margin: 0;
@@ -4350,24 +4358,6 @@ div.col-main div.col-main {
 
   .block-subscribe .actions {
     width: 30%; } }
-@media only screen and (max-width: 500px) {
-  .contacts-index-index button.button {
-    width: 100%;
-    margin-bottom: 10px; } }
-@media only screen and (max-width: 600px) {
-  .cart-table .btn-update {
-    float: none;
-    margin: 5px 0 !important; }
-  .cart-table .btn-empty {
-    float: none;
-    margin: 5px 0 !important; }
-
-  .cart button.button {
-    margin: 5px 0;
-    width: 100%; }
-
-  #shopping-cart-table #c2qBtn {
-    margin-left: 5px 0 !important; } }
 @media only screen and (max-width: 639px) {
   #header .container {
     width: 100% !important;

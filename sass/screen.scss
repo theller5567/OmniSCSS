@@ -3700,6 +3700,10 @@ body.cms-page-view.cms-soil-dna-request-form {
 		}
 		button.button {
 			margin: 5px;
+			@media only screen and(max-width:600px){
+				margin: 5px 0;
+				width: 100%;
+			}
 		}
 		.discount-form button.button {
 			margin-left: 0 !important;
@@ -3730,6 +3734,9 @@ body.cms-page-view.cms-soil-dna-request-form {
 #shopping-cart-table {
 	#c2qBtn {
 		margin-left: 5px;
+		@media only screen and(max-width:600px){
+			margin-left:5px 0 !important;
+		}
 	}
 	.product-name a {
 		padding: 0 10px 0 0;
@@ -3964,10 +3971,12 @@ body.cms-page-view.cms-soil-dna-request-form {
 			width: 60px;
 		}
 	}
-	@media only screen and(max-width:480px){
-		.button {
-			float: none !important;
-			margin: 0 0 5px;
+	@media only screen and(max-width:600px){
+		.btn-update {
+			margin: 5px 0 !important;
+		}
+		.btn-empty {
+			margin: 5px 0 !important;
 		}
 	}
 }
@@ -5771,31 +5780,32 @@ $myriadpro-bold-svg: url(../webfonts/myriadpro-bold-webfont.svg#myriadpro_bold);
 	// }
 }
 
-@media only screen and(max-width: 500px) {
-	.contacts-index-index button.button {
-		width: 100%;
-		margin-bottom: 10px;
-	}
-}
+//Check if Exists in DOM
+// @media only screen and(max-width: 500px) {
+// 	.contacts-index-index button.button {
+// 		width: 100%;
+// 		margin-bottom: 10px;
+// 	}
+// }
 
 @media only screen and(max-width: 600px) {
-	.cart-table {
-		.btn-update {
-			float: none;
-			margin: 5px 0 !important;
-		}
-		.btn-empty {
-			float: none;
-			margin: 5px 0 !important;
-		}
-	}
-	.cart button.button {
-		margin: 5px 0;
-		width: 100%;
-	}
-	#shopping-cart-table #c2qBtn {
-		margin-left: 5px 0 !important;
-	}
+	// .cart-table {
+	// 	.btn-update {
+	// 		float: none;
+	// 		margin: 5px 0 !important;
+	// 	}
+	// 	.btn-empty {
+	// 		float: none;
+	// 		margin: 5px 0 !important;
+	// 	}
+	// }
+	// .cart button.button {
+	// 	margin: 5px 0;
+	// 	width: 100%;
+	// }
+	// #shopping-cart-table #c2qBtn {
+	// 	margin-left: 5px 0 !important;
+	// }
 }
 
 @media only screen and(max-width: 639px) {
