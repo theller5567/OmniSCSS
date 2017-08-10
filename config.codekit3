@@ -75,6 +75,12 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"\/gitignore": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/gitignore",
+		"oF": 0
+		},
 	"\/media-queries.scss": {
 		"aP": 0,
 		"bl": 0,
