@@ -3474,52 +3474,20 @@ body.cms-page-view.cms-soil-dna-request-form {
 		border: none;
 		box-shadow: none;
 		padding-left: 0;
-	}
-	.c2q li.section {
-		.tab-title {
-			position: relative;
-			background: none;
-			background-color: $blue;
-			border: none;
-			text-shadow: none;
-			z-index: 0;
-			border-radius: 0;
-			transition: all 300ms;
-			background-color: lighten($blue, 5%);
-			text-shadow: none;
-			&:before {
-				position: absolute;
-				content: "";
-				bottom: 0;
-				display: none;
-				width: 100%;
-				left: 50%;
-				transform: translateX(-50%);
-				height: 4px;
-				background-color: none;
-				width: 0;
-				height: 0;
-				border-style: solid;
-				border-width: 10px 10px 0 10px;
-				border-color: lighten($blue, 5%) transparent transparent transparent;
-			}
-			.numeration {
-				color: $white;
-				border-right: 1px solid $white;
-				line-height: 32px;
-			}
-			h2 {
-				color: $white;
-				font-size: 18px;
-				margin: 10px 0.8em;
-				text-shadow: none;
-			}
-		}
-		&.active {
+		font-size: 0;
+		box-sizing: border-box;
+		width: 100%;
+		padding: 0;
+		li.section {
+			display: inline-block;
+    		width: 50%;
 			.tab-title {
 				position: relative;
+				margin: 0;
+				width: 100%;
+				padding: 0;
 				background: none;
-				background-color: $blue;
+				background-color: lighten($blue, 5%);
 				border: none;
 				text-shadow: none;
 				z-index: 0;
@@ -3529,8 +3497,8 @@ body.cms-page-view.cms-soil-dna-request-form {
 				&:before {
 					position: absolute;
 					content: "";
-					bottom: -10px;
-					display: block;
+					bottom: 0;
+					display: none;
 					width: 100%;
 					left: 50%;
 					transform: translateX(-50%);
@@ -3540,7 +3508,7 @@ body.cms-page-view.cms-soil-dna-request-form {
 					height: 0;
 					border-style: solid;
 					border-width: 10px 10px 0 10px;
-					border-color: $blue transparent transparent transparent;
+					border-color: lighten($blue, 5%) transparent transparent transparent;
 				}
 				.numeration {
 					color: $white;
@@ -3550,24 +3518,27 @@ body.cms-page-view.cms-soil-dna-request-form {
 				h2 {
 					color: $white;
 					font-size: 18px;
-					margin: 10px 0.8em;
+					margin: 20px 0;
 					text-shadow: none;
+					width: 100%;
+				}
+			}
+			&.active {
+				.tab-title {
+					background-color: $blue;
+					&:before {
+						bottom: -10px;
+						display: block;
+						border-color: $blue transparent transparent transparent;
+					}
+				}
+				&:hover .tab-title {
+					background-color: $blue;
 				}
 			}
 			&:hover .tab-title {
-				background-color: $blue;
+				background-color: lighten($blue, 5%);
 			}
-		}
-		&:hover .tab-title {
-			position: relative;
-			background: none;
-			background-color: $blue;
-			border: none;
-			text-shadow: none;
-			z-index: 0;
-			border-radius: 0;
-			transition: all 300ms;
-			background-color: lighten($blue, 3%);
 		}
 	}
 }
@@ -6302,19 +6273,6 @@ $myriadpro-bold-svg: url(../webfonts/myriadpro-bold-webfont.svg#myriadpro_bold);
 			text-align: left;
 		}
 	}
-	// #nav {
-	// 	padding: 0 3px;
-	// 	li .shown-sub {
-	// 		ul.shown-sub {
-	// 			left: 10px;
-	// 			top: 100%;
-	// 		}
-	// 		li div.shown-sub {
-	// 			left: 10px;
-	// 			top: 100%;
-	// 		}
-	// 	}
-	// }
 	.col-main {
 		.c2q {
 			li.section {
@@ -6452,7 +6410,6 @@ $myriadpro-bold-svg: url(../webfonts/myriadpro-bold-webfont.svg#myriadpro_bold);
 			}
 		}
 	}
-
 }
 
 @media only screen and(max-width: 730px) {

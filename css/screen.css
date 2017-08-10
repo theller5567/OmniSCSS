@@ -2687,88 +2687,62 @@ body.cms-page-view.cms-soil-dna-request-form .buttons-set {
     background: none;
     border: none;
     box-shadow: none;
-    padding-left: 0; }
-  .col-main .c2q li.section .tab-title {
-    position: relative;
-    background: none;
-    background-color: #305893;
-    border: none;
-    text-shadow: none;
-    z-index: 0;
-    border-radius: 0;
-    transition: all 300ms;
-    background-color: #3664a6;
-    text-shadow: none; }
-    .col-main .c2q li.section .tab-title:before {
-      position: absolute;
-      content: "";
-      bottom: 0;
-      display: none;
-      width: 100%;
-      left: 50%;
-      transform: translateX(-50%);
-      height: 4px;
-      background-color: none;
-      width: 0;
-      height: 0;
-      border-style: solid;
-      border-width: 10px 10px 0 10px;
-      border-color: #3664a6 transparent transparent transparent; }
-    .col-main .c2q li.section .tab-title .numeration {
-      color: #ffffff;
-      border-right: 1px solid #ffffff;
-      line-height: 32px; }
-    .col-main .c2q li.section .tab-title h2 {
-      color: #ffffff;
-      font-size: 18px;
-      margin: 10px 0.8em;
-      text-shadow: none; }
-  .col-main .c2q li.section.active .tab-title {
-    position: relative;
-    background: none;
-    background-color: #305893;
-    border: none;
-    text-shadow: none;
-    z-index: 0;
-    border-radius: 0;
-    transition: all 300ms;
-    text-shadow: none; }
-    .col-main .c2q li.section.active .tab-title:before {
-      position: absolute;
-      content: "";
-      bottom: -10px;
-      display: block;
-      width: 100%;
-      left: 50%;
-      transform: translateX(-50%);
-      height: 4px;
-      background-color: none;
-      width: 0;
-      height: 0;
-      border-style: solid;
-      border-width: 10px 10px 0 10px;
-      border-color: #305893 transparent transparent transparent; }
-    .col-main .c2q li.section.active .tab-title .numeration {
-      color: #ffffff;
-      border-right: 1px solid #ffffff;
-      line-height: 32px; }
-    .col-main .c2q li.section.active .tab-title h2 {
-      color: #ffffff;
-      font-size: 18px;
-      margin: 10px 0.8em;
-      text-shadow: none; }
-  .col-main .c2q li.section.active:hover .tab-title {
-    background-color: #305893; }
-  .col-main .c2q li.section:hover .tab-title {
-    position: relative;
-    background: none;
-    background-color: #305893;
-    border: none;
-    text-shadow: none;
-    z-index: 0;
-    border-radius: 0;
-    transition: all 300ms;
-    background-color: #345f9f; }
+    padding-left: 0;
+    font-size: 0;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0; }
+    .col-main ol.c2q li.section {
+      display: inline-block;
+      width: 50%; }
+      .col-main ol.c2q li.section .tab-title {
+        position: relative;
+        margin: 0;
+        width: 100%;
+        padding: 0;
+        background: none;
+        background-color: #3664a6;
+        border: none;
+        text-shadow: none;
+        z-index: 0;
+        border-radius: 0;
+        transition: all 300ms;
+        text-shadow: none; }
+        .col-main ol.c2q li.section .tab-title:before {
+          position: absolute;
+          content: "";
+          bottom: 0;
+          display: none;
+          width: 100%;
+          left: 50%;
+          transform: translateX(-50%);
+          height: 4px;
+          background-color: none;
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 10px 10px 0 10px;
+          border-color: #3664a6 transparent transparent transparent; }
+        .col-main ol.c2q li.section .tab-title .numeration {
+          color: #ffffff;
+          border-right: 1px solid #ffffff;
+          line-height: 32px; }
+        .col-main ol.c2q li.section .tab-title h2 {
+          color: #ffffff;
+          font-size: 18px;
+          margin: 20px 0;
+          text-shadow: none;
+          width: 100%; }
+      .col-main ol.c2q li.section.active .tab-title {
+        background-color: #305893; }
+        .col-main ol.c2q li.section.active .tab-title:before {
+          bottom: -10px;
+          display: block;
+          border-color: #305893 transparent transparent transparent; }
+      .col-main ol.c2q li.section.active:hover .tab-title {
+        background-color: #305893; }
+      .col-main ol.c2q li.section:hover .tab-title {
+        background-color: #3664a6; }
 
 .checkout-cart-index .page-title.custom-title {
   display: none; }
