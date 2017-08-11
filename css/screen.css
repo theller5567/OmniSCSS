@@ -2242,6 +2242,29 @@ table#compare-br {
       margin: 0 0 8px; }
     .fieldset .form-list li.wide .input-box {
       width: auto; } }
+  @media only screen and (max-width: 916px) {
+    .fieldset .form-list li {
+      margin: 0; }
+      .fieldset .form-list li.control {
+        padding: 5px 0 0; }
+        .fieldset .form-list li.control label {
+          line-height: 20px; }
+      .fieldset .form-list li.wide .input-box {
+        margin: 0 0 8px;
+        width: auto; }
+      .fieldset .form-list li.wide input.input-text {
+        width: 100%;
+        box-sizing: border-box; }
+    .fieldset .form-list label {
+      float: none;
+      display: inline-block; }
+    .fieldset .form-list select {
+      width: 100%;
+      height: 35px;
+      margin: 10px 0; }
+    .fieldset .form-list input.input-text {
+      width: 100%;
+      box-sizing: border-box; } }
 
 .buttons-set {
   position: relative;
@@ -5146,29 +5169,6 @@ div.col-main div.col-main {
   #newsletter-validate-detail .input-box {
     margin-right: 0;
     width: 80%; } }
-@media only screen and (max-width: 916px) {
-  .form-list li {
-    margin: 0; }
-    .form-list li.control {
-      padding: 5px 0 0; }
-      .form-list li.control label {
-        line-height: 20px; }
-    .form-list li.wide .input-box {
-      margin: 0 0 8px;
-      width: auto; }
-    .form-list li.wide input.input-text {
-      width: 100%;
-      box-sizing: border-box; }
-  .form-list label {
-    float: none;
-    display: inline-block; }
-  .form-list select {
-    width: 100%;
-    height: 35px;
-    margin: 10px 0; }
-  .form-list input.input-text {
-    width: 100%;
-    box-sizing: border-box; } }
 @media only screen and (max-width: 978px) {
   img {
     height: auto; }
