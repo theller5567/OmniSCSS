@@ -230,6 +230,22 @@ input[type="image"] {
 		.cart h2 {
 			font-size: 18px;
 		}
+		@media only screen and(max-width:767px){
+			float: none;
+			width: 100%;
+			margin: 0 0 15px;
+			.product-list {
+				.col-1 {
+					width: 100%;
+				}
+				.col-2 {
+					width: 100%;
+				}
+			}
+			.page-title h1 {
+				width: auto;
+			}
+		}
 	}
 	&:after {
 		content: "";
@@ -240,6 +256,9 @@ input[type="image"] {
 		font-size: 18px;
 		font-weight: bold;
 		color: $black;
+	}
+	@media only screen and(max-width:767px){
+		width: 100%;
 	}
 }
 .page {
@@ -275,6 +294,9 @@ input[type="image"] {
 	&.product-title h1 {
 		text-align: left;
 		line-height: 100%;
+	}
+	@media only screen and(max-width:767px){
+		position:static;
 	}
 }
 
@@ -551,6 +573,26 @@ button.button.plain {
 		width: 74%;
 		margin-bottom: 20px;
 	}
+	@media only screen and(max-width:767px){
+		.main {
+			width: auto;
+		}
+		.col-main {
+			float: none !important;
+			width: auto !important;
+			margin: 0 3%;
+			margin: 0 !important;
+		}
+		.sidebar {
+			float: none !important;
+			width: auto !important;
+			margin: 0 3%;
+		}
+		.col-right {
+			width: auto;
+			min-height: 30px;
+		}
+	}
 }
 .col2-left-layout {
 	.col-left {
@@ -643,6 +685,13 @@ button.button.plain {
 	}
 	li strong {
 		font-weight: normal;
+	}
+	@media only screen and(max-width:767px){
+		width: auto;
+		margin: 5px 3%;
+		ul {
+			padding: 0;
+		}
 	}
 }
 .catalog-category-view {
@@ -737,6 +786,12 @@ button.button.plain {
 			width: 100% !important;
 			padding: 10px 0 0 0 !important;
 		}
+		@media only screen and(max-width: 767px) {
+			.container {
+				width: 100%;
+				padding: 10px 0 0;
+			}
+		}
 	}
 	.cell {
 		display: table-cell;
@@ -799,6 +854,9 @@ button.button.plain {
 			box-sizing: border-box;
 			letter-spacing: -0.4px;
 			font-weight: 400;
+		}
+		@media only screen and(max-width: 767px) {
+			width: 100%;
 		}
 	}
 	.quote-link {
@@ -895,6 +953,9 @@ button.button.plain {
 				float: none;
 			}
 		}
+		@media only screen and(max-width:767px){
+			margin: 0 8px;
+		}
 	}
 	.cart-link {
 	    position: relative;
@@ -928,6 +989,10 @@ button.button.plain {
 		img {
 			display: block;
 			margin: 7px auto 0;
+		}
+		@media only screen and(max-width:767px){
+			padding: 0;
+			margin: 0 -1px 0 0;
 		}
 	}
 	.changeLocation-wrapper {
@@ -1128,6 +1193,9 @@ button.button.plain {
 				position: relative;
 				.products-section {
 					margin-right: 0;
+					@media only screen and(max-width:767px){
+						margin: 0;
+					}
 				}
 				.megamenu > li {
 					display: block;
@@ -1266,6 +1334,67 @@ button.button.plain {
 		.products-section {
 			margin-left: 0;
 			margin-right: 0;
+		}
+	}
+	@media only screen and(max-width:767px){
+		background: $blue !important;
+		.megamenu {
+			padding: 2%;
+			> li {
+				width: auto;
+				display: block;
+				margin-top: 10px;
+				&:first-child {
+					margin-top: 0;
+				}
+			}
+		}
+		.container {
+			width: 100%;
+			padding: 0;
+		}
+		.drop-slide-wrapper {
+			margin: 0;
+			width: 100% !important;
+			left: 0 !important;
+		}
+		.drop {
+			width: 100% !important;
+		}
+		.products-section {
+			margin-top: 0;
+			padding: 0;
+		}
+		> .container > ul {
+			display: block;
+			> li {
+				display: block;
+				border-bottom: 1px solid $black;
+				position: relative;
+				width: auto;
+				&.hover {
+					z-index: 1;
+				}
+				&:nth-child(2) .megamenu > li {
+					&.Parmaceutical {
+						width: 100%;
+					}
+					&.Food {
+						width: 100%;
+					}
+					&.Forensic {
+						width: 100%;
+					}
+					&.Environmental {
+						width: 100%;
+					}
+				}
+			}
+		}
+		.drop-wrapper > a {
+			text-align: left;
+			padding: 5px 15px;
+			border: none;
 		}
 	}
 }
@@ -1422,6 +1551,15 @@ button.button.plain {
 			}
 		}
 	}
+	@media only screen and(max-width:767px){
+		padding-right: 0;
+		display: block;
+		margin-right: 1%;
+		width: auto;
+		.links {
+			clear: none;
+		}
+	}
 }
 
 //Styling for Header Logo
@@ -1454,21 +1592,19 @@ button.button.plain {
 			width: 196px;
 		}
 	}
+	@media only screen and(max-width:767px){
+		margin-left: 1%;
+		width: 22%;
+		.logo {
+			width: 196px;
+		}
+	}
 }
 
 //Styling for Home Page
 .cms-home {
 	#wrapper {
 		background-color: $white;
-	}
-	.gallery {
-		.slides {
-			height: 295px !important;
-		}
-		.slide {
-			padding: 167px 0 0;
-			height: 496px;
-		}
 	}
 	.page-title.custom-title {
 		display: none;
@@ -2228,6 +2364,12 @@ table#compare-br {
 				-moz-transition: opacity 300ms;
 				-o-transition: opacity 300ms;
 			}
+			@media only screen and(max-width:767px){
+				font-size: 14px;
+				.container {
+					width: 100%;
+				}
+			}
 		}
 		@media only screen and(max-width:767px){
 			.featured-list { 
@@ -2457,6 +2599,10 @@ table#compare-br {
 	@media only screen and(max-width:480px){
 		float: none;
 		width: auto;
+	}
+	@media only screen and(max-width:767px){
+		width: auto;
+		margin: 0;
 	}
 }
 .block {
@@ -3373,6 +3519,21 @@ body.cms-page-view.cms-soil-dna-request-form {
 		float: right;
 		margin: -5px 0 0 15px;
 	}
+	@media only screen and(max-width:767px){
+		h1 {
+			float: none;
+			margin: 0 0 10px;
+		}
+		h2 {
+			float: none;
+			margin: 0 0 10px;
+		}
+		.btn-application {
+			min-width: 240px;
+			float: none;
+			margin: 0;
+		}
+	}
 }
 
 //Check if Exists in the DOM
@@ -3510,9 +3671,6 @@ body.cms-page-view.cms-soil-dna-request-form {
 				line-height: 1.65em;
 				margin-bottom: 1.65em;
 			}
-			span {
-
-			}
 		}
 	}
 }
@@ -3627,11 +3785,21 @@ body.cms-page-view.cms-soil-dna-request-form {
 			float: none;
 		}
 	}
+	@media only screen and(max-width:767px){
+		text-align: center;
+		li {
+			text-align: left;
+			width: 290px;
+		}
+	}
 }
 
 .tab-content {
 	padding: 51px 0 15px;
 	overflow: hidden;
+	@media only screen and(max-width:767px){
+		padding: 51px 0 30px;
+	}
 }
 
 .regular-price {
@@ -3862,10 +4030,6 @@ body.cms-page-view.cms-soil-dna-request-form {
 		}
 		@media only screen and(max-width:480px){
 			overflow: hidden;
-			.title-buttons .checkout-types {
-				float: none;
-				overflow: hidden;
-			}
 			.page-title h1 {
 				margin: 0 0 10px;
 			}
@@ -3880,17 +4044,23 @@ body.cms-page-view.cms-soil-dna-request-form {
 				float: none;
 			}
 		}
+		@media only screen and(max-width:767px){
+			.page-title h1 {
+				float: left;
+				float: none;
+			}
+			.totals .checkout-types li {
+				width: 100%;
+				box-sizing: border-box;
+			}
+			button.button.btn-proceed-checkout.btn-checkout {
+				width: 100%;
+				margin: 0 !important;
+			}
+		}
 	}
 	.totals td.a-right {
 		text-align: left !important;
-	}
-	.title-buttons h1 {
-		float: none;
-		@media only screen and(max-width:480px){
-			float: none;
-			text-align: left;
-			margin: 0 0 15px;
-		}
 	}
 }
 #shopping-cart-table {
@@ -4732,6 +4902,38 @@ body.cms-page-view.cms-soil-dna-request-form {
 			text-align: center;
 		}
 	}
+	@media only screen and(max-width:767px){
+		.container {
+			width: 100%;
+		}
+		.col-l {
+			text-align: center;
+			float: none;
+		}
+		.col-r {
+			float: none;
+		}
+		.footer-nav {
+			ul {
+				text-align: center;
+				font-size: 0;
+				.first a {
+					border-radius: 0;
+				}
+				.last a {
+					border-radius: 0;
+				}
+			}
+			li {
+				font-size: 12px;
+				display: block;
+				float: none;
+			}
+		}
+		.copy {
+			text-align: left;
+		}
+	}
 
 }
 
@@ -5128,7 +5330,6 @@ body.cms-page-view.cms-soil-dna-request-form {
 	.pager .pages { margin:0 140px; }
 	.pager .pages ol { display:inline; }
 	.pager .pages li { display:inline; margin:0 2px; }
-	.pager .pages .current {}
 
 	/* Sorter */
 	.sorter { font-size:11px; background:none; padding:3px 8px; border-top:0; }
@@ -5136,13 +5337,10 @@ body.cms-page-view.cms-soil-dna-request-form {
 	.sorter .sort-by { float:right; padding-right:0; }
 	.sorter .sort-by label { vertical-align:middle; }
 	.sorter .sort-by select { padding:0; margin:0 0 1px; vertical-align:middle; }
-	.sorter .link-feed {}
 
 	/* Toolbar */
-	.toolbar {}
 	.toolbar .pager { padding:3px 8px; border-bottom:0; }
 	.toolbar .sorter { border-bottom:0; }
-	.toolbar-bottom {}
 
 	dd.last.even {
 		padding: 0 5px 12px;
@@ -5198,6 +5396,19 @@ body.cms-page-view.cms-soil-dna-request-form {
 				}
 			}
 		}
+		@media only screen and(max-width:767px){
+			overflow: hidden;
+			margin: 0 auto;
+			width: 100%;
+			li {
+				width: 50% !important;
+				.txt {
+					.col-1 {
+						width: 100%;
+					}
+				}
+			}
+		}	
 	}	
 }
 
@@ -5620,8 +5831,6 @@ $myriadpro-bold-svg: url(../webfonts/myriadpro-bold-webfont.svg#myriadpro_bold);
 /* added css to create a max-height on video block for product image */
 .product-gallery .thumbnails img { max-height: 72px; width:94px!important; }
 
-
-
 /* ===============  MEDIA QUERIES  =============== */
 //RESPONSIVE STYLING USING MEDIA QUERIES
 @media only screen and(max-width: 330px) {
@@ -5973,110 +6182,110 @@ $myriadpro-bold-svg: url(../webfonts/myriadpro-bold-webfont.svg#myriadpro_bold);
 }
 
 @media only screen and(max-width: 639px) {
-	#header {
-		// .container {
-		// 	width: 100% !important;
-		// 	padding: 10px 0 0 0 !important;
-		// 	.top-bar {
-		// 		float: none;
-		// 		width: auto;
-		// 		margin: 0;
-		// 		padding: 0;
-		// 		form {
-		// 			width: auto;
-		// 			float: none;
-		// 			display: block;
-		// 		}
-		// 		.links {
-		// 			float: right;
-		// 			clear: none;
-		// 			text-align: center;
-		// 			margin-top: 4px;
-		// 			line-height: 24px;
-		// 			width: 33%;
-		// 			margin: 0;
-		// 			padding: 0;
-		// 			float: left;
-		// 			text-align: center;
-		// 			margin-top: 4px;
-		// 			li {
-		// 				display: inline;
-		// 			}
-		// 		}
-		// 	}
-		// 	.logo-holder {
-		// 		float: none;
-		// 		width: auto;
-		// 		margin: 0;
-		// 	}
-		// 	.logo {
-		// 		width: 196px;
-		// 	}
-		// 	.top-bar-top {
-		// 		padding: 10px 0 20px 0;
-		// 		margin: 0;
-		// 	}
-		// 	.form-search {
-		// 		width: 100%;
-		// 		text-align: center;
-		// 		margin: 0;
-		// 		.button {
-		// 			width: 10%;
-		// 		}
-		// 		input.input-text {
-		// 			width: 80%;
-		// 		}
-		// 	}
-		// 	.block-cart {
-		// 		width: 33%;
-		// 		margin: 0;
-		// 		padding: 0;
-		// 		float: left;
-		// 		text-align: center;
-		// 		margin-top: 4px;
-		// 		margin: 4px 0 0;
-		// 		float: left;
-		// 		border-left: none;
-		// 		text-align: center;
-		// 		max-height: 25px;
-		// 		padding-top: 3px;
-		// 		.cart-link {
-		// 			line-height: 22px;
-		// 		}
-		// 		form.searchautocomplete .nav {
-		// 		    width: 340px;
-		// 		}
-		// 		.block-title {
-		// 			display: none;
-		// 			float: none;
-		// 		}
-		// 		.block-content {
-		// 			display: inline-block;
-		// 			float: none;
-		// 		}
-		// 	}
-		// 	.quote-link {
-		// 		width: 33%;
-		// 		margin: 0;
-		// 		padding: 0;
-		// 		float: left;
-		// 		text-align: center;
-		// 		margin-top: 4px;
-		// 		border-left: none;
-		// 		border-right: 1px solid $black;
-		// 		line-height: 24px;
-		// 	}
-		// 	.changeLocation-wrapper {
-		// 		right: 0;
-		// 		top: -34px;
-		// 	}
-		// }
-		// .contacts-box {
-		// 	margin-right: 0;
-		// 	float: none;
-		// 	width: 100%;
-		// }
-	}
+	// #header {
+	// 	.container {
+	// 		width: 100% !important;
+	// 		padding: 10px 0 0 0 !important;
+	// 		.top-bar {
+	// 			float: none;
+	// 			width: auto;
+	// 			margin: 0;
+	// 			padding: 0;
+	// 			form {
+	// 				width: auto;
+	// 				float: none;
+	// 				display: block;
+	// 			}
+	// 			.links {
+	// 				float: right;
+	// 				clear: none;
+	// 				text-align: center;
+	// 				margin-top: 4px;
+	// 				line-height: 24px;
+	// 				width: 33%;
+	// 				margin: 0;
+	// 				padding: 0;
+	// 				float: left;
+	// 				text-align: center;
+	// 				margin-top: 4px;
+	// 				li {
+	// 					display: inline;
+	// 				}
+	// 			}
+	// 		}
+	// 		.logo-holder {
+	// 			float: none;
+	// 			width: auto;
+	// 			margin: 0;
+	// 		}
+	// 		.logo {
+	// 			width: 196px;
+	// 		}
+	// 		.top-bar-top {
+	// 			padding: 10px 0 20px 0;
+	// 			margin: 0;
+	// 		}
+	// 		.form-search {
+	// 			width: 100%;
+	// 			text-align: center;
+	// 			margin: 0;
+	// 			.button {
+	// 				width: 10%;
+	// 			}
+	// 			input.input-text {
+	// 				width: 80%;
+	// 			}
+	// 		}
+	// 		.block-cart {
+	// 			width: 33%;
+	// 			margin: 0;
+	// 			padding: 0;
+	// 			float: left;
+	// 			text-align: center;
+	// 			margin-top: 4px;
+	// 			margin: 4px 0 0;
+	// 			float: left;
+	// 			border-left: none;
+	// 			text-align: center;
+	// 			max-height: 25px;
+	// 			padding-top: 3px;
+	// 			.cart-link {
+	// 				line-height: 22px;
+	// 			}
+	// 			form.searchautocomplete .nav {
+	// 			    width: 340px;
+	// 			}
+	// 			.block-title {
+	// 				display: none;
+	// 				float: none;
+	// 			}
+	// 			.block-content {
+	// 				display: inline-block;
+	// 				float: none;
+	// 			}
+	// 		}
+	// 		.quote-link {
+	// 			width: 33%;
+	// 			margin: 0;
+	// 			padding: 0;
+	// 			float: left;
+	// 			text-align: center;
+	// 			margin-top: 4px;
+	// 			border-left: none;
+	// 			border-right: 1px solid $black;
+	// 			line-height: 24px;
+	// 		}
+	// 		.changeLocation-wrapper {
+	// 			right: 0;
+	// 			top: -34px;
+	// 		}
+	// 	}
+	// 	.contacts-box {
+	// 		margin-right: 0;
+	// 		float: none;
+	// 		width: 100%;
+	// 	}
+	// }
 }
 
 @media only screen and(max-width: 668px) {
@@ -6622,293 +6831,245 @@ $myriadpro-bold-svg: url(../webfonts/myriadpro-bold-webfont.svg#myriadpro_bold);
 	// 		}
 	// 	}
 	// }
-	#main.col2-left-layout .main>.col-main {
-		width: 100%;
-		float: none;
-		padding-top: 0;
-		margin: 0;
-	}
-	.catalogsearch-result-index .product-list.list-view li {
-		width: 50% !important;
-		.txt {
-			.col-1 {
-				width: 100%;
-			}
-		}
-	}
-	.product-list {
-		&.list-view {
-			overflow: hidden;
-			margin: 0 auto;
-			width: 100%;
-			li {
-				width: 100%;
-			}
-		}
-	}
-	.products-section {
-		margin: 0;
-	}
-	#main-nav {
-		background: $blue !important;
-		.megamenu {
-			padding: 2%;
-			> li {
-				width: auto;
-				display: block;
-				margin-top: 10px;
-				&:first-child {
-					margin-top: 0;
-				}
-			}
-		}
-		.container {
-			width: 100%;
-			padding: 0;
-		}
-		.drop-slide-wrapper {
-			margin: 0;
-			width: 100% !important;
-			left: 0 !important;
-		}
-		.drop {
-			width: 100% !important;
-		}
-		.products-section {
-			margin-top: 0;
-			padding: 0;
-		}
-		> .container > ul {
-			display: block;
-			> li {
-				display: block;
-				border-bottom: 1px solid $black;
-				position: relative;
-				width: auto;
-				&.hover {
-					z-index: 1;
-				}
-				&:nth-child(2) .megamenu > li {
-					&.Parmaceutical {
-						width: 100%;
-					}
-					&.Food {
-						width: 100%;
-					}
-					&.Forensic {
-						width: 100%;
-					}
-					&.Environmental {
-						width: 100%;
-					}
-				}
-			}
-		}
-		.drop-wrapper > a {
-			text-align: left;
-			padding: 5px 15px;
-			border: none;
-		}
-	}
-	#header {
-		.container {
-			width: 100%;
-			padding: 10px 0 0;
-		}
-		.block-cart {
-			margin: 0 8px;
-		}
-		.form-search {
-			width: 100%;
-		}
-		.form-language {
-			padding: 0;
-			margin: 0 -1px 0 0;
-		}
-	}
-	.featured-list {
-		font-size: 14px;
-		.container {
-			width: 100%;
-		}
-	}
-	#footer {
-		.container {
-			width: 100%;
-		}
-		.col-l {
-			text-align: center;
-			float: none;
-		}
-		.col-r {
-			float: none;
-		}
-	}
-	.container {
-		width: 100%;
-	}
-	.breadcrumbs {
-		width: auto;
-		margin: 5px 3%;
-		ul {
-			padding: 0;
-		}
-	}
-	.top-bar {
-		padding-right: 0;
-		display: block;
-		margin-right: 1%;
-		width: auto;
-		.links {
-			clear: none;
-		}
-	}
-	.developer {
-		display: none;
-	}
-	.gallery {
-		display: none;
-	}
-	.product-list {
-		text-align: center;
-		li {
-			text-align: left;
-			width: 290px;
-		}
-	}
-	.logo-holder {
-		margin-left: 1%;
-		width: 22%;
-	}
-	.logo {
-		width: 196px;
-	}
-	.slogan {
-		margin: -28px 0 10px 10% !important;
-		margin: -10px 0 10px 120px;
-	}
-	.block-subscribe {
-		.actions {
-			float: left;
-			width: 20%;
-			margin: 0;
-			button.button {
-				width: 100%;
-				span {
-					height: 28px;
-					line-height: 28px;
-				}
-			}
-		}
-		input.input-text {
-			margin: 0;
-			width: 100%;
-			box-sizing: border-box;
-		}
-	}
-	.col2-right-layout {
-		.main {
-			width: auto;
-		}
-		.col-main {
-			float: none !important;
-			width: auto !important;
-			margin: 0 3%;
-			margin: 0 !important;
-		}
-		.sidebar {
-			float: none !important;
-			width: auto !important;
-			margin: 0 3%;
-		}
-		.col-right {
-			width: auto;
-			min-height: 30px;
-		}
-	}
-	.col-main {
-		float: none;
-		width: 100%;
-		margin: 0 0 15px;
-		.product-list {
-			.col-1 {
-				width: 100%;
-			}
-			.col-2 {
-				width: 100%;
-			}
-		}
-		.page-title h1 {
-			width: auto;
-		}
-	}
-	.footer-nav {
-		ul {
-			text-align: center;
-			font-size: 0;
-			.first a {
-				border-radius: 0;
-			}
-			.last a {
-				border-radius: 0;
-			}
-		}
-		li {
-			font-size: 12px;
-			display: block;
-			vertical-align: top;
-			float: none;
-		}
-	}
-	.copy {
-		text-align: left;
-	}
-	.title-buttons {
-		text-align: left;
-		.checkout-types {
-			padding: 7px 0 0;
-		}
-		h1 {
-			float: none;
-		}
-		h2 {
-			float: none;
-		}
-		h3 {
-			float: none;
-		}
-		h4 {
-			float: none;
-		}
-		h5 {
-			float: none;
-		}
-		h6 {
-			float: none;
-		}
-	}
-	.title-wrapper {
-		position: static;
-	}
-	.sub-title {
-		h1 {
-			float: none;
-			margin: 0 0 10px;
-		}
-		h2 {
-			float: none;
-			margin: 0 0 10px;
-		}
-		.btn-application {
-			min-width: 240px;
-			float: none;
-			margin: 0;
-		}
-	}
-	.sidebar {
-		width: auto;
-		margin: 0;
-	}
+
+	//Check if Exists in The DOM
+	// #main.col2-left-layout .main>.col-main {
+	// 	width: 100%;
+	// 	float: none;
+	// 	padding-top: 0;
+	// 	margin: 0;
+	// }
+
+	// .catalogsearch-result-index .product-list.list-view li {
+	// 	width: 50% !important;
+	// 	.txt {
+	// 		.col-1 {
+	// 			width: 100%;
+	// 		}
+	// 	}
+	// }
+	// .product-list {
+	// 	&.list-view {
+	// 		overflow: hidden;
+	// 		margin: 0 auto;
+	// 		width: 100%;
+	// 		li {
+	// 			width: 100%;
+	// 		}
+	// 	}
+	// }
+	// .products-section {
+	// 	margin: 0;
+	// }
+	// #main-nav {
+	// 	background: $blue !important;
+	// 	.megamenu {
+	// 		padding: 2%;
+	// 		> li {
+	// 			width: auto;
+	// 			display: block;
+	// 			margin-top: 10px;
+	// 			&:first-child {
+	// 				margin-top: 0;
+	// 			}
+	// 		}
+	// 	}
+	// 	.container {
+	// 		width: 100%;
+	// 		padding: 0;
+	// 	}
+	// 	.drop-slide-wrapper {
+	// 		margin: 0;
+	// 		width: 100% !important;
+	// 		left: 0 !important;
+	// 	}
+	// 	.drop {
+	// 		width: 100% !important;
+	// 	}
+	// 	.products-section {
+	// 		margin-top: 0;
+	// 		padding: 0;
+	// 	}
+	// 	> .container > ul {
+	// 		display: block;
+	// 		> li {
+	// 			display: block;
+	// 			border-bottom: 1px solid $black;
+	// 			position: relative;
+	// 			width: auto;
+	// 			&.hover {
+	// 				z-index: 1;
+	// 			}
+	// 			&:nth-child(2) .megamenu > li {
+	// 				&.Parmaceutical {
+	// 					width: 100%;
+	// 				}
+	// 				&.Food {
+	// 					width: 100%;
+	// 				}
+	// 				&.Forensic {
+	// 					width: 100%;
+	// 				}
+	// 				&.Environmental {
+	// 					width: 100%;
+	// 				}
+	// 			}
+	// 		}
+	// 	}
+	// 	.drop-wrapper > a {
+	// 		text-align: left;
+	// 		padding: 5px 15px;
+	// 		border: none;
+	// 	}
+	// }
+	// #header {
+	// 	.container {
+	// 		width: 100%;
+	// 		padding: 10px 0 0;
+	// 	}
+	// 	.block-cart {
+	// 		margin: 0 8px;
+	// 	}
+	// 	.form-search {
+	// 		width: 100%;
+	// 	}
+	// 	.form-language {
+	// 		padding: 0;
+	// 		margin: 0 -1px 0 0;
+	// 	}
+	// }
+	// .featured-list {
+	// 	font-size: 14px;
+	// 	.container {
+	// 		width: 100%;
+	// 	}
+	// }
+	// #footer {
+	// 	.container {
+	// 		width: 100%;
+	// 	}
+	// 	.col-l {
+	// 		text-align: center;
+	// 		float: none;
+	// 	}
+	// 	.col-r {
+	// 		float: none;
+	// 	}
+	// }
+	// .container {
+	// 	width: 100%;
+	// }
+	// .breadcrumbs {
+	// 	width: auto;
+	// 	margin: 5px 3%;
+	// 	ul {
+	// 		padding: 0;
+	// 	}
+	// }
+	// .top-bar {
+	// 	padding-right: 0;
+	// 	display: block;
+	// 	margin-right: 1%;
+	// 	width: auto;
+	// 	.links {
+	// 		clear: none;
+	// 	}
+	// }
+	// .product-list {
+	// 	text-align: center;
+	// 	li {
+	// 		text-align: left;
+	// 		width: 290px;
+	// 	}
+	// }
+	// .logo-holder {
+	// 	margin-left: 1%;
+	// 	width: 22%;
+	// }
+	// .logo {
+	// 	width: 196px;
+	// }
+	// .col2-right-layout {
+	// 	.main {
+	// 		width: auto;
+	// 	}
+	// 	.col-main {
+	// 		float: none !important;
+	// 		width: auto !important;
+	// 		margin: 0 3%;
+	// 		margin: 0 !important;
+	// 	}
+	// 	.sidebar {
+	// 		float: none !important;
+	// 		width: auto !important;
+	// 		margin: 0 3%;
+	// 	}
+	// 	.col-right {
+	// 		width: auto;
+	// 		min-height: 30px;
+	// 	}
+	// }
+	// .col-main {
+	// 	float: none;
+	// 	width: 100%;
+	// 	margin: 0 0 15px;
+	// 	.product-list {
+	// 		.col-1 {
+	// 			width: 100%;
+	// 		}
+	// 		.col-2 {
+	// 			width: 100%;
+	// 		}
+	// 	}
+	// 	.page-title h1 {
+	// 		width: auto;
+	// 	}
+	// }
+	// .footer-nav {
+	// 	ul {
+	// 		text-align: center;
+	// 		font-size: 0;
+	// 		.first a {
+	// 			border-radius: 0;
+	// 		}
+	// 		.last a {
+	// 			border-radius: 0;
+	// 		}
+	// 	}
+	// 	li {
+	// 		font-size: 12px;
+	// 		display: block;
+	// 		vertical-align: top;
+	// 		float: none;
+	// 	}
+	// }
+	// .copy {
+	// 	text-align: left;
+	// }
+	// .title-wrapper {
+	// 	position: static;
+	// }
+	// .sub-title {
+	// 	h1 {
+	// 		float: none;
+	// 		margin: 0 0 10px;
+	// 	}
+	// 	h2 {
+	// 		float: none;
+	// 		margin: 0 0 10px;
+	// 	}
+	// 	.btn-application {
+	// 		min-width: 240px;
+	// 		float: none;
+	// 		margin: 0;
+	// 	}
+	// }
+	// .sidebar {
+	// 	width: auto;
+	// 	margin: 0;
+	// }
+
+	//Check if exists in the DOM - below
 	.accessories-list {
 		text-align: center;
 		li {
@@ -6929,23 +7090,24 @@ $myriadpro-bold-svg: url(../webfonts/myriadpro-bold-webfont.svg#myriadpro_bold);
 			padding: 13px 20px 0;
 		}
 	}
-	.tab-content {
-		padding: 51px 0 30px;
-	}
-	.cart {
-		.page-title h1 {
-			float: left;
-			float: none;
-		}
-		.totals .checkout-types li {
-			width: 100%;
-			box-sizing: border-box;
-		}
-		button.button.btn-proceed-checkout.btn-checkout {
-			width: 100%;
-			margin: 0 !important;
-		}
-	}
+
+	// .tab-content {
+	// 	padding: 51px 0 30px;
+	// }
+	// .cart {
+	// 	.page-title h1 {
+	// 		float: left;
+	// 		float: none;
+	// 	}
+	// 	.totals .checkout-types li {
+	// 		width: 100%;
+	// 		box-sizing: border-box;
+	// 	}
+	// 	button.button.btn-proceed-checkout.btn-checkout {
+	// 		width: 100%;
+	// 		margin: 0 !important;
+	// 	}
+	// }
 	#opc-review {
 		.product-name {
 			font-size: 11px;

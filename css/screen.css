@@ -162,6 +162,17 @@ input[type="image"] {
       text-decoration: underline; }
   .container .col-main .cart h2 {
     font-size: 18px; }
+  @media only screen and (max-width: 767px) {
+    .container .col-main {
+      float: none;
+      width: 100%;
+      margin: 0 0 15px; }
+      .container .col-main .product-list .col-1 {
+        width: 100%; }
+      .container .col-main .product-list .col-2 {
+        width: 100%; }
+      .container .col-main .page-title h1 {
+        width: auto; } }
   .container:after {
     content: "";
     display: block;
@@ -170,6 +181,9 @@ input[type="image"] {
     font-size: 18px;
     font-weight: bold;
     color: #000000; }
+  @media only screen and (max-width: 767px) {
+    .container {
+      width: 100%; } }
 
 .page {
   margin-top: -21px;
@@ -201,6 +215,9 @@ input[type="image"] {
   .title-wrapper.product-title h1 {
     text-align: left;
     line-height: 100%; }
+  @media only screen and (max-width: 767px) {
+    .title-wrapper {
+      position: static; } }
 
 .btnNew {
   color: #000000;
@@ -428,6 +445,21 @@ button.button.plain span {
 .col2-right-layout .col-main {
   width: 74%;
   margin-bottom: 20px; }
+@media only screen and (max-width: 767px) {
+  .col2-right-layout .main {
+    width: auto; }
+  .col2-right-layout .col-main {
+    float: none !important;
+    width: auto !important;
+    margin: 0 3%;
+    margin: 0 !important; }
+  .col2-right-layout .sidebar {
+    float: none !important;
+    width: auto !important;
+    margin: 0 3%; }
+  .col2-right-layout .col-right {
+    width: auto;
+    min-height: 30px; } }
 
 .col2-left-layout .col-left {
   margin-top: 20px !important;
@@ -504,6 +536,12 @@ button.button.plain span {
     text-align: left; }
   .breadcrumbs li strong {
     font-weight: normal; }
+  @media only screen and (max-width: 767px) {
+    .breadcrumbs {
+      width: auto;
+      margin: 5px 3%; }
+      .breadcrumbs ul {
+        padding: 0; } }
 
 .catalog-category-view .breadcrumbs {
   position: relative;
@@ -584,6 +622,10 @@ button.button.plain span {
       #header .container {
         width: 100% !important;
         padding: 10px 0 0 0 !important; } }
+    @media only screen and (max-width: 767px) {
+      #header .container .container {
+        width: 100%;
+        padding: 10px 0 0; } }
   #header .cell {
     display: table-cell;
     background-color: #dedede;
@@ -639,6 +681,9 @@ button.button.plain span {
       box-sizing: border-box;
       letter-spacing: -0.4px;
       font-weight: 400; }
+    @media only screen and (max-width: 767px) {
+      #header .form-search {
+        width: 100%; } }
   #header .quote-link {
     float: right;
     font-size: 12px;
@@ -720,6 +765,9 @@ button.button.plain span {
         #header .block-cart .block-content {
           display: inline-block;
           float: none; } }
+    @media only screen and (max-width: 767px) {
+      #header .block-cart {
+        margin: 0 8px; } }
   #header .cart-link {
     position: relative;
     background-position: -152px -49px;
@@ -750,6 +798,10 @@ button.button.plain span {
     #header .form-language img {
       display: block;
       margin: 7px auto 0; }
+    @media only screen and (max-width: 767px) {
+      #header .form-language {
+        padding: 0;
+        margin: 0 -1px 0 0; } }
   #header .changeLocation-wrapper #changeLocation {
     background-color: #444444;
     color: #ffffff;
@@ -904,6 +956,9 @@ button.button.plain span {
     position: relative; }
     #main-nav li.mark.support .products-section {
       margin-right: 0; }
+      @media only screen and (max-width: 767px) {
+        #main-nav li.mark.support .products-section {
+          margin: 0; } }
     #main-nav li.mark.support .megamenu > li {
       display: block;
       width: 100%;
@@ -1006,6 +1061,50 @@ button.button.plain span {
     #main-nav .products-section {
       margin-left: 0;
       margin-right: 0; } }
+  @media only screen and (max-width: 767px) {
+    #main-nav {
+      background: #305893 !important; }
+      #main-nav .megamenu {
+        padding: 2%; }
+        #main-nav .megamenu > li {
+          width: auto;
+          display: block;
+          margin-top: 10px; }
+          #main-nav .megamenu > li:first-child {
+            margin-top: 0; }
+      #main-nav .container {
+        width: 100%;
+        padding: 0; }
+      #main-nav .drop-slide-wrapper {
+        margin: 0;
+        width: 100% !important;
+        left: 0 !important; }
+      #main-nav .drop {
+        width: 100% !important; }
+      #main-nav .products-section {
+        margin-top: 0;
+        padding: 0; }
+      #main-nav > .container > ul {
+        display: block; }
+        #main-nav > .container > ul > li {
+          display: block;
+          border-bottom: 1px solid #000000;
+          position: relative;
+          width: auto; }
+          #main-nav > .container > ul > li.hover {
+            z-index: 1; }
+          #main-nav > .container > ul > li:nth-child(2) .megamenu > li.Parmaceutical {
+            width: 100%; }
+          #main-nav > .container > ul > li:nth-child(2) .megamenu > li.Food {
+            width: 100%; }
+          #main-nav > .container > ul > li:nth-child(2) .megamenu > li.Forensic {
+            width: 100%; }
+          #main-nav > .container > ul > li:nth-child(2) .megamenu > li.Environmental {
+            width: 100%; }
+      #main-nav .drop-wrapper > a {
+        text-align: left;
+        padding: 5px 15px;
+        border: none; } }
 
 .toggle-menu {
   position: relative;
@@ -1127,6 +1226,14 @@ button.button.plain span {
         margin-top: 4px; }
         .top-bar .links li {
           display: inline; } }
+  @media only screen and (max-width: 767px) {
+    .top-bar {
+      padding-right: 0;
+      display: block;
+      margin-right: 1%;
+      width: auto; }
+      .top-bar .links {
+        clear: none; } }
 
 .logo-holder {
   float: left;
@@ -1154,14 +1261,15 @@ button.button.plain span {
       margin: 0; }
       .logo-holder .logo {
         width: 196px; } }
+  @media only screen and (max-width: 767px) {
+    .logo-holder {
+      margin-left: 1%;
+      width: 22%; }
+      .logo-holder .logo {
+        width: 196px; } }
 
 .cms-home #wrapper {
   background-color: #ffffff; }
-.cms-home .gallery .slides {
-  height: 295px !important; }
-.cms-home .gallery .slide {
-  padding: 167px 0 0;
-  height: 496px; }
 .cms-home .page-title.custom-title {
   display: none; }
 
@@ -1779,6 +1887,11 @@ table#compare-br {
   -o-transition: opacity 300ms; }
 @media only screen and (max-width: 767px) {
   .cms-home .container .featured-list {
+    font-size: 14px; }
+    .cms-home .container .featured-list .container {
+      width: 100%; } }
+@media only screen and (max-width: 767px) {
+  .cms-home .container .featured-list {
     display: none; }
   .cms-home .container .home-block .left-col, .cms-home .container .home-block .right-col {
     width: 100%; } }
@@ -1906,6 +2019,10 @@ table#compare-br {
     .sidebar {
       float: none;
       width: auto; } }
+  @media only screen and (max-width: 767px) {
+    .sidebar {
+      width: auto;
+      margin: 0; } }
 
 .block .actions {
   background: none; }
@@ -2623,6 +2740,17 @@ body.cms-page-view.cms-soil-dna-request-form .buttons-set {
   .sub-title .btn-application {
     float: right;
     margin: -5px 0 0 15px; }
+  @media only screen and (max-width: 767px) {
+    .sub-title h1 {
+      float: none;
+      margin: 0 0 10px; }
+    .sub-title h2 {
+      float: none;
+      margin: 0 0 10px; }
+    .sub-title .btn-application {
+      min-width: 240px;
+      float: none;
+      margin: 0; } }
 
 .data-table tr.odd {
   background: none; }
@@ -2810,10 +2938,19 @@ body.cms-page-view.cms-soil-dna-request-form .buttons-set {
       font-size: 14px;
       text-align: left;
       float: none; }
+  @media only screen and (max-width: 767px) {
+    .product-list {
+      text-align: center; }
+      .product-list li {
+        text-align: left;
+        width: 290px; } }
 
 .tab-content {
   padding: 51px 0 15px;
   overflow: hidden; }
+  @media only screen and (max-width: 767px) {
+    .tab-content {
+      padding: 51px 0 30px; } }
 
 .regular-price {
   color: #007b33; }
@@ -3005,9 +3142,6 @@ body.cms-page-view.cms-soil-dna-request-form .buttons-set {
   @media only screen and (max-width: 480px) {
     .checkout-cart-index .cart {
       overflow: hidden; }
-      .checkout-cart-index .cart .title-buttons .checkout-types {
-        float: none;
-        overflow: hidden; }
       .checkout-cart-index .cart .page-title h1 {
         margin: 0 0 10px; } }
   @media only screen and (max-width: 730px) {
@@ -3017,15 +3151,18 @@ body.cms-page-view.cms-soil-dna-request-form .buttons-set {
       width: 100%;
       min-width: auto;
       float: none; } }
+  @media only screen and (max-width: 767px) {
+    .checkout-cart-index .cart .page-title h1 {
+      float: left;
+      float: none; }
+    .checkout-cart-index .cart .totals .checkout-types li {
+      width: 100%;
+      box-sizing: border-box; }
+    .checkout-cart-index .cart button.button.btn-proceed-checkout.btn-checkout {
+      width: 100%;
+      margin: 0 !important; } }
 .checkout-cart-index .totals td.a-right {
   text-align: left !important; }
-.checkout-cart-index .title-buttons h1 {
-  float: none; }
-  @media only screen and (max-width: 480px) {
-    .checkout-cart-index .title-buttons h1 {
-      float: none;
-      text-align: left;
-      margin: 0 0 15px; } }
 
 #shopping-cart-table #c2qBtn {
   margin-left: 5px; }
@@ -3662,6 +3799,27 @@ body.cms-page-view.cms-soil-dna-request-form .buttons-set {
     #footer .col-l p {
       max-width: 380px;
       text-align: center; } }
+  @media only screen and (max-width: 767px) {
+    #footer .container {
+      width: 100%; }
+    #footer .col-l {
+      text-align: center;
+      float: none; }
+    #footer .col-r {
+      float: none; }
+    #footer .footer-nav ul {
+      text-align: center;
+      font-size: 0; }
+      #footer .footer-nav ul .first a {
+        border-radius: 0; }
+      #footer .footer-nav ul .last a {
+        border-radius: 0; }
+    #footer .footer-nav li {
+      font-size: 12px;
+      display: block;
+      float: none; }
+    #footer .copy {
+      text-align: left; } }
 
 .col3-layout .col-wrapper {
   width: 646px; }
@@ -4065,6 +4223,15 @@ body.cms-page-view.cms-soil-dna-request-form .buttons-set {
         float: none;
         width: 80%;
         min-width: 155px; }
+  @media only screen and (max-width: 767px) {
+    .catalogsearch-result-index .product-list.list-view {
+      overflow: hidden;
+      margin: 0 auto;
+      width: 100%; }
+      .catalogsearch-result-index .product-list.list-view li {
+        width: 50% !important; }
+        .catalogsearch-result-index .product-list.list-view li .txt .col-1 {
+          width: 100%; } }
 
 .messages .success-msg {
   width: 100%;
@@ -4878,226 +5045,6 @@ div.col-main div.col-main {
       font-size: 16px;
       padding: 5px 50px 5px 10px; } }
 @media only screen and (max-width: 767px) {
-  #main.col2-left-layout .main > .col-main {
-    width: 100%;
-    float: none;
-    padding-top: 0;
-    margin: 0; }
-
-  .catalogsearch-result-index .product-list.list-view li {
-    width: 50% !important; }
-    .catalogsearch-result-index .product-list.list-view li .txt .col-1 {
-      width: 100%; }
-
-  .product-list.list-view {
-    overflow: hidden;
-    margin: 0 auto;
-    width: 100%; }
-    .product-list.list-view li {
-      width: 100%; }
-
-  .products-section {
-    margin: 0; }
-
-  #main-nav {
-    background: #305893 !important; }
-    #main-nav .megamenu {
-      padding: 2%; }
-      #main-nav .megamenu > li {
-        width: auto;
-        display: block;
-        margin-top: 10px; }
-        #main-nav .megamenu > li:first-child {
-          margin-top: 0; }
-    #main-nav .container {
-      width: 100%;
-      padding: 0; }
-    #main-nav .drop-slide-wrapper {
-      margin: 0;
-      width: 100% !important;
-      left: 0 !important; }
-    #main-nav .drop {
-      width: 100% !important; }
-    #main-nav .products-section {
-      margin-top: 0;
-      padding: 0; }
-    #main-nav > .container > ul {
-      display: block; }
-      #main-nav > .container > ul > li {
-        display: block;
-        border-bottom: 1px solid #000000;
-        position: relative;
-        width: auto; }
-        #main-nav > .container > ul > li.hover {
-          z-index: 1; }
-        #main-nav > .container > ul > li:nth-child(2) .megamenu > li.Parmaceutical {
-          width: 100%; }
-        #main-nav > .container > ul > li:nth-child(2) .megamenu > li.Food {
-          width: 100%; }
-        #main-nav > .container > ul > li:nth-child(2) .megamenu > li.Forensic {
-          width: 100%; }
-        #main-nav > .container > ul > li:nth-child(2) .megamenu > li.Environmental {
-          width: 100%; }
-    #main-nav .drop-wrapper > a {
-      text-align: left;
-      padding: 5px 15px;
-      border: none; }
-
-  #header .container {
-    width: 100%;
-    padding: 10px 0 0; }
-  #header .block-cart {
-    margin: 0 8px; }
-  #header .form-search {
-    width: 100%; }
-  #header .form-language {
-    padding: 0;
-    margin: 0 -1px 0 0; }
-
-  .featured-list {
-    font-size: 14px; }
-    .featured-list .container {
-      width: 100%; }
-
-  #footer .container {
-    width: 100%; }
-  #footer .col-l {
-    text-align: center;
-    float: none; }
-  #footer .col-r {
-    float: none; }
-
-  .container {
-    width: 100%; }
-
-  .breadcrumbs {
-    width: auto;
-    margin: 5px 3%; }
-    .breadcrumbs ul {
-      padding: 0; }
-
-  .top-bar {
-    padding-right: 0;
-    display: block;
-    margin-right: 1%;
-    width: auto; }
-    .top-bar .links {
-      clear: none; }
-
-  .developer {
-    display: none; }
-
-  .gallery {
-    display: none; }
-
-  .product-list {
-    text-align: center; }
-    .product-list li {
-      text-align: left;
-      width: 290px; }
-
-  .logo-holder {
-    margin-left: 1%;
-    width: 22%; }
-
-  .logo {
-    width: 196px; }
-
-  .slogan {
-    margin: -28px 0 10px 10% !important;
-    margin: -10px 0 10px 120px; }
-
-  .block-subscribe .actions {
-    float: left;
-    width: 20%;
-    margin: 0; }
-    .block-subscribe .actions button.button {
-      width: 100%; }
-      .block-subscribe .actions button.button span {
-        height: 28px;
-        line-height: 28px; }
-  .block-subscribe input.input-text {
-    margin: 0;
-    width: 100%;
-    box-sizing: border-box; }
-
-  .col2-right-layout .main {
-    width: auto; }
-  .col2-right-layout .col-main {
-    float: none !important;
-    width: auto !important;
-    margin: 0 3%;
-    margin: 0 !important; }
-  .col2-right-layout .sidebar {
-    float: none !important;
-    width: auto !important;
-    margin: 0 3%; }
-  .col2-right-layout .col-right {
-    width: auto;
-    min-height: 30px; }
-
-  .col-main {
-    float: none;
-    width: 100%;
-    margin: 0 0 15px; }
-    .col-main .product-list .col-1 {
-      width: 100%; }
-    .col-main .product-list .col-2 {
-      width: 100%; }
-    .col-main .page-title h1 {
-      width: auto; }
-
-  .footer-nav ul {
-    text-align: center;
-    font-size: 0; }
-    .footer-nav ul .first a {
-      border-radius: 0; }
-    .footer-nav ul .last a {
-      border-radius: 0; }
-  .footer-nav li {
-    font-size: 12px;
-    display: block;
-    vertical-align: top;
-    float: none; }
-
-  .copy {
-    text-align: left; }
-
-  .title-buttons {
-    text-align: left; }
-    .title-buttons .checkout-types {
-      padding: 7px 0 0; }
-    .title-buttons h1 {
-      float: none; }
-    .title-buttons h2 {
-      float: none; }
-    .title-buttons h3 {
-      float: none; }
-    .title-buttons h4 {
-      float: none; }
-    .title-buttons h5 {
-      float: none; }
-    .title-buttons h6 {
-      float: none; }
-
-  .title-wrapper {
-    position: static; }
-
-  .sub-title h1 {
-    float: none;
-    margin: 0 0 10px; }
-  .sub-title h2 {
-    float: none;
-    margin: 0 0 10px; }
-  .sub-title .btn-application {
-    min-width: 240px;
-    float: none;
-    margin: 0; }
-
-  .sidebar {
-    width: auto;
-    margin: 0; }
-
   .accessories-list {
     text-align: center; }
     .accessories-list li {
@@ -5112,19 +5059,6 @@ div.col-main div.col-main {
     display: none; }
   .configure-box .txt {
     padding: 13px 20px 0; }
-
-  .tab-content {
-    padding: 51px 0 30px; }
-
-  .cart .page-title h1 {
-    float: left;
-    float: none; }
-  .cart .totals .checkout-types li {
-    width: 100%;
-    box-sizing: border-box; }
-  .cart button.button.btn-proceed-checkout.btn-checkout {
-    width: 100%;
-    margin: 0 !important; }
 
   #opc-review .product-name {
     font-size: 11px; }
