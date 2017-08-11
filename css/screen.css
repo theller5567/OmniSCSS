@@ -1672,6 +1672,13 @@ table#compare-br {
         padding-top: 0;
         height: auto;
         overflow: hidden; }
+  @media only screen and (max-width: 767px) {
+    .cms-product-videos ul.videos li.video, .cms-how-to-videos ul.videos li.video {
+      width: 100%;
+      padding: 10px;
+      margin: 0; }
+      .cms-product-videos ul.videos li.video:nth-child(odd), .cms-how-to-videos ul.videos li.video:nth-child(odd) {
+        padding: 20px; } }
 
 .slide ul.thumbnails li.iwd-pv-thumb-video .iwd-pv-fake-thumb-block {
   background-color: rgba(0, 0, 0, 0.3); }
@@ -4198,6 +4205,26 @@ body.cms-page-view.cms-soil-dna-request-form .buttons-set {
   clear: both;
   display: table;
   overflow: hidden; }
+@media only screen and (max-width: 767px) {
+  .select-country-popup-wrapper .country.expand {
+    max-height: 150px;
+    overflow-y: auto; }
+  .select-country-popup-wrapper #distributorList li {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 0; }
+  .select-country-popup-wrapper .col-1 {
+    width: 100%; }
+    .select-country-popup-wrapper .col-1 .left {
+      float: none;
+      width: 100%; }
+    .select-country-popup-wrapper .col-1 .right {
+      float: none;
+      width: 100%; }
+  .select-country-popup-wrapper .col-2 {
+    width: 100%; }
+  .select-country-popup-wrapper .col-3 {
+    width: 100%; } }
 
 .catalogsearch-result-index {
   /* Pager */
@@ -5152,34 +5179,7 @@ div.col-main div.col-main {
 
   #newsletter-validate-detail .input-box {
     margin-right: 0;
-    width: 80%; }
-
-  #wrapper .container.main .col-main .widget ul.videos li.video {
-    width: 100%;
-    padding: 10px;
-    margin: 0; }
-    #wrapper .container.main .col-main .widget ul.videos li.video:nth-child(odd) {
-      padding: 20px; }
-
-  .select-country-popup-wrapper .country.expand {
-    max-height: 150px;
-    overflow-y: auto; }
-  .select-country-popup-wrapper #distributorList li {
-    width: 100%;
-    margin-bottom: 15px;
-    padding: 0; }
-  .select-country-popup-wrapper .col-1 {
-    width: 100%; }
-    .select-country-popup-wrapper .col-1 .left {
-      float: none;
-      width: 100%; }
-    .select-country-popup-wrapper .col-1 .right {
-      float: none;
-      width: 100%; }
-  .select-country-popup-wrapper .col-2 {
-    width: 100%; }
-  .select-country-popup-wrapper .col-3 {
-    width: 100%; } }
+    width: 80%; } }
 @media only screen and (max-width: 800px) {
   .demo-program .container .left-col {
     width: 100%; }

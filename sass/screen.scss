@@ -2095,6 +2095,16 @@ table#compare-br {
 				}
 			}
 		}
+		@media only screen and(max-width:767px){
+			li.video {
+				width: 100%;
+				padding: 10px;
+				margin: 0;
+				&:nth-child(odd){
+					padding: 20px;
+				}
+			}
+		}
 	}
 }
 
@@ -5434,6 +5444,36 @@ body.cms-page-view.cms-soil-dna-request-form {
 		display: table;
 		overflow: hidden;
 	}
+	@media only screen and(max-width:767px){
+		.country.expand {
+			max-height: 150px;
+			overflow-y: auto;
+		}
+		#distributorList {
+			li {
+				width: 100%;
+				margin-bottom: 15px;
+				padding: 0;
+			}
+		}
+		.col-1 {
+			width: 100%;
+			.left {
+				float: none;
+				width: 100%;
+			}
+			.right {
+				float: none;
+				width: 100%;
+			}
+		}
+		.col-2 {
+			width: 100%;
+		}
+		.col-3 {
+			width: 100%;
+		}
+	}
 }
 
 //Styles for Search Page
@@ -5950,7 +5990,6 @@ $myriadpro-bold-svg: url(../webfonts/myriadpro-bold-webfont.svg#myriadpro_bold);
 .my-floating-cart { display: none; }
 /* added css to create a max-height on video block for product image */
 .product-gallery .thumbnails img { max-height: 72px; width:94px!important; }
-
 
 /* ===============  MEDIA QUERIES  =============== */
 //RESPONSIVE STYLING USING MEDIA QUERIES
@@ -7364,54 +7403,54 @@ $myriadpro-bold-svg: url(../webfonts/myriadpro-bold-webfont.svg#myriadpro_bold);
 	// .products-list .add-to-links .separator {
 	// 	display: none;
 	// }
-	#wrapper {
-		.container.main {
-			.col-main {
-				.widget {
-					ul.videos {
-					    li.video {
-					        width: 100%;
-					        padding: 10px;
-					        margin: 0;
-					        &:nth-child(odd){
-					        	padding: 20px;
-					        }
-					    }
-					}
-				}
-			}
-		}
-	}
-	.select-country-popup-wrapper {
-		.country.expand {
-			max-height: 150px;
-			overflow-y: auto;
-		}
-		#distributorList {
-			li {
-				width: 100%;
-				margin-bottom: 15px;
-				padding: 0;
-			}
-		}
-		.col-1 {
-			width: 100%;
-			.left {
-				float: none;
-				width: 100%;
-			}
-			.right {
-				float: none;
-				width: 100%;
-			}
-		}
-		.col-2 {
-			width: 100%;
-		}
-		.col-3 {
-			width: 100%;
-		}
-	}
+	// #wrapper {
+	// 	.container.main {
+	// 		.col-main {
+	// 			.widget {
+	// 				ul.videos {
+	// 				    li.video {
+	// 				        width: 100%;
+	// 				        padding: 10px;
+	// 				        margin: 0;
+	// 				        &:nth-child(odd){
+	// 				        	padding: 20px;
+	// 				        }
+	// 				    }
+	// 				}
+	// 			}
+	// 		}
+	// 	}
+	// }
+	// .select-country-popup-wrapper {
+	// 	.country.expand {
+	// 		max-height: 150px;
+	// 		overflow-y: auto;
+	// 	}
+	// 	#distributorList {
+	// 		li {
+	// 			width: 100%;
+	// 			margin-bottom: 15px;
+	// 			padding: 0;
+	// 		}
+	// 	}
+	// 	.col-1 {
+	// 		width: 100%;
+	// 		.left {
+	// 			float: none;
+	// 			width: 100%;
+	// 		}
+	// 		.right {
+	// 			float: none;
+	// 			width: 100%;
+	// 		}
+	// 	}
+	// 	.col-2 {
+	// 		width: 100%;
+	// 	}
+	// 	.col-3 {
+	// 		width: 100%;
+	// 	}
+	// }
 }
 
 @media only screen and(max-width: 800px) {
