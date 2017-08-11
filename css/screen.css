@@ -206,6 +206,9 @@ input[type="image"] {
       margin: 0; }
     #main .main {
       padding: 0 10px 80px; } }
+  @media only screen and (max-width: 668px) and (max-width: 800px) {
+    #main .main {
+      padding: 25px 10px 80px; } }
 
 .main-container {
   background: none; }
@@ -1588,7 +1591,6 @@ table#compare-br {
         margin: 10px 0;
         padding-left: 10px; }
   .demo-program .container .right-col {
-    display: inline-block;
     overflow: hidden;
     padding: 10px 0 10px 10px;
     width: 30%;
@@ -1601,6 +1603,24 @@ table#compare-br {
       color: #ffffff;
       padding: 5px;
       text-align: center; }
+@media only screen and (max-width: 800px) {
+  .demo-program .container .left-col {
+    width: 100%; }
+    .demo-program .container .left-col .video {
+      max-width: 492px;
+      margin: 0 auto 10px auto;
+      display: block; }
+      .demo-program .container .left-col .video:nth-child(odd) {
+        margin-left: auto; }
+  .demo-program .container .right-col {
+    width: 100%; }
+    .demo-program .container .right-col .fieldset .form-list .field input.input-text {
+      max-width: 100%;
+      padding: 10px; }
+    .demo-program .container .right-col .buttons-set button.button {
+      width: 100%; }
+      .demo-program .container .right-col .buttons-set button.button span span {
+        padding: 10px 20px; } }
 
 .video-wrapper {
   position: relative;
@@ -2520,6 +2540,11 @@ body.cms-page-view.cms-soil-dna-request-form .buttons-set {
       color: #ffffff; }
     .catalog-product-view .product-order-wrapper .options-block .product-options ul.options-list label {
       color: #000000; }
+    @media only screen and (max-width: 800px) {
+      .catalog-product-view .product-order-wrapper .options-block .product-options ul.options-list input.radio {
+        margin-top: -3px; }
+      .catalog-product-view .product-order-wrapper .options-block .product-options ul.options-list input.checkbox {
+        margin-top: -3px; } }
   .catalog-product-view .product-order-wrapper .options-block .row {
     margin: 0 20px 0 19px;
     padding: 0;
@@ -5121,37 +5146,6 @@ div.col-main div.col-main {
   #newsletter-validate-detail .input-box {
     margin-right: 0;
     width: 80%; } }
-@media only screen and (max-width: 800px) {
-  .demo-program .container .left-col {
-    width: 100%; }
-    .demo-program .container .left-col .video {
-      max-width: 492px;
-      margin: 0 auto 10px auto;
-      display: block; }
-      .demo-program .container .left-col .video:nth-child(odd) {
-        margin-left: auto; }
-
-  .demo-program .container .right-col {
-    width: 100%; }
-    .demo-program .container .right-col .fieldset .form-list .field input.input-text {
-      max-width: 100%;
-      padding: 10px; }
-    .demo-program .container .right-col .buttons-set button.button {
-      width: 100%; }
-      .demo-program .container .right-col .buttons-set button.button span span {
-        padding: 10px 20px; }
-
-  .main {
-    padding: 25px 10px 80px; }
-
-  #newsletter-validate-detail .input-box {
-    float: left;
-    margin: 0 5px 0 0; }
-
-  .product-options ul.options-list input.radio {
-    margin-top: -3px; }
-  .product-options ul.options-list input.checkbox {
-    margin-top: -3px; } }
 @media only screen and (max-width: 916px) {
   .form-list li {
     margin: 0; }

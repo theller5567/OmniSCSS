@@ -292,6 +292,9 @@ input[type="image"] {
 		}
 		.main {
 			padding: 0 10px 80px;
+			@media only screen and(max-width:800px){
+				padding: 25px 10px 80px;
+			}
 		}
 	}
 }
@@ -2011,7 +2014,6 @@ table#compare-br {
 			}
 		}
 		.right-col {
-			display: inline-block;
 		    overflow: hidden;
 		    padding: 10px 0 10px 10px;
 		    width: 30%;
@@ -2025,6 +2027,34 @@ table#compare-br {
 		    	padding: 5px;
 		    	text-align: center;
 		    }
+		}
+	}
+	@media only screen and(max-width:800px){
+		.container {
+			.left-col {
+				width: 100%;
+				.video {
+					max-width: 492px;
+					margin: 0 auto 10px auto;
+					display: block;
+					&:nth-child(odd) {
+						margin-left: auto;
+					}
+				}
+			}
+			.right-col {
+				width: 100%;
+				.fieldset .form-list .field input.input-text {
+					max-width: 100%;
+					padding: 10px;
+				}
+				.buttons-set button.button {
+					width: 100%;
+					span span {
+						padding: 10px 20px;
+					}
+				}
+			}
 		}
 	}
 }
@@ -3274,8 +3304,20 @@ body.cms-page-view.cms-soil-dna-request-form {
 					    font-weight: normal;
 					    color: $white;
 				}
-				ul.options-list label {
-					color: $black;
+				ul.options-list {
+					label {
+						color: $black;
+					}
+					@media only screen and(max-width:800px){
+						input {
+							&.radio {
+								margin-top: -3px;
+							}
+							&.checkbox {
+								margin-top: -3px;
+							}
+						}
+					}
 				}
 			}
 			.row {
@@ -4806,7 +4848,6 @@ body.cms-page-view.cms-soil-dna-request-form {
 		text-align: left !important;
 	}
 }
-
 .mini-products-list {
 	margin: 0;
 	padding: 0;
@@ -5473,7 +5514,6 @@ body.cms-page-view.cms-soil-dna-request-form {
 			text-align: left;
 		}
 	}
-
 }
 
 //Styling for Col3 Layout
@@ -5557,6 +5597,7 @@ body.cms-page-view.cms-soil-dna-request-form {
 	}
 }
 
+//Check if exists in the DOM
 .pinned {
 	display: none;
 }
@@ -7871,45 +7912,41 @@ $myriadpro-bold-svg: url(../webfonts/myriadpro-bold-webfont.svg#myriadpro_bold);
 }
 
 @media only screen and(max-width: 800px) {
-	.demo-program .container .left-col {
-		width: 100%;
-		.video {
-			max-width: 492px;
-		    margin: 0 auto 10px auto;
-		    display: block;
-		    &:nth-child(odd) {
-		    	margin-left: auto;
-		    }
-		}
-	}
-	.demo-program .container .right-col {
-		width: 100%;
-		.fieldset .form-list .field input.input-text {
-			max-width: 100%;
-			padding: 10px;
-		}
-		.buttons-set button.button {
-			width: 100%;
-			span span {
-				padding: 10px 20px;
-			}
-		}
-	}
-	.main {
-		padding: 25px 10px 80px;
-	}
-	#newsletter-validate-detail .input-box {
-		float: left;
-		margin: 0 5px 0 0;
-	}
-	.product-options ul.options-list input {
-		&.radio {
-			margin-top: -3px;
-		}
-		&.checkbox {
-			margin-top: -3px;
-		}
-	}
+	// .demo-program .container .left-col {
+	// 	width: 100%;
+	// 	.video {
+	// 		max-width: 492px;
+	// 	    margin: 0 auto 10px auto;
+	// 	    display: block;
+	// 	    &:nth-child(odd) {
+	// 	    	margin-left: auto;
+	// 	    }
+	// 	}
+	// }
+	// .demo-program .container .right-col {
+	// 	width: 100%;
+	// 	.fieldset .form-list .field input.input-text {
+	// 		max-width: 100%;
+	// 		padding: 10px;
+	// 	}
+	// 	.buttons-set button.button {
+	// 		width: 100%;
+	// 		span span {
+	// 			padding: 10px 20px;
+	// 		}
+	// 	}
+	// }
+	// .main {
+	// 	padding: 25px 10px 80px;
+	// }
+	// .product-options ul.options-list input {
+	// 	&.radio {
+	// 		margin-top: -3px;
+	// 	}
+	// 	&.checkbox {
+	// 		margin-top: -3px;
+	// 	}
+	// }
 }
 
 @media only screen and(max-width: 916px) {
