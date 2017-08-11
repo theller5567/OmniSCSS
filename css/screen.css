@@ -186,6 +186,9 @@ input[type="image"] {
     font-size: 18px;
     font-weight: bold;
     color: #000000; }
+  @media only screen and (max-width: 668px) {
+    .container .featured-title-bar h2 {
+      font-size: 20px; } }
   @media only screen and (max-width: 767px) {
     .container {
       width: 100%; } }
@@ -1128,6 +1131,9 @@ button.button.plain span {
     #main-nav .products-section {
       margin-left: 0;
       margin-right: 0; } }
+  @media only screen and (max-width: 668px) {
+    #main-nav .drop-wrapper .drop {
+      margin-top: 0; } }
   @media only screen and (max-width: 767px) {
     #main-nav {
       background: #305893 !important; }
@@ -1457,6 +1463,19 @@ button.button.plain span {
         padding: 10px; }
     .cms-promotions .promotion .right-col .desc .promo-length {
       font-style: italic; }
+  @media only screen and (max-width: 668px) {
+    .cms-promotions .promotion .left-col {
+      display: inline-block;
+      width: 100%; }
+      .cms-promotions .promotion .left-col img {
+        margin: 0 auto;
+        display: block; }
+    .cms-promotions .promotion .right-col {
+      display: inline-block;
+      width: 100%; }
+      .cms-promotions .promotion .right-col .desc a.promo-btn {
+        font-size: 16px;
+        padding: 5px 50px 5px 10px; } }
 
 table#compare-br {
   background-color: #cecece;
@@ -2188,6 +2207,13 @@ table#compare-br {
       padding: 22px 10px 12px; }
       .fieldset .legend {
         margin-left: 0; } }
+  @media only screen and (max-width: 668px) {
+    .fieldset {
+      padding: 22px 15px 12px 18px; }
+      .fieldset .form-list .field {
+        margin: 0 0 8px; }
+      .fieldset .form-list .name-lastname {
+        margin: 0; } }
   @media only screen and (max-width: 767px) {
     .fieldset .form-list .input-box {
       width: auto; }
@@ -3270,6 +3296,9 @@ body.cms-page-view.cms-soil-dna-request-form .buttons-set {
       .checkout-cart-index .cart .data-table td .td.last {
         float: none;
         width: 100%; } }
+  @media only screen and (max-width: 668px) {
+    .checkout-cart-index .cart .data-table .td.first img {
+      width: 100%; } }
   @media only screen and (max-width: 767px) {
     .checkout-cart-index .cart .data-table td {
       font-size: 14px;
@@ -3641,7 +3670,12 @@ body.cms-page-view.cms-soil-dna-request-form .buttons-set {
     .checkout-cart-index .cart #shopping-cart-table tr th span {
       display: none; }
       .checkout-cart-index .cart #shopping-cart-table tr th span:nth-child(1) {
-        display: block; } }
+        display: block; }
+    .checkout-cart-index .cart .cart .cart-collaterals .totals {
+      float: none;
+      width: 100%;
+      box-sizing: border-box;
+      overflow: hidden; } }
   @media only screen and (max-width: 730px) {
     .checkout-cart-index .cart .shipping {
       width: 100%; }
@@ -3753,6 +3787,15 @@ body.cms-page-view.cms-soil-dna-request-form .buttons-set {
       width: 100%; }
     #my-orders-table tbody span.nobr {
       width: 100%; } }
+@media only screen and (max-width: 668px) {
+  #my-orders-table thead span:first-child {
+    display: block;
+    text-align: left;
+    padding-left: 10px; }
+  #my-orders-table tbody span {
+    float: none;
+    width: 49%;
+    display: inline-block; } }
 
 .nobr {
   white-space: normal !important; }
@@ -5041,79 +5084,8 @@ div.col-main div.col-main {
     width: 100%;
     margin: 0 0 15px; }
 
-  .cart .totals {
-    float: none;
-    width: 100%;
-    box-sizing: border-box;
-    overflow: hidden; }
-  .cart .cart-collaterals .col2-set {
-    width: 100%; }
-    .cart .cart-collaterals .col2-set .col-2 {
-      width: 100%; }
-
-  .fieldset {
-    padding: 22px 15px 12px 18px; }
-
-  .form-list .field {
-    margin: 0 0 8px; }
-  .form-list .name-lastname {
-    margin: 0; }
-
-  #my-orders-table thead span:first-child {
-    display: block;
-    text-align: left;
-    padding-left: 10px; }
-  #my-orders-table tbody span {
-    float: none;
-    width: 49%;
-    display: inline-block; }
-
-  div#LPMcontainer-1448044527697-0.LPMcontainer.LPMslider {
-    display: none !important; }
-
-  .footer li {
-    white-space: nowrap; }
-
-  .sp-methods .form-list {
-    padding-left: 0; }
-
-  .ratings .rating-box {
-    float: none; }
-
-  .products-grid .ratings .rating-box {
-    margin: 0 auto 5px; }
-
-  .catalog-product-view .ratings .rating-box {
-    margin: 0 0 8px; }
-
-  .data-table .td.first img {
-    width: 100%; }
-
   .form-add .button {
-    float: right; }
-
-  #wishlist-table th span:first-child + span {
-    white-space: normal;
-    text-align: left; }
-
-  #main-nav .drop-wrapper .drop {
-    margin-top: 0; }
-
-  .container .featured-title-bar h2 {
-    font-size: 20px; }
-
-  .std .promotion .left-col {
-    display: inline-block;
-    width: 100%; }
-    .std .promotion .left-col img {
-      margin: 0 auto;
-      display: block; }
-  .std .promotion .right-col {
-    display: inline-block;
-    width: 100%; }
-    .std .promotion .right-col .desc a.promo-btn {
-      font-size: 16px;
-      padding: 5px 50px 5px 10px; } }
+    float: right; } }
 @media only screen and (max-width: 767px) {
   .accessories-list {
     text-align: center; }
