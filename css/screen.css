@@ -2996,7 +2996,14 @@ body.cms-page-view.cms-soil-dna-request-form .buttons-set {
         min-height: 20px;
         background-position: 193px 0; }
   .catalog-product-view .info-wrapper .main-tab .main-column {
-    width: 100%; } }
+    width: 100%;
+    margin: 0; }
+    .catalog-product-view .info-wrapper .main-tab .main-column .add-nav ul {
+      text-align: left; }
+      .catalog-product-view .info-wrapper .main-tab .main-column .add-nav ul li:before, .catalog-product-view .info-wrapper .main-tab .main-column .add-nav ul li:after {
+        display: none; }
+  .catalog-product-view .info-wrapper .main-tab .col-right {
+    margin: 0; } }
 
 .downloads {
   padding: 10px 10px 10px 0; }
@@ -3366,8 +3373,7 @@ body.cms-page-view.cms-soil-dna-request-form .buttons-set {
       text-align: center;
       width: 100%; }
       .col-main ol.c2q li.section {
-        display: inline-block;
-        width: 160px; }
+        display: inline-block; }
         .col-main ol.c2q li.section .tab-title {
           margin: 0; }
           .col-main ol.c2q li.section .tab-title h2 {
@@ -4829,6 +4835,8 @@ body.cms-page-view.cms-soil-dna-request-form .buttons-set {
   .select-country-popup-wrapper .country.expand {
     max-height: 150px;
     overflow-y: auto; }
+    .select-country-popup-wrapper .country.expand ul {
+      height: auto !important; }
   .select-country-popup-wrapper #distributorList li {
     width: 100%;
     margin-bottom: 15px;

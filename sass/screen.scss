@@ -3923,6 +3923,21 @@ body.cms-page-view.cms-soil-dna-request-form {
 			.main-tab {
 				.main-column {
 					width: 100%;
+					margin: 0;
+					.add-nav {
+						ul {
+							text-align: left;
+							li {
+								&:before, &:after {
+									display: none;
+								}
+							}
+						}
+						
+					}
+				}
+				.col-right {
+					margin: 0;
 				}
 			}
 		}
@@ -4370,7 +4385,6 @@ body.cms-page-view.cms-soil-dna-request-form {
 			width: 100%;
 			li.section {
 				display: inline-block;
-				width: 160px;
 				.tab-title {
 					margin: 0;
 					h2 {
@@ -6310,6 +6324,9 @@ body.cms-page-view.cms-soil-dna-request-form {
 		.country.expand {
 			max-height: 150px;
 			overflow-y: auto;
+			ul {
+				height: auto !important;
+			}
 		}
 		#distributorList {
 			li {
