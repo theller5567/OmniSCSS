@@ -301,9 +301,6 @@ input[type="image"] {
 		}
 		.main {
 			padding: 0 10px 80px;
-			@media only screen and(max-width:800px){
-				padding: 25px 10px 80px;
-			}
 		}
 	}
 }
@@ -1076,9 +1073,6 @@ button.button.plain {
 		border-bottom: none;
 		border-left: 1px solid $black;
 		border-right: 1px solid $black;
-		&:hover {
-			background-color: $light-grey;
-		}
 		.block-title {
 			border: none;
 			padding: 0;
@@ -1799,9 +1793,6 @@ button.button.plain {
 	@media only screen and(max-width:978px){
 		.links {
 			clear: left;
-		}
-		.top-bar-top {
-			margin-bottom: 10px;
 		}
 		.contacts-box {
 			overflow: hidden;
@@ -4290,7 +4281,6 @@ body.cms-page-view.cms-soil-dna-request-form {
 	color: $omni-green;
 }
 .col-main {
-	padding-top: 20px;
 	max-height: none !important;
 	width: 76%;
 	.page-title {
