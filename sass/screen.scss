@@ -4302,6 +4302,25 @@ body.cms-page-view.cms-soil-dna-request-form {
 			}
 		}
 	}
+	@media only screen and(max-width:500px){
+		&.list-view {
+			.col-2 {
+				.add-to-cart {
+					button {
+						max-width: 100%;
+						span {
+							span {
+								padding: 0;
+								&:before, &:after {
+									display: none;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 }
 
 .tab-content {

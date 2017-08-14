@@ -3287,6 +3287,13 @@ body.cms-page-view.cms-soil-dna-request-form .buttons-set {
         margin-left: 0; }
       .product-list.list-view .col-2 .add-to-cart button {
         max-width: 100%; } }
+  @media only screen and (max-width: 500px) {
+    .product-list.list-view .col-2 .add-to-cart button {
+      max-width: 100%; }
+      .product-list.list-view .col-2 .add-to-cart button span span {
+        padding: 0; }
+        .product-list.list-view .col-2 .add-to-cart button span span:before, .product-list.list-view .col-2 .add-to-cart button span span:after {
+          display: none; } }
 
 .tab-content {
   padding: 51px 0 15px;
