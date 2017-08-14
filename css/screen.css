@@ -538,7 +538,12 @@ button.button.plain span {
       padding: 0; }
   .col2-left-layout .sidebar {
     width: auto;
-    min-height: 30px; } }
+    min-height: 30px; }
+  .col2-left-layout .main > .col-main {
+    width: 100%;
+    float: none;
+    padding-top: 0;
+    margin: 0; } }
 @media only screen and (max-width: 978px) {
   .col2-left-layout .sidebar {
     width: 100%; }
@@ -2989,7 +2994,9 @@ body.cms-page-view.cms-soil-dna-request-form .buttons-set {
         background: url(../images/omni8.png);
         width: 20px;
         min-height: 20px;
-        background-position: 193px 0; } }
+        background-position: 193px 0; }
+  .catalog-product-view .main-tab .main-column {
+    width: 100%; } }
 
 .downloads {
   padding: 10px 10px 10px 0; }
@@ -5378,13 +5385,7 @@ div.col-main div.col-main {
     text-align: left; }
 
   .form-add .button {
-    float: right; }
-
-  #newsletter-validate-detail .input-box {
-    width: 70%; }
-
-  .block-subscribe .actions {
-    width: 30%; } }
+    float: right; } }
 @media only screen and (max-width: 668px) {
   .LPMcontainer {
     display: none !important; }
@@ -5401,21 +5402,6 @@ div.col-main div.col-main {
   .form-add .button {
     float: right; } }
 @media only screen and (max-width: 767px) {
-  .accessories-list {
-    text-align: center; }
-    .accessories-list li {
-      text-align: left;
-      width: 280px; }
-    .accessories-list .txt {
-      clear: both;
-      width: 100%;
-      padding: 7px 0 0; }
-
-  .configure-box .product-image {
-    display: none; }
-  .configure-box .txt {
-    padding: 13px 20px 0; }
-
   #opc-review .product-name {
     font-size: 11px; }
   #opc-review .item-options {
@@ -5430,11 +5416,7 @@ div.col-main div.col-main {
     box-sizing: border-box;
     margin-bottom: 10px; }
   .product-view .product-shop .add-to-links li .separator {
-    display: none; }
-
-  #newsletter-validate-detail .input-box {
-    margin-right: 0;
-    width: 80%; } }
+    display: none; } }
 @media only screen and (max-width: 978px) {
   img {
     height: auto; }
