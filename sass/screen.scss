@@ -888,6 +888,11 @@ button.button.plain {
 			padding: 0;
 			display: inline-block;
 		}
+		/* added css to create a max-height on video block for product image */
+		img { 
+			max-height: 72px; 
+			width:94px!important; 
+		}
 		a {
 			display: block;
 			padding: 2px;
@@ -924,63 +929,157 @@ button.button.plain {
 		width: 1024px;
 		max-width: 1024px;
 		filter: progid:dximagetransform.microsoft.gradient(startcolorstr='$white', endcolorstr='$white',gradienttype=1 );
-		@media only screen and(max-width: 639px) {
-			width: 100% !important;
-			padding: 10px 0 0 0 !important;
-		}
-		@media only screen and(max-width:668px) {
-			h2.logo {
-				width: 126px;
-				height: 55px;
-			}
-			div.top-bar {
-				display: inline-block;
-				width: 100%;
-				box-sizing: border-box;
-				.top-bar-top {
-					.block-cart, .quote-link, ul.links {
-						display: inline-block;
-						float: none;
-						text-align:left;
-						vertical-align: top;
-						margin-top: 0;
-						text-align: center;
-					}
-					.block-cart {
-						width: 15%;
-					}
-					.quote-link {
-						width: 35%;
-					}
-					ul.links {
-						width: 40%;
-					}
-					form.searchautocomplete .nav {
-						width: calc(100% - 44px);
+		//Styling for Top Header Bar / Search/Login/Register/Cart/Quote
+		.top-bar {
+			float: right;
+			vertical-align: top;
+			text-align: left;
+			position: relative;
+			z-index: 1;
+			.top-bar-top {
+				background-color: $light-medium-grey;
+				padding: 10px 5px;
+				margin-bottom: 10px;
+				.button {
+					span {
+						position: relative;
+						span.btn-search {
+							display: block !important;
+							background-position: 95px 0;
+							background-color: transparent;
+							width: 21px;
+							top: 0;
+							position: absolute;
+							transform: none;
+							float: none;
+							background-image: $omni-sprites;
+							left: 0;
+							min-height: 20px;
+							&:before, &:after {
+								display: none;
+							}
+						}
 					}
 				}
-				
 			}
-			.changeLocation-wrapper {
-				right: 15px;
-				top: -32px;
-				height: 34px;
-				background-color: $omni-grey;
+			form.searchautocomplete {
+				.searchautocomplete-placeholder {
+					max-height: 400px;
+					overflow: hidden;
+					ul {
+						max-height: 360px;
+						overflow: hidden;
+						overflow-y: auto;
+						border-bottom: 1px solid #cecece;
+					}
+					.all {
+						a {
+							background-color: #0E5991;
+							color: $white;
+							cursor: pointer;
+							padding: 5px 10px;
+						}
+					}
+				}
 			}
-		}
-		@media only screen and(max-width: 767px) {
-			width: 100%;
-			padding: 10px 0 0;
-		}
-		@media only screen and(max-width: 978px) {
-			padding: 0 15px 5px;
-			background: none;
-			padding-top: 10px;
-			padding-bottom: 10px;
-			width: 720px;
+			.contacts-box {
+				display: none;
+			}
+			&:after {
+				content: "";
+				display: block;
+				clear: both;
+			}
+			form {
+				display: block;
+			}
+			.links {
+				float: right;
+				font-size: 14px;
+				font-weight: 400;
+				a {
+					color: $black;
+					font-size: 12px;
+				}
+				span {
+					color: $black;
+					font-size: 12px;
+				}
+			}
+			@media only screen and(max-width:639px){
+				float: none;
+				width: auto;
+				margin: 0;
+				padding: 0;
+				.contacts-box {
+					margin-right: 0;
+					float: none;
+					width: 100%;
+				}
+				.top-bar-top {
+					padding: 10px 0 20px 0;
+					margin: 0;
+				}
+				.form-search {
+					width: 100%;
+					text-align: center;
+					margin: 0;
+					.button {
+						width: 10%;
+					}
+					input.input-text {
+						width: 80%;
+					}
+				}
+				form {
+					width: auto;
+					float: none;
+					display: block;
+				}
+				.links {
+					clear: none;
+					text-align: center;
+					margin-top: 4px;
+					line-height: 24px;
+					width: 33%;
+					margin: 0;
+					padding: 0;
+					float: left;
+					text-align: center;
+					margin-top: 4px;
+					li {
+						display: inline;
+					}
+				}
+			}
+			@media only screen and(max-width:767px){
+				padding-right: 0;
+				display: block;
+				margin-right: 1%;
+				width: auto;
+				.links {
+					clear: none;
+				}
+			}
+			@media only screen and(max-width:978px){
+				.links {
+					clear: left;
+				}
+				.contacts-box {
+					overflow: hidden;
+					clear: both;
+					display: block;
+					text-align: center;
+					padding: 0;
+					.phone {
+						float: none;
+						vertical-align: top;
+						display: none;
+					}
+				}
+			}
 		}
 	}
-
 	.cell {
 		display: table-cell;
 		background-color: $light-grey;
@@ -1211,6 +1310,70 @@ button.button.plain {
 	    right: 100%;
 	    display: block;
 	    float: right;
+	}
+	@media only screen and(max-width: 639px) {
+		.container {
+			width: 100% !important;
+			padding: 10px 0 0 0 !important;
+		}
+	}
+	@media only screen and(max-width:668px) {
+		.container {
+			h2.logo {
+				width: 126px;
+				height: 55px;
+			}
+			div.top-bar {
+				display: inline-block;
+				width: 100%;
+				box-sizing: border-box;
+				.top-bar-top {
+					.block-cart, .quote-link, ul.links {
+						display: inline-block;
+						float: none;
+						text-align:left;
+						vertical-align: top;
+						margin-top: 0;
+						text-align: center;
+					}
+					.block-cart {
+						width: 15%;
+					}
+					.quote-link {
+						width: 35%;
+					}
+					ul.links {
+						width: 40%;
+					}
+					form.searchautocomplete .nav {
+						width: calc(100% - 44px);
+					}
+				}
+				
+			}
+			.changeLocation-wrapper {
+				right: 15px;
+				top: -32px;
+				height: 34px;
+				background-color: $omni-grey;
+			}
+		}
+		
+	}
+	@media only screen and(max-width: 767px) {
+		.container {
+			width: 100%;
+			padding: 10px 0 0;
+		}
+	}
+	@media only screen and(max-width: 978px) {
+		.container {
+			padding: 0 15px 5px;
+			background: none;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			width: 720px;
+		}
 	}
 	@media only screen and(max-width:1024px){
 		display: block;
@@ -1660,157 +1823,6 @@ button.button.plain {
 	}
 	&.expand:before {
 		content: '';
-	}
-}
-
-//Styling for Top Header Bar / Search/Login/Register/Cart/Quote
-.top-bar {
-	float: right;
-	vertical-align: top;
-	text-align: left;
-	position: relative;
-	z-index: 1;
-	.top-bar-top {
-		background-color: $light-medium-grey;
-		padding: 10px 5px;
-		margin-bottom: 10px;
-		.button {
-			span {
-				position: relative;
-				span.btn-search {
-					display: block !important;
-					background-position: 95px 0;
-				    background-color: transparent;
-				    width: 21px;
-				    top: 0;
-				    position: absolute;
-				    transform: none;
-				    float: none;
-				    background-image: $omni-sprites;
-				    left: 0;
-				    min-height: 20px;
-				    &:before, &:after {
-				    	display: none;
-				    }
-				}
-			}
-		}
-	}
-	form.searchautocomplete {
-		.searchautocomplete-placeholder {
-			max-height: 400px;
-			overflow: hidden;
-			ul {
-				max-height: 360px;
-			    overflow: hidden;
-			    overflow-y: auto;
-			    border-bottom: 1px solid #cecece;
-			}
-			.all {
-				a {
-					background-color: #0E5991;
-				    color: $white;
-				    cursor: pointer;
-				    padding: 5px 10px;
-				}
-			}
-		}
-	}
-	.contacts-box {
-		display: none;
-	}
-	&:after {
-		content: "";
-		display: block;
-		clear: both;
-	}
-	form {
-		display: block;
-	}
-	.links {
-		float: right;
-		font-size: 14px;
-		font-weight: 400;
-		a {
-			color: $black;
-			font-size: 12px;
-		}
-		span {
-			color: $black;
-			font-size: 12px;
-		}
-	}
-	@media only screen and(max-width:639px){
-		float: none;
-		width: auto;
-		margin: 0;
-		padding: 0;
-		.contacts-box {
-			margin-right: 0;
-			float: none;
-			width: 100%;
-		}
-		.top-bar-top {
-			padding: 10px 0 20px 0;
-			margin: 0;
-		}
-		.form-search {
-			width: 100%;
-			text-align: center;
-			margin: 0;
-			.button {
-				width: 10%;
-			}
-			input.input-text {
-				width: 80%;
-			}
-		}
-		form {
-			width: auto;
-			float: none;
-			display: block;
-		}
-		.links {
-			clear: none;
-			text-align: center;
-			margin-top: 4px;
-			line-height: 24px;
-			width: 33%;
-			margin: 0;
-			padding: 0;
-			float: left;
-			text-align: center;
-			margin-top: 4px;
-			li {
-				display: inline;
-			}
-		}
-	}
-	@media only screen and(max-width:767px){
-		padding-right: 0;
-		display: block;
-		margin-right: 1%;
-		width: auto;
-		.links {
-			clear: none;
-		}
-	}
-	@media only screen and(max-width:978px){
-		.links {
-			clear: left;
-		}
-		.contacts-box {
-			overflow: hidden;
-			clear: both;
-			display: block;
-			text-align: center;
-			padding: 0;
-			.phone {
-				float: none;
-				vertical-align: top;
-				display: none;
-			}
-		}
 	}
 }
 
@@ -4271,6 +4283,24 @@ body.cms-page-view.cms-soil-dna-request-form {
 			text-align: left;
 			width: 290px;
 		}
+		&.list-view {
+			.img {
+				margin: 0 auto 10px;
+				float: none;
+			}
+			li {
+				.txt {
+					margin-left:0;
+				}
+			}
+			.col-2 {
+				.add-to-cart {
+					button {
+						max-width: 100%;
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -6446,12 +6476,10 @@ body.cms-page-view.cms-soil-dna-request-form {
 	}	
 }
 
-//Check if Exist in the DOM
-// .links li {
-// 	display: inline-block;
-// }
+// REMOVE SHOPPING CART DROPDOWN
+.my-floating-cart { display: none; }
 
-
+//Magento Messages styling
 .messages .success-msg {
 	width: 100%;
 	max-width: 1024px;
@@ -6882,12 +6910,6 @@ $myriadpro-bold-svg: url(../webfonts/myriadpro-bold-webfont.svg#myriadpro_bold);
 	font-weight: normal;
 	font-style: normal;
 }
-
-/* REMOVE SHOPPING CART DROPDOWN */
-.my-floating-cart { display: none; }
-/* added css to create a max-height on video block for product image */
-.product-gallery .thumbnails img { max-height: 72px; width:94px!important; }
-
 
 /* ===============  MEDIA QUERIES  =============== */
 //RESPONSIVE STYLING USING MEDIA QUERIES

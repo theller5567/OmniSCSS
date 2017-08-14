@@ -686,7 +686,8 @@ button.button.plain span {
     padding: 0;
     list-style: none;
     width: 100%;
-    text-align: center; }
+    text-align: center;
+    /* added css to create a max-height on video block for product image */ }
     .product-gallery .thumbnails li {
       vertical-align: top;
       width: 100px;
@@ -694,6 +695,9 @@ button.button.plain span {
       margin: 5px;
       padding: 0;
       display: inline-block; }
+    .product-gallery .thumbnails img {
+      max-height: 72px;
+      width: 94px !important; }
     .product-gallery .thumbnails a {
       display: block;
       padding: 2px;
@@ -723,49 +727,122 @@ button.button.plain span {
     width: 1024px;
     max-width: 1024px;
     filter: progid:dximagetransform.microsoft.gradient(startcolorstr='$white', endcolorstr='$white',gradienttype=1 ); }
-    @media only screen and (max-width: 639px) {
-      #header .container {
-        width: 100% !important;
-        padding: 10px 0 0 0 !important; } }
-    @media only screen and (max-width: 668px) {
-      #header .container h2.logo {
-        width: 126px;
-        height: 55px; }
-      #header .container div.top-bar {
-        display: inline-block;
-        width: 100%;
-        box-sizing: border-box; }
-        #header .container div.top-bar .top-bar-top .block-cart, #header .container div.top-bar .top-bar-top .quote-link, #header .container div.top-bar .top-bar-top ul.links {
-          display: inline-block;
+    #header .container .top-bar {
+      float: right;
+      vertical-align: top;
+      text-align: left;
+      position: relative;
+      z-index: 1; }
+      #header .container .top-bar .top-bar-top {
+        background-color: #cccccc;
+        padding: 10px 5px;
+        margin-bottom: 10px; }
+        #header .container .top-bar .top-bar-top .button span {
+          position: relative; }
+          #header .container .top-bar .top-bar-top .button span span.btn-search {
+            display: block !important;
+            background-position: 95px 0;
+            background-color: transparent;
+            width: 21px;
+            top: 0;
+            position: absolute;
+            transform: none;
+            float: none;
+            background-image: url(../images/omni8.png);
+            left: 0;
+            min-height: 20px; }
+            #header .container .top-bar .top-bar-top .button span span.btn-search:before, #header .container .top-bar .top-bar-top .button span span.btn-search:after {
+              display: none; }
+      #header .container .top-bar form.searchautocomplete .searchautocomplete-placeholder {
+        max-height: 400px;
+        overflow: hidden; }
+        #header .container .top-bar form.searchautocomplete .searchautocomplete-placeholder ul {
+          max-height: 360px;
+          overflow: hidden;
+          overflow-y: auto;
+          border-bottom: 1px solid #cecece; }
+        #header .container .top-bar form.searchautocomplete .searchautocomplete-placeholder .all a {
+          background-color: #0E5991;
+          color: #ffffff;
+          cursor: pointer;
+          padding: 5px 10px; }
+      #header .container .top-bar .contacts-box {
+        display: none; }
+      #header .container .top-bar:after {
+        content: "";
+        display: block;
+        clear: both; }
+      #header .container .top-bar form {
+        display: block; }
+      #header .container .top-bar .links {
+        float: right;
+        font-size: 14px;
+        font-weight: 400; }
+        #header .container .top-bar .links a {
+          color: #000000;
+          font-size: 12px; }
+        #header .container .top-bar .links span {
+          color: #000000;
+          font-size: 12px; }
+      @media only screen and (max-width: 639px) {
+        #header .container .top-bar {
           float: none;
-          text-align: left;
-          vertical-align: top;
-          margin-top: 0;
-          text-align: center; }
-        #header .container div.top-bar .top-bar-top .block-cart {
-          width: 15%; }
-        #header .container div.top-bar .top-bar-top .quote-link {
-          width: 35%; }
-        #header .container div.top-bar .top-bar-top ul.links {
-          width: 40%; }
-        #header .container div.top-bar .top-bar-top form.searchautocomplete .nav {
-          width: calc(100% - 44px); }
-      #header .container .changeLocation-wrapper {
-        right: 15px;
-        top: -32px;
-        height: 34px;
-        background-color: #444444; } }
-    @media only screen and (max-width: 767px) {
-      #header .container {
-        width: 100%;
-        padding: 10px 0 0; } }
-    @media only screen and (max-width: 978px) {
-      #header .container {
-        padding: 0 15px 5px;
-        background: none;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        width: 720px; } }
+          width: auto;
+          margin: 0;
+          padding: 0; }
+          #header .container .top-bar .contacts-box {
+            margin-right: 0;
+            float: none;
+            width: 100%; }
+          #header .container .top-bar .top-bar-top {
+            padding: 10px 0 20px 0;
+            margin: 0; }
+          #header .container .top-bar .form-search {
+            width: 100%;
+            text-align: center;
+            margin: 0; }
+            #header .container .top-bar .form-search .button {
+              width: 10%; }
+            #header .container .top-bar .form-search input.input-text {
+              width: 80%; }
+          #header .container .top-bar form {
+            width: auto;
+            float: none;
+            display: block; }
+          #header .container .top-bar .links {
+            clear: none;
+            text-align: center;
+            margin-top: 4px;
+            line-height: 24px;
+            width: 33%;
+            margin: 0;
+            padding: 0;
+            float: left;
+            text-align: center;
+            margin-top: 4px; }
+            #header .container .top-bar .links li {
+              display: inline; } }
+      @media only screen and (max-width: 767px) {
+        #header .container .top-bar {
+          padding-right: 0;
+          display: block;
+          margin-right: 1%;
+          width: auto; }
+          #header .container .top-bar .links {
+            clear: none; } }
+      @media only screen and (max-width: 978px) {
+        #header .container .top-bar .links {
+          clear: left; }
+        #header .container .top-bar .contacts-box {
+          overflow: hidden;
+          clear: both;
+          display: block;
+          text-align: center;
+          padding: 0; }
+          #header .container .top-bar .contacts-box .phone {
+            float: none;
+            vertical-align: top;
+            display: none; } }
   #header .cell {
     display: table-cell;
     background-color: #dedede;
@@ -967,6 +1044,49 @@ button.button.plain span {
     right: 100%;
     display: block;
     float: right; }
+  @media only screen and (max-width: 639px) {
+    #header .container {
+      width: 100% !important;
+      padding: 10px 0 0 0 !important; } }
+  @media only screen and (max-width: 668px) {
+    #header .container h2.logo {
+      width: 126px;
+      height: 55px; }
+    #header .container div.top-bar {
+      display: inline-block;
+      width: 100%;
+      box-sizing: border-box; }
+      #header .container div.top-bar .top-bar-top .block-cart, #header .container div.top-bar .top-bar-top .quote-link, #header .container div.top-bar .top-bar-top ul.links {
+        display: inline-block;
+        float: none;
+        text-align: left;
+        vertical-align: top;
+        margin-top: 0;
+        text-align: center; }
+      #header .container div.top-bar .top-bar-top .block-cart {
+        width: 15%; }
+      #header .container div.top-bar .top-bar-top .quote-link {
+        width: 35%; }
+      #header .container div.top-bar .top-bar-top ul.links {
+        width: 40%; }
+      #header .container div.top-bar .top-bar-top form.searchautocomplete .nav {
+        width: calc(100% - 44px); }
+    #header .container .changeLocation-wrapper {
+      right: 15px;
+      top: -32px;
+      height: 34px;
+      background-color: #444444; } }
+  @media only screen and (max-width: 767px) {
+    #header .container {
+      width: 100%;
+      padding: 10px 0 0; } }
+  @media only screen and (max-width: 978px) {
+    #header .container {
+      padding: 0 15px 5px;
+      background: none;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      width: 720px; } }
   @media only screen and (max-width: 1024px) {
     #header {
       display: block;
@@ -1302,123 +1422,6 @@ button.button.plain span {
     transform: translateY(-50%); }
   .toggle-menu.expand:before {
     content: ''; }
-
-.top-bar {
-  float: right;
-  vertical-align: top;
-  text-align: left;
-  position: relative;
-  z-index: 1; }
-  .top-bar .top-bar-top {
-    background-color: #cccccc;
-    padding: 10px 5px;
-    margin-bottom: 10px; }
-    .top-bar .top-bar-top .button span {
-      position: relative; }
-      .top-bar .top-bar-top .button span span.btn-search {
-        display: block !important;
-        background-position: 95px 0;
-        background-color: transparent;
-        width: 21px;
-        top: 0;
-        position: absolute;
-        transform: none;
-        float: none;
-        background-image: url(../images/omni8.png);
-        left: 0;
-        min-height: 20px; }
-        .top-bar .top-bar-top .button span span.btn-search:before, .top-bar .top-bar-top .button span span.btn-search:after {
-          display: none; }
-  .top-bar form.searchautocomplete .searchautocomplete-placeholder {
-    max-height: 400px;
-    overflow: hidden; }
-    .top-bar form.searchautocomplete .searchautocomplete-placeholder ul {
-      max-height: 360px;
-      overflow: hidden;
-      overflow-y: auto;
-      border-bottom: 1px solid #cecece; }
-    .top-bar form.searchautocomplete .searchautocomplete-placeholder .all a {
-      background-color: #0E5991;
-      color: #ffffff;
-      cursor: pointer;
-      padding: 5px 10px; }
-  .top-bar .contacts-box {
-    display: none; }
-  .top-bar:after {
-    content: "";
-    display: block;
-    clear: both; }
-  .top-bar form {
-    display: block; }
-  .top-bar .links {
-    float: right;
-    font-size: 14px;
-    font-weight: 400; }
-    .top-bar .links a {
-      color: #000000;
-      font-size: 12px; }
-    .top-bar .links span {
-      color: #000000;
-      font-size: 12px; }
-  @media only screen and (max-width: 639px) {
-    .top-bar {
-      float: none;
-      width: auto;
-      margin: 0;
-      padding: 0; }
-      .top-bar .contacts-box {
-        margin-right: 0;
-        float: none;
-        width: 100%; }
-      .top-bar .top-bar-top {
-        padding: 10px 0 20px 0;
-        margin: 0; }
-      .top-bar .form-search {
-        width: 100%;
-        text-align: center;
-        margin: 0; }
-        .top-bar .form-search .button {
-          width: 10%; }
-        .top-bar .form-search input.input-text {
-          width: 80%; }
-      .top-bar form {
-        width: auto;
-        float: none;
-        display: block; }
-      .top-bar .links {
-        clear: none;
-        text-align: center;
-        margin-top: 4px;
-        line-height: 24px;
-        width: 33%;
-        margin: 0;
-        padding: 0;
-        float: left;
-        text-align: center;
-        margin-top: 4px; }
-        .top-bar .links li {
-          display: inline; } }
-  @media only screen and (max-width: 767px) {
-    .top-bar {
-      padding-right: 0;
-      display: block;
-      margin-right: 1%;
-      width: auto; }
-      .top-bar .links {
-        clear: none; } }
-  @media only screen and (max-width: 978px) {
-    .top-bar .links {
-      clear: left; }
-    .top-bar .contacts-box {
-      overflow: hidden;
-      clear: both;
-      display: block;
-      text-align: center;
-      padding: 0; }
-      .top-bar .contacts-box .phone {
-        float: none;
-        vertical-align: top;
-        display: none; } }
 
 .logo-holder {
   float: left;
@@ -3276,7 +3279,14 @@ body.cms-page-view.cms-soil-dna-request-form .buttons-set {
       text-align: center; }
       .product-list li {
         text-align: left;
-        width: 290px; } }
+        width: 290px; }
+      .product-list.list-view .img {
+        margin: 0 auto 10px;
+        float: none; }
+      .product-list.list-view li .txt {
+        margin-left: 0; }
+      .product-list.list-view .col-2 .add-to-cart button {
+        max-width: 100%; } }
 
 .tab-content {
   padding: 51px 0 15px;
@@ -4957,6 +4967,9 @@ body.cms-page-view.cms-soil-dna-request-form .buttons-set {
         .catalogsearch-result-index .product-list.list-view li .txt .col-1 {
           width: 100%; } }
 
+.my-floating-cart {
+  display: none; }
+
 .messages .success-msg {
   width: 100%;
   max-width: 1024px;
@@ -5318,15 +5331,6 @@ div.col-main div.col-main {
   src: url(../webfonts/myriadpro-bold-webfont.eot?#iefix) format("embedded-opentype"), url(../webfonts/myriadpro-bold-webfont.woff) format("woff"), url(../webfonts/myriadpro-bold-webfont.ttf) format("truetype"), url(../webfonts/myriadpro-bold-webfont.svg#myriadpro_bold) format("svg");
   font-weight: normal;
   font-style: normal; }
-/* REMOVE SHOPPING CART DROPDOWN */
-.my-floating-cart {
-  display: none; }
-
-/* added css to create a max-height on video block for product image */
-.product-gallery .thumbnails img {
-  max-height: 72px;
-  width: 94px !important; }
-
 /* ===============  MEDIA QUERIES  =============== */
 @media only screen and (max-width: 330px) {
   .my-account .title-buttons h1 {
