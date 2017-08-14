@@ -651,6 +651,9 @@ button.button.plain span {
   z-index: 99; }
 .catalog-category-view .col-main .breadcrumbs {
   position: relative; }
+@media only screen and (max-width: 978px) {
+  .catalog-category-view .page-title.custom-title {
+    display: none; } }
 
 .block-news {
   display: none; }
@@ -5386,6 +5389,10 @@ div.col-main div.col-main {
 
   .form-add .button {
     float: right; } }
+@media only screen and (max-width: 500px) {
+  .contacts-index-index button.button {
+    width: 100%;
+    margin-bottom: 10px; } }
 @media only screen and (max-width: 668px) {
   .LPMcontainer {
     display: none !important; }
@@ -5425,6 +5432,12 @@ div.col-main div.col-main {
     float: none;
     vertical-align: top;
     display: inline-block; }
+
+  .contacts-index-index .fieldset .form-list .field input.input-text {
+    width: 100%;
+    max-width: 100%; }
+  .contacts-index-index .form-list .input-box {
+    width: 100%; }
 
   .configure-box {
     margin-right: 0; }

@@ -840,6 +840,11 @@ button.button.plain {
 	.col-main .breadcrumbs {
 		position: relative;
 	}
+	@media only screen and(max-width:978px){
+		.page-title.custom-title {
+			display: none;
+		}
+	}
 }
 .block-news {
 	display: none;
@@ -6970,13 +6975,14 @@ $myriadpro-bold-svg: url(../webfonts/myriadpro-bold-webfont.svg#myriadpro_bold);
 	}
 }
 
-//Check if Exists in DOM
-// @media only screen and(max-width: 500px) {
-// 	.contacts-index-index button.button {
-// 		width: 100%;
-// 		margin-bottom: 10px;
-// 	}
-// }
+@media only screen and(max-width: 500px) {
+	.contacts-index-index {
+		button.button {
+			width: 100%;
+			margin-bottom: 10px;
+		}
+	}
+}
 
 @media only screen and(max-width: 668px) {
 	.LPMcontainer {
@@ -7066,6 +7072,15 @@ $myriadpro-bold-svg: url(../webfonts/myriadpro-bold-webfont.svg#myriadpro_bold);
 		float: none;
 		vertical-align: top;
 		display: inline-block;
+	}
+	.contacts-index-index {
+		.fieldset .form-list .field input.input-text {
+			width: 100%;
+			max-width: 100%;
+		}
+		.form-list .input-box {
+			width: 100%;
+		}
 	}
 	//Check if exists in the DOM - Below
 	// .sample-box {
