@@ -3720,6 +3720,11 @@ body.cms-page-view.cms-soil-dna-request-form {
 				.box-collateral .std {
 					overflow: visible;
 				}
+				.main-column {
+					.materials-box {
+						width:100%;
+					}
+				}
 			}
 		}
 		.sub-title {
@@ -3822,6 +3827,52 @@ body.cms-page-view.cms-soil-dna-request-form {
 				margin-bottom: 10px;
 				li {
 					margin-bottom: 5px;
+				}
+			}
+		}
+	}
+	@media only screen and(max-width:978px){
+		.options-block {
+			.product-name {
+				font-size: 22px;
+			}
+			.add-to-cart {
+				padding-top: 10px;
+				button.button {
+					position: relative;
+					margin-top: 20px;
+					width: 100%;
+					height: 45px;
+					background: $omni-green;
+					border: none;
+					overflow: hidden;
+					transition: all 300ms;
+					span {
+						position: relative;
+						height: 45px;
+						font-size: 18px;
+						line-height: 45px;
+						background: none;
+						color: $white;
+						span {
+							padding: 0 0 0 45px;
+							&:before {
+								width: 45px;
+								height: 45px;
+							}
+						}
+					}
+					&.btn-quote span span:after {
+						content: '';
+						position: absolute;
+						top: 50%;
+						left: 15px;
+						transform: translateY(-50%);
+						background: $omni-sprites;
+						width: 20px;
+						min-height: 20px;
+						background-position: 193px 0;
+					}
 				}
 			}
 		}
@@ -4292,6 +4343,9 @@ body.cms-page-view.cms-soil-dna-request-form {
 		.page-title {
 			padding: 24px 15px 27px;
 			margin: -34px -15px 15px;
+		}
+		.col-main {
+			width: 72%;
 		}
 	}
 }
@@ -5030,6 +5084,20 @@ body.cms-page-view.cms-soil-dna-request-form {
 				padding: 24px 15px 27px;
 				margin: -34px -15px 15px;
 			}
+			.totals {
+				float: none;
+				overflow: hidden;
+				width: auto;
+				margin: 0 0 25px;
+			}
+			.cart-collaterals .col2-set {
+				float: none;
+				width: auto;
+				overflow: hidden;
+				.col-2 {
+					width: 48%;
+				}
+			}
 		}
 	}
 	.totals td.a-right {
@@ -5444,6 +5512,14 @@ body.cms-page-view.cms-soil-dna-request-form {
 			}
 			input.input-text {
 				width: 100%;
+			}
+		}
+		@media only screen and(max-width:978px){
+			li {
+				margin: 0 0 8px;
+				&.wide .input-box {
+					width: 100%;
+				}
 			}
 		}
 	}
@@ -8497,45 +8573,36 @@ $myriadpro-bold-svg: url(../webfonts/myriadpro-bold-webfont.svg#myriadpro_bold);
 	// 		}
 	// 	}
 	// }
-	.add-to-box {
-		.or {
-			float: none;
-			display: block;
-			margin: 0;
-		}
-		.add-to-cart {
-			float: none;
-		}
-	}
-	.cart {
-		.totals {
-			float: none;
-			overflow: hidden;
-			width: auto;
-			margin: 0 0 25px;
-		}
-		.cart-collaterals .col2-set {
-			float: none;
-			width: auto;
-			overflow: hidden;
-			.col-2 {
-				width: 48%;
-			}
-		}
-	}
-	.product-view .box-reviews .form-add .form-list {
-		.input-box {
-			width: 100%;
-		}
-		textarea {
-			width: 100%;
-			box-sizing: border-box;
-		}
-		input.input-text {
-			width: 100%;
-			box-sizing: border-box;
-		}
-	}
+
+	//Check if exists in the DOM - Below
+	// .add-to-box {
+	// 	.or {
+	// 		float: none;
+	// 		display: block;
+	// 		margin: 0;
+	// 	}
+	// 	.add-to-cart {
+	// 		float: none;
+	// 	}
+	// }
+
+	// .cart {
+	// 	.totals {
+	// 		float: none;
+	// 		overflow: hidden;
+	// 		width: auto;
+	// 		margin: 0 0 25px;
+	// 	}
+	// 	.cart-collaterals .col2-set {
+	// 		float: none;
+	// 		width: auto;
+	// 		overflow: hidden;
+	// 		.col-2 {
+	// 			width: 48%;
+	// 		}
+	// 	}
+	// }
+	
 	.advanced-search .form-list {
 		.input-box {
 			float: none;
@@ -8544,60 +8611,60 @@ $myriadpro-bold-svg: url(../webfonts/myriadpro-bold-webfont.svg#myriadpro_bold);
 			float: none;
 		}
 	}
-	.product-order-wrapper .options-block {
-		.product-name {
-			font-size: 22px;
-		}
-		.add-to-cart {
-			padding-top: 10px;
-			button.button {
-				position: relative;
-				margin-top: 20px;
-				width: 100%;
-				height: 45px;
-				background: $omni-green;
-				border: none;
-				overflow: hidden;
-				transition: all 300ms;
-				span {
-					position: relative;
-					height: 45px;
-					font-size: 18px;
-					line-height: 45px;
-					background: none;
-					color: $white;
-					span {
-						padding: 0 0 0 45px;
-						&:before {
-							width: 45px;
-							height: 45px;
-						}
-					}
-				}
-				&.btn-quote span span:after {
-					content: '';
-				    position: absolute;
-				    top: 50%;
-				    left: 15px;
-				    transform: translateY(-50%);
-				    background: $omni-sprites;
-				    width: 20px;
-				    min-height: 20px;
-				    background-position: 193px 0;
-				}
-			}
-		}
+	// .product-order-wrapper .options-block {
+	// 	.product-name {
+	// 		font-size: 22px;
+	// 	}
+	// 	.add-to-cart {
+	// 		padding-top: 10px;
+	// 		button.button {
+	// 			position: relative;
+	// 			margin-top: 20px;
+	// 			width: 100%;
+	// 			height: 45px;
+	// 			background: $omni-green;
+	// 			border: none;
+	// 			overflow: hidden;
+	// 			transition: all 300ms;
+	// 			span {
+	// 				position: relative;
+	// 				height: 45px;
+	// 				font-size: 18px;
+	// 				line-height: 45px;
+	// 				background: none;
+	// 				color: $white;
+	// 				span {
+	// 					padding: 0 0 0 45px;
+	// 					&:before {
+	// 						width: 45px;
+	// 						height: 45px;
+	// 					}
+	// 				}
+	// 			}
+	// 			&.btn-quote span span:after {
+	// 				content: '';
+	// 			    position: absolute;
+	// 			    top: 50%;
+	// 			    left: 15px;
+	// 			    transform: translateY(-50%);
+	// 			    background: $omni-sprites;
+	// 			    width: 20px;
+	// 			    min-height: 20px;
+	// 			    background-position: 193px 0;
+	// 			}
+	// 		}
+	// 	}
 		
-	}
-	.col-main {
-		width: 72%;
-	}
-	.send-friend .form-list li {
-		margin: 0 0 8px;
-		&.wide .input-box {
-			width: 100%;
-		}
-	}
+	// }
+	// .col-main {
+	// 	width: 72%;
+	// }
+	// .send-friend .form-list li {
+	// 	margin: 0 0 8px;
+	// 	&.wide .input-box {
+	// 		width: 100%;
+	// 	}
+	// }
 }
 
 @media only screen and (max-width: 1024px) and (min-width: 800px){
