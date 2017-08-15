@@ -784,7 +784,7 @@ button.button.plain span {
         #header .container .top-bar .links span {
           color: #000000;
           font-size: 12px; }
-      @media only screen and (max-width: 639px) {
+      @media only screen and (max-width: 767px) {
         #header .container .top-bar {
           float: none;
           width: auto;
@@ -822,14 +822,6 @@ button.button.plain span {
             margin-top: 4px; }
             #header .container .top-bar .links li {
               display: inline; } }
-      @media only screen and (max-width: 767px) {
-        #header .container .top-bar {
-          padding-right: 0;
-          display: block;
-          margin-right: 1%;
-          width: auto; }
-          #header .container .top-bar .links {
-            clear: none; } }
       @media only screen and (max-width: 978px) {
         #header .container .top-bar .links {
           clear: left; }
@@ -909,7 +901,7 @@ button.button.plain span {
     margin-left: 5px; }
     #header .quote-link strong {
       font-size: 14px; }
-    @media only screen and (max-width: 639px) {
+    @media only screen and (max-width: 767px) {
       #header .quote-link {
         width: 33%;
         margin: 0;
@@ -956,7 +948,7 @@ button.button.plain span {
       padding: 0; }
       #header .block-cart .summary a {
         color: #ffffff; }
-    @media only screen and (max-width: 639px) {
+    @media only screen and (max-width: 767px) {
       #header .block-cart {
         width: 33%;
         margin: 0;
@@ -1034,7 +1026,7 @@ button.button.plain span {
         top: -34px; }
         #header .changeLocation-wrapper #changeLocation #changeLocation {
           padding: 0 5px; } }
-  @media only screen and (max-width: 639px) {
+  @media only screen and (max-width: 767px) {
     #header .changeLocation-wrapper {
       right: 0;
       top: -34px; } }
@@ -1044,38 +1036,37 @@ button.button.plain span {
     right: 100%;
     display: block;
     float: right; }
-  @media only screen and (max-width: 639px) {
+  @media only screen and (max-width: 767px) {
     #header .container {
       width: 100% !important;
-      padding: 10px 0 0 0 !important; } }
-  @media only screen and (max-width: 668px) {
-    #header .container h2.logo {
-      width: 126px;
-      height: 55px; }
-    #header .container div.top-bar {
-      display: inline-block;
-      width: 100%;
-      box-sizing: border-box; }
-      #header .container div.top-bar .top-bar-top .block-cart, #header .container div.top-bar .top-bar-top .quote-link, #header .container div.top-bar .top-bar-top ul.links {
+      padding: 10px 0 0 0 !important; }
+      #header .container h2.logo {
+        width: 126px;
+        height: 55px; }
+      #header .container div.top-bar {
         display: inline-block;
-        float: none;
-        text-align: left;
-        vertical-align: top;
-        margin-top: 0;
-        text-align: center; }
-      #header .container div.top-bar .top-bar-top .block-cart {
-        width: 15%; }
-      #header .container div.top-bar .top-bar-top .quote-link {
-        width: 35%; }
-      #header .container div.top-bar .top-bar-top ul.links {
-        width: 40%; }
-      #header .container div.top-bar .top-bar-top form.searchautocomplete .nav {
-        width: calc(100% - 44px); }
-    #header .container .changeLocation-wrapper {
-      right: 15px;
-      top: -32px;
-      height: 34px;
-      background-color: #444444; } }
+        width: 100%;
+        box-sizing: border-box; }
+        #header .container div.top-bar .top-bar-top .block-cart, #header .container div.top-bar .top-bar-top .quote-link, #header .container div.top-bar .top-bar-top ul.links {
+          display: inline-block;
+          float: none;
+          text-align: left;
+          vertical-align: top;
+          margin-top: 0;
+          text-align: center; }
+        #header .container div.top-bar .top-bar-top .block-cart {
+          width: 15%; }
+        #header .container div.top-bar .top-bar-top .quote-link {
+          width: 35%; }
+        #header .container div.top-bar .top-bar-top ul.links {
+          width: 40%; }
+        #header .container div.top-bar .top-bar-top form.searchautocomplete .nav {
+          width: calc(100% - 44px); }
+      #header .container .changeLocation-wrapper {
+        right: 15px;
+        top: -32px;
+        height: 34px;
+        background-color: #444444; } }
   @media only screen and (max-width: 767px) {
     #header .container {
       width: 100%;
@@ -3757,6 +3748,131 @@ body.cms-page-view.cms-soil-dna-request-form .buttons-set {
     margin: 5px 0 !important; }
   .checkout-cart-index .cart-table .btn-empty, .qquoteadv-index-index .cart-table .btn-empty {
     margin: 5px 0 !important; } }
+.checkout-cart-index .totals td.a-right, .qquoteadv-index-index .totals td.a-right {
+  text-align: left !important; }
+.checkout-cart-index .cart, .qquoteadv-index-index .cart {
+  overflow: visible; }
+.checkout-cart-index .mini-products-list, .qquoteadv-index-index .mini-products-list {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  .checkout-cart-index .mini-products-list li, .qquoteadv-index-index .mini-products-list li {
+    list-style: none;
+    margin: 0;
+    padding: 15px; }
+  .checkout-cart-index .mini-products-list img, .qquoteadv-index-index .mini-products-list img {
+    position: absolute;
+    width: 71px;
+    height: 71px;
+    border: none;
+    border-radius: 50%;
+    float: left;
+    margin: 0;
+    border: 2px solid #305893;
+    box-shadow: 0 1px 3px #404040; }
+  .checkout-cart-index .mini-products-list .product-details, .qquoteadv-index-index .mini-products-list .product-details {
+    padding-left: 20px;
+    margin: 0 0 10px 71px;
+    overflow: hidden;
+    display: inline-block; }
+  .checkout-cart-index .mini-products-list .product-name, .qquoteadv-index-index .mini-products-list .product-name {
+    font-size: 14px;
+    font-weight: bold;
+    color: #000000;
+    line-height: 16px;
+    margin: 0 0 10px;
+    min-height: 20px;
+    font-weight: normal; }
+    .checkout-cart-index .mini-products-list .product-name a, .qquoteadv-index-index .mini-products-list .product-name a {
+      color: #000000; }
+  @media only screen and (max-width: 767px) {
+    .checkout-cart-index .mini-products-list li, .qquoteadv-index-index .mini-products-list li {
+      padding: 10px 7px; } }
+.checkout-cart-index .btn-remove2, .qquoteadv-index-index .btn-remove2 {
+  position: relative;
+  background: none;
+  width: 20px;
+  height: 20px; }
+  .checkout-cart-index .btn-remove2:before, .qquoteadv-index-index .btn-remove2:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    display: block;
+    background: url(../images/omni8.png);
+    width: 22px;
+    min-height: 20px;
+    background-position: 243px  -22px; }
+.checkout-cart-index #my-orders-table thead span, .qquoteadv-index-index #my-orders-table thead span {
+  width: 16%;
+  float: left;
+  text-align: left; }
+.checkout-cart-index #my-orders-table tbody span, .qquoteadv-index-index #my-orders-table tbody span {
+  float: left;
+  width: 16%; }
+  .checkout-cart-index #my-orders-table tbody span span, .qquoteadv-index-index #my-orders-table tbody span span {
+    width: auto;
+    float: none; }
+  .checkout-cart-index #my-orders-table tbody span.separator, .qquoteadv-index-index #my-orders-table tbody span.separator {
+    display: none; }
+@media only screen and (max-width: 480px) {
+  .checkout-cart-index #my-orders-table, .qquoteadv-index-index #my-orders-table {
+    width: 100%;
+    font-size: 11px; }
+    .checkout-cart-index #my-orders-table td, .qquoteadv-index-index #my-orders-table td {
+      font-size: 10px;
+      padding: 3px; }
+    .checkout-cart-index #my-orders-table th, .qquoteadv-index-index #my-orders-table th {
+      padding: 3px; }
+    .checkout-cart-index #my-orders-table tbody span.price-excl-tax, .qquoteadv-index-index #my-orders-table tbody span.price-excl-tax {
+      width: 100%; }
+    .checkout-cart-index #my-orders-table tbody span.nobr, .qquoteadv-index-index #my-orders-table tbody span.nobr {
+      width: 100%; } }
+@media only screen and (max-width: 668px) {
+  .checkout-cart-index #my-orders-table thead span:first-child, .qquoteadv-index-index #my-orders-table thead span:first-child {
+    display: block;
+    text-align: left;
+    padding-left: 10px; }
+  .checkout-cart-index #my-orders-table tbody span, .qquoteadv-index-index #my-orders-table tbody span {
+    float: none;
+    width: 49%;
+    display: inline-block; } }
+.checkout-cart-index .nobr, .qquoteadv-index-index .nobr {
+  white-space: normal !important; }
+.checkout-cart-index .shipping-form .button-set button span span:after, .qquoteadv-index-index .shipping-form .button-set button span span:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 8px;
+  transform: translateY(-50%);
+  background: url(../images/omni8.png);
+  width: 21px;
+  min-height: 20px;
+  background-position: 142px 0; }
+.checkout-cart-index .shipping-form .button-set button.button span span:after, .qquoteadv-index-index .shipping-form .button-set button.button span span:after {
+  background-position: 143px 0; }
+.checkout-cart-index #c2qBtn.btn-update span span:after, .qquoteadv-index-index #c2qBtn.btn-update span span:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 8px;
+  transform: translateY(-50%);
+  background: url(../images/omni8.png);
+  width: 21px;
+  min-height: 20px;
+  background-position: 69px 0; }
+.checkout-cart-index .discount-form button.button span span:after, .qquoteadv-index-index .discount-form button.button span span:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 8px;
+  transform: translateY(-50%);
+  background: url(../images/omni8.png);
+  width: 21px;
+  min-height: 20px;
+  background-position: 142px 0;
+  content: '\f145'; }
+.checkout-cart-index .cart-recently-viewed, .qquoteadv-index-index .cart-recently-viewed {
+  display: block; }
 @media only screen and (max-width: 480px) {
   .checkout-cart-index .cart, .qquoteadv-index-index .cart {
     overflow: hidden; }
@@ -3931,7 +4047,19 @@ body.cms-page-view.cms-soil-dna-request-form .buttons-set {
     float: none;
     width: 100%;
     box-sizing: border-box;
-    overflow: hidden; } }
+    overflow: hidden; }
+  .checkout-cart-index .cart-recently-viewed-title, .qquoteadv-index-index .cart-recently-viewed-title {
+    display: none; }
+  .checkout-cart-index .cart-recently-viewed, .qquoteadv-index-index .cart-recently-viewed {
+    display: none !important; }
+  .checkout-cart-index button.btn-proceed-checkout.btn-checkout, .qquoteadv-index-index button.btn-proceed-checkout.btn-checkout {
+    height: auto !important; }
+    .checkout-cart-index button.btn-proceed-checkout.btn-checkout span, .qquoteadv-index-index button.btn-proceed-checkout.btn-checkout span {
+      height: auto !important; }
+      .checkout-cart-index button.btn-proceed-checkout.btn-checkout span span, .qquoteadv-index-index button.btn-proceed-checkout.btn-checkout span span {
+        height: auto !important;
+        padding-top: 10px;
+        padding-bottom: 10px; } }
 @media only screen and (max-width: 730px) {
   .checkout-cart-index .shipping, .qquoteadv-index-index .shipping {
     width: 100%; }
@@ -3978,152 +4106,7 @@ body.cms-page-view.cms-soil-dna-request-form .buttons-set {
     overflow: hidden; }
     .checkout-cart-index .cart-collaterals .col2-set .col-2, .qquoteadv-index-index .cart-collaterals .col2-set .col-2 {
       width: 48%; } }
-.checkout-cart-index .totals td.a-right, .qquoteadv-index-index .totals td.a-right {
-  text-align: left !important; }
-.checkout-cart-index .cart, .qquoteadv-index-index .cart {
-  overflow: visible; }
 
-.mini-products-list {
-  margin: 0;
-  padding: 0;
-  list-style: none; }
-  .mini-products-list li {
-    list-style: none;
-    margin: 0;
-    padding: 15px; }
-  .mini-products-list img {
-    position: absolute;
-    width: 71px;
-    height: 71px;
-    border: none;
-    border-radius: 50%;
-    float: left;
-    margin: 0;
-    border: 2px solid #305893;
-    box-shadow: 0 1px 3px #404040; }
-  .mini-products-list .product-details {
-    padding-left: 20px;
-    margin: 0 0 10px 71px;
-    overflow: hidden;
-    display: inline-block; }
-  .mini-products-list .product-name {
-    font-size: 14px;
-    font-weight: bold;
-    color: #000000;
-    line-height: 16px;
-    margin: 0 0 10px;
-    min-height: 20px;
-    font-weight: normal; }
-    .mini-products-list .product-name a {
-      color: #000000; }
-  @media only screen and (max-width: 767px) {
-    .mini-products-list li {
-      padding: 10px 7px; } }
-
-.btn-remove2 {
-  position: relative;
-  background: none;
-  width: 20px;
-  height: 20px; }
-  .btn-remove2:before {
-    content: '';
-    position: absolute;
-    left: 0;
-    display: block;
-    background: url(../images/omni8.png);
-    width: 22px;
-    min-height: 20px;
-    background-position: 243px  -22px; }
-
-#my-orders-table thead span {
-  width: 16%;
-  float: left;
-  text-align: left; }
-#my-orders-table tbody span {
-  float: left;
-  width: 16%; }
-  #my-orders-table tbody span span {
-    width: auto;
-    float: none; }
-  #my-orders-table tbody span.separator {
-    display: none; }
-@media only screen and (max-width: 480px) {
-  #my-orders-table {
-    width: 100%;
-    font-size: 11px; }
-    #my-orders-table td {
-      font-size: 10px;
-      padding: 3px; }
-    #my-orders-table th {
-      padding: 3px; }
-    #my-orders-table tbody span.price-excl-tax {
-      width: 100%; }
-    #my-orders-table tbody span.nobr {
-      width: 100%; } }
-@media only screen and (max-width: 668px) {
-  #my-orders-table thead span:first-child {
-    display: block;
-    text-align: left;
-    padding-left: 10px; }
-  #my-orders-table tbody span {
-    float: none;
-    width: 49%;
-    display: inline-block; } }
-
-.nobr {
-  white-space: normal !important; }
-
-.shipping-form .button-set button span span:after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 8px;
-  transform: translateY(-50%);
-  background: url(../images/omni8.png);
-  width: 21px;
-  min-height: 20px;
-  background-position: 142px 0; }
-.shipping-form .button-set button.button span span:after {
-  background-position: 143px 0; }
-
-#c2qBtn.btn-update span span:after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 8px;
-  transform: translateY(-50%);
-  background: url(../images/omni8.png);
-  width: 21px;
-  min-height: 20px;
-  background-position: 69px 0; }
-
-.discount-form button.button span span:after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 8px;
-  transform: translateY(-50%);
-  background: url(../images/omni8.png);
-  width: 21px;
-  min-height: 20px;
-  background-position: 142px 0;
-  content: '\f145'; }
-
-@media only screen and (max-width: 678px) {
-  .cart-recently-viewed-title {
-    display: none; }
-
-  .cart-recently-viewed {
-    display: none !important; }
-
-  button.btn-proceed-checkout.btn-checkout {
-    height: auto !important; }
-    button.btn-proceed-checkout.btn-checkout span {
-      height: auto !important; }
-      button.btn-proceed-checkout.btn-checkout span span {
-        height: auto !important;
-        padding-top: 10px;
-        padding-bottom: 10px; } }
 .checkout-onepage-index .col-right.sidebar .block.opc-block-progress .block-title {
   margin: 0; }
 .checkout-onepage-index .col-right.sidebar .block.opc-block-progress .block-content {
@@ -4236,6 +4219,18 @@ body.cms-page-view.cms-soil-dna-request-form .buttons-set {
       float: right; }
     .qquoteadv-index-index #quotelist .qquote-client-collaterals .box.address-form {
       width: 100%; }
+  @media only screen and (max-width: 678px) {
+    .qquoteadv-index-index #quotelist .qquote-client-collaterals {
+      padding: 25px 0; }
+      .qquoteadv-index-index #quotelist .qquote-client-collaterals .box {
+        padding: 12px 0; }
+        .qquoteadv-index-index #quotelist .qquote-client-collaterals .box.client-data {
+          width: 100%; }
+        .qquoteadv-index-index #quotelist .qquote-client-collaterals .box.distribution-list {
+          width: 100%; } }
+@media only screen and (max-width: 687px) {
+  .qquoteadv-index-index .box.address-form #billing-new-address-form .input-box #accountDiv #qquote-tbl-address .input-group {
+    width: 100%; } }
 .qquoteadv-index-index .td.price.quote {
   text-align: center; }
 .qquoteadv-index-index td.last div p {
