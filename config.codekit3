@@ -81,32 +81,6 @@
 		"oAP": "\/gitignore",
 		"oF": 0
 		},
-	"\/media-queries.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/css\/media-queries.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/media.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/css\/media.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
 	"\/sass\/app-database.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -213,16 +187,6 @@
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
-		},
-	"\/spcksc.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 2,
-		"oAP": "\/spcksc-ck.css",
-		"oF": 0,
-		"oS": 0
 		}
 	},
 "hooks": [

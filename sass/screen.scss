@@ -3954,9 +3954,6 @@ body.cms-page-view.cms-soil-dna-request-form {
 			color: $white;
 		}
 	}
-	.clear {
-		display: none;
-	}
 	.downloads {
 		padding: 0;
 	}
@@ -5603,9 +5600,9 @@ body.cms-page-view.cms-soil-dna-request-form {
 			font-family: $myriadpro_bold;
 		}
 		p:nth-child(5){
-			margin-bottom: 5px;
+			margin-bottom: 5pxgit;
 		}
-		ul.resources {
+		ul {
 			padding: 0;
 			li {
 				list-style: none;

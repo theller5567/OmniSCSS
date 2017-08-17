@@ -3055,12 +3055,6 @@ body.cms-page-view.cms-soil-dna-request-form .buttons-set {
   .cms-corporate .sub-title h3,
   .cms-product-brochures .sub-title h3 {
     color: #ffffff; }
-.cms-product-manuals .clear,
-.cms-repair-installation-guides .clear,
-.cms-application-notes-files .clear,
-.cms-corporate .clear,
-.cms-product-brochures .clear {
-  display: none; }
 .cms-product-manuals .downloads,
 .cms-repair-installation-guides .downloads,
 .cms-application-notes-files .downloads,
@@ -4267,13 +4261,13 @@ body.cms-page-view.cms-soil-dna-request-form .buttons-set {
   text-decoration: underline;
   font-family: myriadpro_bold; }
 .cms-distributors div.resources p:nth-child(5) {
-  margin-bottom: 5px; }
-.cms-distributors div.resources ul.resources {
+  margin-bottom: 5pxgit; }
+.cms-distributors div.resources ul {
   padding: 0; }
-  .cms-distributors div.resources ul.resources li {
+  .cms-distributors div.resources ul li {
     list-style: none;
     margin-bottom: 10px; }
-    .cms-distributors div.resources ul.resources li a {
+    .cms-distributors div.resources ul li a {
       position: relative;
       padding: 10px;
       color: #ffffff;
@@ -4282,12 +4276,12 @@ body.cms-page-view.cms-soil-dna-request-form .buttons-set {
       background-color: #014383;
       min-width: 235px;
       padding-right: 30px; }
-      .cms-distributors div.resources ul.resources li a:hover {
+      .cms-distributors div.resources ul li a:hover {
         background-color: #01509c; }
-        .cms-distributors div.resources ul.resources li a:hover:after {
+        .cms-distributors div.resources ul li a:hover:after {
           right: 5px;
           transition: all 100ms; }
-      .cms-distributors div.resources ul.resources li a:after {
+      .cms-distributors div.resources ul li a:after {
         position: absolute;
         content: '';
         top: calc(50% - 15px);
