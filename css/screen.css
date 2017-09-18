@@ -1876,6 +1876,8 @@ button.button.plain span {
   font-size: 24px;
   margin: -12px 0 0 -4px; }
 
+.catalogsearch-result-index .col2-left-layout .main .col-main {
+  margin: 0; }
 .catalogsearch-result-index .col-left.sidebar .block .block-title {
   background: #444444; }
   .catalogsearch-result-index .col-left.sidebar .block .block-title strong span {
@@ -1885,13 +1887,10 @@ button.button.plain span {
   padding: 3px 10px; }
   .catalogsearch-result-index .toolbar .pager {
     padding: 3px 8px;
-    max-width: 30%;
     border-bottom: 0;
     display: inline-block;
     color: white;
     vertical-align: top; }
-    .catalogsearch-result-index .toolbar .pager .pager {
-      max-width: 70%; }
     .catalogsearch-result-index .toolbar .pager .amount {
       margin: 0;
       display: inline-block; }
@@ -1908,20 +1907,6 @@ button.button.plain span {
       padding-left: 20px; }
       .catalogsearch-result-index .toolbar .pager .limiter label {
         vertical-align: middle; }
-    @media only screen and (max-width: 480px) {
-      .catalogsearch-result-index .toolbar .pager .amount {
-        margin: 0 0 3px;
-        float: none;
-        text-align: left; }
-      .catalogsearch-result-index .toolbar .pager .limiter {
-        margin: 0 0 3px;
-        float: none;
-        text-align: left; }
-      .catalogsearch-result-index .toolbar .pager .pages {
-        margin: 0 0 3px;
-        float: none;
-        text-align: left;
-        margin: 0; } }
   .catalogsearch-result-index .toolbar .sorter {
     border-bottom: 0;
     display: inline-block;
@@ -1938,6 +1923,34 @@ button.button.plain span {
         vertical-align: middle; }
       .catalogsearch-result-index .toolbar .sorter .sort-by a {
         display: none; }
+  @media only screen and (max-width: 480px) {
+    .catalogsearch-result-index .toolbar .pager {
+      display: block;
+      float: none;
+      width: 100%;
+      padding: 10px 0 !important; }
+    .catalogsearch-result-index .toolbar .amount {
+      margin: 0 0 3px;
+      float: none;
+      text-align: left; }
+    .catalogsearch-result-index .toolbar .limiter {
+      margin: 0 0 3px;
+      float: none;
+      text-align: left; }
+    .catalogsearch-result-index .toolbar .pages {
+      margin: 0 0 3px;
+      float: none;
+      text-align: left;
+      margin: 0;
+      padding: 0 8px; }
+    .catalogsearch-result-index .toolbar .sorter {
+      width: 100%;
+      padding: 10px 0 !important;
+      border-top: 1px solid #ffffff;
+      float: none;
+      display: block; }
+      .catalogsearch-result-index .toolbar .sorter .sort-by {
+        float: none; } }
 @media (max-width: 767px) {
   .catalogsearch-result-index .catalogsearch-result-index .toolbar .pager {
     max-width: 100%; }
@@ -3061,6 +3074,25 @@ body.cms-page-view.cms-soil-dna-request-form .buttons-set {
 .cms-corporate .downloads,
 .cms-product-brochures .downloads {
   padding: 0; }
+
+.col-main .storelocator .item .store-info .phone {
+  padding: 0 0 0 10px; }
+  .col-main .storelocator .item .store-info .phone a {
+    padding: 0; }
+.col-main .storelocator .item .store-info .store-address {
+  padding: 0 0 0 10px; }
+  .col-main .storelocator .item .store-info .store-address address {
+    padding: 0; }
+.col-main .storelocator .item .store-info .extend-link {
+  background: #444444;
+  padding: 5px 10px;
+  border-radius: 4px; }
+  .col-main .storelocator .item .store-info .extend-link a {
+    margin: 0;
+    color: #ffffff; }
+  .col-main .storelocator .item .store-info .extend-link:hover {
+    background-color: #717376;
+    transition: all 300ms; }
 
 .sub-title {
   padding: 0 0 23px;
@@ -4935,7 +4967,8 @@ body.cms-page-view.cms-soil-dna-request-form .buttons-set {
     font-size: 11px;
     background: none;
     padding: 3px 8px;
-    border-top: 0; }
+    border-top: 0;
+    float: right; }
   .catalogsearch-result-index .sorter .view-mode {
     float: left;
     margin: 0;

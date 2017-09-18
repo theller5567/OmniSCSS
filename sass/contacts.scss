@@ -1,0 +1,94 @@
+/* Form */
+.col-main {
+	.banner {
+		img {
+			width: 100%;
+			margin-bottom: 20px;
+		}
+	}
+	.fieldset {
+		padding: 0;
+		border: 0;
+		margin-bottom: 0;
+		.legend {
+			display: none;
+		}
+	}
+	.form-list {
+		max-width: 560px;
+		>li {
+			&:not(:last-child) {
+				margin-bottom: 20px;
+			}
+		}
+		label {
+			margin-bottom: 10px;
+			color: black;
+		}
+		label.required {
+			em {
+				color: black;
+			}
+		}
+		input[type=text] {
+			height: 30px;
+			border-radius: 0;
+			padding-top: 0;
+			padding-bottom: 0;
+			width: 100%;
+			-moz-box-sizing: border-box;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+		select {
+			height: 30px;
+			border-radius: 0;
+			padding-top: 0;
+			padding-bottom: 0;
+			width: 100%;
+			-moz-box-sizing: border-box;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+		.field {
+			width: 48%;
+			&:last-child {
+				float: right;
+			}
+		}
+		li.wide {
+			.input-box {
+				width: 100%;
+			}
+		}
+	}
+	.buttons-set {
+		border: none;
+		margin-top: 0;
+		max-width: 560px;
+		p.required {
+			display: none;
+		}
+	}
+}
+.col-right {
+	>div {
+		&:not(.contact-info) {
+			display: none;
+		}
+	}
+}
+@media only screen and (max-width:978px) {
+	.col-main {
+		.form-list {
+			.field {
+				width: 100%;
+				float: none !important;
+				margin: 0;
+				&+.field {
+					margin-top: 20px;
+				}
+			}
+		}
+	}
+}
